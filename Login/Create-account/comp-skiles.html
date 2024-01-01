@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html dir="rtl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>إكمال معلومات الحساب</title>
+        <link rel="stylesheet" href="../../asites/css/style.css">
+        <!-- bootstrab links css -->
+        <link rel="stylesheet" href="../../asites/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../../asites/css/all.min.css">
+        <!-- waw links css -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+        <!-- fontawosme links css -->
+        <link rel="stylesheet" href="../../asites/css/fontawesome.min.css">
+        <!-- fonts Cario Import  -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+        href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Round|Material+Icons+Sharp|Material+Icons+Two+Tone"
+        rel="stylesheet"
+      />
+        <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500&family=Noto+Kufi+Arabic:wght@400;500&display=swap" rel="stylesheet">
+        <!-- other link -->
+        <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0/dist/css/select2.min.css" rel="stylesheet" />
+    </head>
+
+    <body >
+        <!-- header -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white  py-3 px-4">
+            <a class="navbar-brand ms-0 me-4 p-0 " href="../../index.html"><img src="../../asites/images/logo.png" class="logo"> </a>
+        </nav>
+        <!-- /header -->
+        <div class="login-bg justify-content-center align-content-center flex-wrap d-flex">
+            <div class="content-login bg-white overflow-hidden d-flex flex-column align-items-center">
+                <div class="head-content-login w-100 text-center d-grid justify-content-center">
+                    <h4 class="mb-0">إكمال معلومات الحساب</h4>
+                </div>
+                    <form class="date-form-sign w-100" method="post">
+
+                        <div class="item-form mb-2">
+                            <label for="select" class="form-label">التخصص<span class="impor">*</span></label>
+                            <div class="dropdown position-relative">
+                              <div class="input-box zero" onclick="initializeDropdown('.input-box.zero', '.radio.class-1', '.labeles.class-1')" id="select"></div>
+                              <div class="list position-absolute bg-white overflow-hidden d-flex align-items-center justify-content-space-between flex-direction-column">
+                                <div class="search-box w-100">
+                                  <input class="Input-serch-item 1 d-block border-0 w-100"
+                                    type="search"
+                                    name=""
+                                    onkeyup="search(this, '.labeles.class-1')"
+                                    placeholder="Search Options"
+                                  
+                                  />
+                                </div>
+                                <input type="radio" name="drop-1" id="id-sear-1" class="radio class-1" />
+                                <label for="id-sear-1" class="labeles class-1">
+                                  <span class="material-icons-outlined">directions_walk</span>
+                                  <span class="name">Walk</span>
+                                </label>
+
+                                <input type="radio" name="drop-1" id="id-sear-2" class="radio class-1" />
+                                <label for="id-sear-2" class="labeles class-1">
+                                  <span class="material-icons-outlined">directions_bike</span>
+                                  <span class="name">Road</span>
+                                </label>
+
+                                <input type="radio" name="drop-1" id="id-sear-3" class="radio class-1" />
+                                <label for="id-sear-3" class="labeles class-1">
+                                  <span class="material-icons-outlined">train</span>
+                                  <span class="name">Train</span>
+                                </label>
+
+                                <input type="radio" name="drop-1" id="id-sear-4" class="radio class-1" />
+                                <label for="id-sear-4" class="labeles class-1">
+                                  <span class="material-icons-outlined">flight</span>
+                                  <span class="name">Flight</span>
+                                </label>
+
+                                <input type="radio" name="drop-1" id="id-sear-5" class="radio class-1" />
+                                <label for="id-sear-5" class="labeles class-1">
+                                  <span class="material-icons-outlined">directions_boat</span>
+                                  <span class="name">Ship</span>
+                                </label>
+
+                                <input type="radio" name="drop-1" id="id-sear-6" class="radio class-1" />
+                                <label for="id-sear-6" class="labeles class-1">
+                                  <span class="material-icons-outlined">local_shipping</span>
+                                  <span class="name">Delivery</span>
+                                </label>
+                              </div>
+
+                              </div>
+                        </div>
+                        <div class="item-form mb-2">
+                            <label for="selec" class="form-label">المسمى الوظيفي<span class="impor">*</span></label>
+                            <div class="dropdown position-relative">
+                                <div class="input-box one" onclick="initializeDropdown('.input-box.one', 'input.radio.class-2', '.labeles.class-2')" id="selec"></div>
+                                <div class="list position-absolute bg-white overflow-hidden d-flex align-items-center justify-content-space-between flex-direction-column">
+                                  <div class="search-box w-100">
+                                    <input class="d-block border-0 w-100"
+                                       type="search"
+                                       name=""
+                                       id="search-2"
+                                       onkeyup="search(this, '.labeles.class-2');"
+                                       placeholder="Search Options"
+                                     />
+                                  </div>
+                                  <input type="radio" name="drop-2" id="id-search-1" class="radio class-2" />
+                                  <label for="id-search-1" class="labeles class-2">
+                                    <span class="material-icons-outlined"> directions_walk </span>
+                                    <span class="name">Walk</span>
+                                  </label>
+                        
+                                  <input type="radio" name="drop-2" id="id-search-2" class="radio class-2" />
+                                  <label for="id-search-2" class="labeles class-2">
+                                    <span class="material-icons-outlined"> directions_bike </span>
+                                    <span class="name">Road</span>
+                                  </label>
+                        
+                                  <input type="radio" name="drop-2" id="id-search-3" class="radio class-2" />
+                                  <label for="id-search-3" class="labeles class-2">
+                                    <span class="material-icons-outlined"> train </span>
+                                    <span class="name">Train</span>
+                                  </label>
+                        
+                                  <input type="radio" name="drop-2" id="id-search-4" class="radio class-2" />
+                                  <label for="id-search-4" class="labeles class-2">
+                                    <span class="material-icons-outlined"> flight </span>
+                                    <span class="name">Flight</span>
+                                  </label>
+                        
+                                  <input type="radio" name="drop-2" id="id-search-5" class="radio class-2" />
+                                  <label for="id-search-5" class="labeles class-2">
+                                    <span class="material-icons-outlined"> directions_boat </span>
+                                    <span class="name">Ship</span>
+                                  </label>
+                        
+                                  <input type="radio" name="drop-2" id="id-search-6" class="radio class-2" />
+                                  <label for="id-search-6" class="labeles class-2">
+                                    <span class="material-icons-outlined"> local_shipping </span>
+                                    <span class="name">Delivery</span>
+                                  </label>
+                                </div>
+                              </div>
+
+
+                        </div>
+                        <div class="item-form mb-2">
+                            <label for="exampleInputEmail1" class="form-label">النبذة التعريفية<span class="impor">*</span></label>
+                            <textarea type="text" class="text-M d-flex align-items-center"></textarea> 
+                        </div>
+                        <div class="item-form mb-2">
+                            <label class="form-label">أضف مهاراتك وخبراتك<span class="impor">*</span></label>
+                                <textarea type="text" class="text-M d-flex align-items-center"></textarea>
+                                    
+                        </div>
+                        <div class="submit-login mt-4 text-center">
+                            <a class="subm-login text-white d-flex border-0 justify-content-center align-items-center mb-3 text-decoration-none" type="submit" href="comp-cv-up.html">التالي</a>
+                        </div>
+                    </form>
+            </div>
+        </div>
+
+        
+
+
+
+    </body>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0/dist/js/select2.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="../../asites/js/all.min.js"></script>
+    <script src="../../asites/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="../../asites/js/pass.js"></script>
+    <script src="../../asites/js/main.js"></script>
+</html>
