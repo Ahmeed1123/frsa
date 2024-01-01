@@ -43,19 +43,55 @@
             </ul>
             <div class="grub-login me-auto">
                 <li dir="ltr" class="nav-item d-inline-block me-3 border-0 d-inlin-block w-auto direction-ltr dropdown ">
-                    <a class="nav-link text-dark dropdown-toggle profile position-relative " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="true">
-                        <i class="fa-regular fa-bell notifications position-relative"></i>
+                    <a class="nav-link text-dark dropdown-toggle profile  position-relative notifications-news" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+                        <svg class="notifications position-relative" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+                            <g clip-path="url(#clip0_471_2241)">
+                            <path d="M4.23745 18.75H20.5458C21.0477 18.75 21.5422 18.6291 21.9875 18.3976C22.4328 18.166 22.8158 17.8306 23.1041 17.4198C23.3923 17.0089 23.5774 16.5346 23.6436 16.0371C23.7098 15.5396 23.6551 15.0334 23.4843 14.5615L20.5135 6.34792C20.0061 4.52261 18.9148 2.91374 17.4065 1.76736C15.8982 0.620989 14.0559 0.000220915 12.1614 1.0597e-09C10.1892 -3.08253e-05 8.27604 0.672487 6.73767 1.90652C5.1993 3.14055 4.12775 4.8623 3.69995 6.7875L1.25203 14.7042C1.10791 15.1716 1.07551 15.6663 1.15744 16.1485C1.23937 16.6307 1.43334 17.0869 1.72375 17.4805C2.01416 17.874 2.3929 18.1939 2.82949 18.4144C3.26608 18.6349 3.74834 18.7499 4.23745 18.75Z" fill="#1D23D3"/>
+                            <path d="M7.39648 20.8335C7.63556 22.0109 8.27433 23.0694 9.20455 23.8297C10.1348 24.59 11.2992 25.0054 12.5006 25.0054C13.7021 25.0054 14.8665 24.59 15.7968 23.8297C16.727 23.0694 17.3657 22.0109 17.6048 20.8335H7.39648Z" fill="#1D23D3"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_471_2241">
+                            <rect width="25" height="25" fill="white"/>
+                            </clipPath>
+                            </defs>
+                        </svg>
                               </a>
-                    <ul class="dropdown-menu profile mt-4 align-items-end flex-column wow animate__fadeInDown" aria-labelledby="navbarDropdown" data-bs-popper="static">
-                      <p class="Name text-end m-0">محمد عبدالله</p>
-                      <p class="email mb-2">mohmad@gmail.com</p>
-
-                      <li class="w-100"><a class="dropdown-item profile px-2 w-100 active text-end"  href="#">  الملف الشخصي <span><i class="fa-solid fa-user mx-2"></i></span></a></li>
-                      <li class="w-100"><a class="dropdown-item profile px-2 w-100 text-end"  href="#">مفضلتي <span><i class="fa-solid fa-user mx-2"></i></span></a></li>
-                      <li class="w-100"><a class="dropdown-item profile px-2 w-100 text-end" href="#">المشاريع <span><i class="fa-solid fa-user mx-2"></i></span></a></li>
-                      <li class="w-100"><a class="dropdown-item profile px-2 w-100 text-end" href="#">الرصيد <span><i class="fa-solid fa-user mx-2"></i></span></a></li>
-                      <li class="w-100 text-end"><hr class="mt-2 dropdown-divider text-end"><a class="dropdown px-2 w-100 text-danger " href="#">تسجيل الخروج <span><i class="fa-solid fa-right-to-bracket mx-2"></i></span></a></li>
-                    </ul>
+                              <ul class="dropdown-menu py-4 px-3 profile notifications-content mt-4 align-items-end flex-column wow animate__fadeInDown" aria-labelledby="navbarDropdown" style="visibility: visible; animation-name: fadeInDown;" data-bs-popper="none">
+                                <div class="notifications-item w-100 text-end py-2 px-3 mb-2 position-relative">
+                                    <div class="headers">
+                                        <h6 class="title mb-0">مشروع جديد</h6>
+                                    </div>
+                                    <p class="text mb-0"> تم ارسال طلب مشروع لك , <a class="me-1" href="#">تفاصيل المشروع</a> </p>
+                                    <p class="date-time mb-0">قبل 5 دقيقة <span class="ms-0">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                            <path d="M6.5 5.8V4C6.5 3.85833 6.45208 3.73958 6.35625 3.64375C6.26042 3.54792 6.14167 3.5 6 3.5C5.85833 3.5 5.73958 3.54792 5.64375 3.64375C5.54792 3.73958 5.5 3.85833 5.5 4V5.9875C5.5 6.05417 5.5125 6.11875 5.5375 6.18125C5.5625 6.24375 5.6 6.3 5.65 6.35L7.3 8C7.39167 8.09167 7.50833 8.1375 7.65 8.1375C7.79167 8.1375 7.90833 8.09167 8 8C8.09167 7.90833 8.1375 7.79167 8.1375 7.65C8.1375 7.50833 8.09167 7.39167 8 7.3L6.5 5.8ZM6 11C5.30833 11 4.65833 10.8688 4.05 10.6062C3.44167 10.3438 2.9125 9.9875 2.4625 9.5375C2.0125 9.0875 1.65625 8.55833 1.39375 7.95C1.13125 7.34167 1 6.69167 1 6C1 5.30833 1.13125 4.65833 1.39375 4.05C1.65625 3.44167 2.0125 2.9125 2.4625 2.4625C2.9125 2.0125 3.44167 1.65625 4.05 1.39375C4.65833 1.13125 5.30833 1 6 1C6.69167 1 7.34167 1.13125 7.95 1.39375C8.55833 1.65625 9.0875 2.0125 9.5375 2.4625C9.9875 2.9125 10.3438 3.44167 10.6062 4.05C10.8688 4.65833 11 5.30833 11 6C11 6.69167 10.8688 7.34167 10.6062 7.95C10.3438 8.55833 9.9875 9.0875 9.5375 9.5375C9.0875 9.9875 8.55833 10.3438 7.95 10.6062C7.34167 10.8688 6.69167 11 6 11ZM6 10C7.10833 10 8.05208 9.61042 8.83125 8.83125C9.61042 8.05208 10 7.10833 10 6C10 4.89167 9.61042 3.94792 8.83125 3.16875C8.05208 2.38958 7.10833 2 6 2C4.89167 2 3.94792 2.38958 3.16875 3.16875C2.38958 3.94792 2 4.89167 2 6C2 7.10833 2.38958 8.05208 3.16875 8.83125C3.94792 9.61042 4.89167 10 6 10Z" fill="#9A9A9A"></path>
+                                            </svg>
+                                    </span></p>
+                                </div>
+                                <div class="notifications-item w-100 text-end py-2 px-3 mb-2 position-relative">
+                                    <div class="headers">
+                                        <h6 class="title mb-0">رسالة جديدة</h6>
+                                    </div>
+                                    <p class="text mb-0"> تم ارسال رسالة لك ، من<a class="me-1" href="#">تفاصيل المشروع</a> </p>
+                                    <p class="date-time mb-0">قبل 5 دقيقة <span class="ms-0">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                            <path d="M6.5 5.8V4C6.5 3.85833 6.45208 3.73958 6.35625 3.64375C6.26042 3.54792 6.14167 3.5 6 3.5C5.85833 3.5 5.73958 3.54792 5.64375 3.64375C5.54792 3.73958 5.5 3.85833 5.5 4V5.9875C5.5 6.05417 5.5125 6.11875 5.5375 6.18125C5.5625 6.24375 5.6 6.3 5.65 6.35L7.3 8C7.39167 8.09167 7.50833 8.1375 7.65 8.1375C7.79167 8.1375 7.90833 8.09167 8 8C8.09167 7.90833 8.1375 7.79167 8.1375 7.65C8.1375 7.50833 8.09167 7.39167 8 7.3L6.5 5.8ZM6 11C5.30833 11 4.65833 10.8688 4.05 10.6062C3.44167 10.3438 2.9125 9.9875 2.4625 9.5375C2.0125 9.0875 1.65625 8.55833 1.39375 7.95C1.13125 7.34167 1 6.69167 1 6C1 5.30833 1.13125 4.65833 1.39375 4.05C1.65625 3.44167 2.0125 2.9125 2.4625 2.4625C2.9125 2.0125 3.44167 1.65625 4.05 1.39375C4.65833 1.13125 5.30833 1 6 1C6.69167 1 7.34167 1.13125 7.95 1.39375C8.55833 1.65625 9.0875 2.0125 9.5375 2.4625C9.9875 2.9125 10.3438 3.44167 10.6062 4.05C10.8688 4.65833 11 5.30833 11 6C11 6.69167 10.8688 7.34167 10.6062 7.95C10.3438 8.55833 9.9875 9.0875 9.5375 9.5375C9.0875 9.9875 8.55833 10.3438 7.95 10.6062C7.34167 10.8688 6.69167 11 6 11ZM6 10C7.10833 10 8.05208 9.61042 8.83125 8.83125C9.61042 8.05208 10 7.10833 10 6C10 4.89167 9.61042 3.94792 8.83125 3.16875C8.05208 2.38958 7.10833 2 6 2C4.89167 2 3.94792 2.38958 3.16875 3.16875C2.38958 3.94792 2 4.89167 2 6C2 7.10833 2.38958 8.05208 3.16875 8.83125C3.94792 9.61042 4.89167 10 6 10Z" fill="#9A9A9A"></path>
+                                            </svg>
+                                    </span></p>
+                                </div>
+                                <div class="notifications-item w-100 text-end py-2 px-3 mb-2 position-relative">
+                                    <div class="headers">
+                                        <h6 class="title mb-0">مشروع جديد</h6>
+                                    </div>
+                                    <p class="text mb-0"> تم ارسال طلب مشروع لك , ,<a class="me-1" href="#">تفاصيل المشروع</a> </p>
+                                    <p class="date-time mb-0">قبل 5 دقيقة <span class="ms-0">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                            <path d="M6.5 5.8V4C6.5 3.85833 6.45208 3.73958 6.35625 3.64375C6.26042 3.54792 6.14167 3.5 6 3.5C5.85833 3.5 5.73958 3.54792 5.64375 3.64375C5.54792 3.73958 5.5 3.85833 5.5 4V5.9875C5.5 6.05417 5.5125 6.11875 5.5375 6.18125C5.5625 6.24375 5.6 6.3 5.65 6.35L7.3 8C7.39167 8.09167 7.50833 8.1375 7.65 8.1375C7.79167 8.1375 7.90833 8.09167 8 8C8.09167 7.90833 8.1375 7.79167 8.1375 7.65C8.1375 7.50833 8.09167 7.39167 8 7.3L6.5 5.8ZM6 11C5.30833 11 4.65833 10.8688 4.05 10.6062C3.44167 10.3438 2.9125 9.9875 2.4625 9.5375C2.0125 9.0875 1.65625 8.55833 1.39375 7.95C1.13125 7.34167 1 6.69167 1 6C1 5.30833 1.13125 4.65833 1.39375 4.05C1.65625 3.44167 2.0125 2.9125 2.4625 2.4625C2.9125 2.0125 3.44167 1.65625 4.05 1.39375C4.65833 1.13125 5.30833 1 6 1C6.69167 1 7.34167 1.13125 7.95 1.39375C8.55833 1.65625 9.0875 2.0125 9.5375 2.4625C9.9875 2.9125 10.3438 3.44167 10.6062 4.05C10.8688 4.65833 11 5.30833 11 6C11 6.69167 10.8688 7.34167 10.6062 7.95C10.3438 8.55833 9.9875 9.0875 9.5375 9.5375C9.0875 9.9875 8.55833 10.3438 7.95 10.6062C7.34167 10.8688 6.69167 11 6 11ZM6 10C7.10833 10 8.05208 9.61042 8.83125 8.83125C9.61042 8.05208 10 7.10833 10 6C10 4.89167 9.61042 3.94792 8.83125 3.16875C8.05208 2.38958 7.10833 2 6 2C4.89167 2 3.94792 2.38958 3.16875 3.16875C2.38958 3.94792 2 4.89167 2 6C2 7.10833 2.38958 8.05208 3.16875 8.83125C3.94792 9.61042 4.89167 10 6 10Z" fill="#9A9A9A"></path>
+                                            </svg>
+                                    </span></p>
+                                </div>
+                                
+                            </ul>
               </li>
                 <li dir="ltr" class="nav-item d-inline-block me-3 border-0 d-inlin-block w-auto direction-ltr dropdown ">
                     <a class="nav-link text-dark dropdown-toggle profile position-relative " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="true">
@@ -138,7 +174,7 @@
                                               </clipPath>
                                             </defs>
                                           </svg>
-                                    </span>
+                                    </span> 
                                     مصمم واجهات 
                                   </p>
                             </div>
