@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+<html dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحة التعديل</title>
+    <link rel="stylesheet" href="../asites/css/style.css">
+
+    <!-- bootstrab links css -->
+    <link rel="stylesheet" href="../asites/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../asites/css/all.min.css">
+    <!-- fontawosme links css -->
+    <link rel="stylesheet" href="../asites/css/fontawesome.min.css">
+    <!-- fonts Cario Import  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500&family=Noto+Kufi+Arabic:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@500&display=swap" rel="stylesheet"><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@500&display=swap" rel="stylesheet">
+    <link
+    href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Round|Material+Icons+Sharp|Material+Icons+Two+Tone"
+    rel="stylesheet"
+    />
+    <!-- other links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    
+</head>
+
+<body>
+    <!-- header -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 px-4">
+        <a class="navbar-brand ms-0 me-4 p-0 " href="#"><img src="../asites/images/logo.png" class="logo"> </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto me-auto">
+                <li class="nav-item">
+                    <a class="nav-link pe-0 ms-4 ps-3 text-dark" href="#">عن فرصة</a>
+                </li>
+                <li dir="ltr" class="nav-item d-inline-block mx-3 border-0 d-inlin-block w-auto direction-ltr dropdown ">
+                    <a class="nav-link text-dark dropdown-toggle profile position-relative " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+                        <span class="ms-1 text-dark">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="24" viewBox="0 0 23 24" fill="none">
+                                <path d="M10.6469 17.9112C10.9742 17.9077 11.2562 17.7855 11.5058 17.5264L18.8509 10.0289C19.0613 9.81063 19.167 9.55034 19.167 9.23595C19.167 8.61681 18.6807 8.11914 18.0554 8.11914C17.7506 8.11914 17.4686 8.24312 17.2495 8.45778L10.6487 15.2265L4.04433 8.45778C3.82698 8.24486 3.55114 8.11914 3.2367 8.11914C2.61315 8.11914 2.12514 8.61681 2.12514 9.23595C2.12514 9.54687 2.23078 9.81063 2.44911 10.0289L9.78808 17.5264C10.0455 17.7872 10.3214 17.9112 10.6469 17.9112Z" fill="#1D23D3"></path>
+                                </svg>
+                        </span>
+                        الفرص
+                              </a>
+                    <ul class="dropdown-menu profile opportunity mt-4 px-0 align-items-end flex-column h-auto w-auto py-3 " aria-labelledby="navbarDropdown" data-bs-popper="static">
+                      <li class="w-100"><a class="dropdown-item profile opportunity px-2 w-100  text-center rounded-0 rounded-top rounded-0" href="#"> التدريب</a></li>
+                      <li class="w-100"><a class="dropdown-item profile opportunity px-2 w-100  active text-center rounded-0" href="#">الوظيفة</a></li>
+                      <li class="w-100"><a class="dropdown-item profile opportunity px-2 w-100 text-center rounded-0 rounded-bottom" href="#">طلب خدمة لمرة واحدة </a></li>
+                    </ul>
+              </li>
+                <li class="nav-item">
+                    <a class="nav-link pe-0 ps-3 text-dark" href="#">المستخدمين</a>
+                </li>
+            </ul>
+            <div class="grub-login me-auto">
+                <li dir="ltr" class="nav-item d-inline-block me-3 border-0 d-inlin-block w-auto direction-ltr dropdown ">
+                    <a class="nav-link text-dark dropdown-toggle profile  position-relative notifications-news" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+                        <svg class="notifications position-relative" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+                            <g clip-path="url(#clip0_471_2241)">
+                            <path d="M4.23745 18.75H20.5458C21.0477 18.75 21.5422 18.6291 21.9875 18.3976C22.4328 18.166 22.8158 17.8306 23.1041 17.4198C23.3923 17.0089 23.5774 16.5346 23.6436 16.0371C23.7098 15.5396 23.6551 15.0334 23.4843 14.5615L20.5135 6.34792C20.0061 4.52261 18.9148 2.91374 17.4065 1.76736C15.8982 0.620989 14.0559 0.000220915 12.1614 1.0597e-09C10.1892 -3.08253e-05 8.27604 0.672487 6.73767 1.90652C5.1993 3.14055 4.12775 4.8623 3.69995 6.7875L1.25203 14.7042C1.10791 15.1716 1.07551 15.6663 1.15744 16.1485C1.23937 16.6307 1.43334 17.0869 1.72375 17.4805C2.01416 17.874 2.3929 18.1939 2.82949 18.4144C3.26608 18.6349 3.74834 18.7499 4.23745 18.75Z" fill="#1D23D3"/>
+                            <path d="M7.39648 20.8335C7.63556 22.0109 8.27433 23.0694 9.20455 23.8297C10.1348 24.59 11.2992 25.0054 12.5006 25.0054C13.7021 25.0054 14.8665 24.59 15.7968 23.8297C16.727 23.0694 17.3657 22.0109 17.6048 20.8335H7.39648Z" fill="#1D23D3"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_471_2241">
+                            <rect width="25" height="25" fill="white"/>
+                            </clipPath>
+                            </defs>
+                        </svg>
+                              </a>
+                    <ul class="dropdown-menu py-4 px-3 profile notifications-content mt-4 align-items-end flex-column wow animate__fadeInDown" aria-labelledby="navbarDropdown" data-bs-popper="static">
+                        <div class="notifications-item w-100 text-end py-2 px-3 mb-2 position-relative">
+                            <div class="headers">
+                                <h6 class="title mb-0">مشروع جديد</h6>
+                            </div>
+                            <p class="text mb-0"> تم ارسال طلب مشروع لك , <a class="me-1" href="#">تفاصيل المشروع</a> </p>
+                            <p class="date-time mb-0">قبل 5 دقيقة <span class="ms-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                    <path d="M6.5 5.8V4C6.5 3.85833 6.45208 3.73958 6.35625 3.64375C6.26042 3.54792 6.14167 3.5 6 3.5C5.85833 3.5 5.73958 3.54792 5.64375 3.64375C5.54792 3.73958 5.5 3.85833 5.5 4V5.9875C5.5 6.05417 5.5125 6.11875 5.5375 6.18125C5.5625 6.24375 5.6 6.3 5.65 6.35L7.3 8C7.39167 8.09167 7.50833 8.1375 7.65 8.1375C7.79167 8.1375 7.90833 8.09167 8 8C8.09167 7.90833 8.1375 7.79167 8.1375 7.65C8.1375 7.50833 8.09167 7.39167 8 7.3L6.5 5.8ZM6 11C5.30833 11 4.65833 10.8688 4.05 10.6062C3.44167 10.3438 2.9125 9.9875 2.4625 9.5375C2.0125 9.0875 1.65625 8.55833 1.39375 7.95C1.13125 7.34167 1 6.69167 1 6C1 5.30833 1.13125 4.65833 1.39375 4.05C1.65625 3.44167 2.0125 2.9125 2.4625 2.4625C2.9125 2.0125 3.44167 1.65625 4.05 1.39375C4.65833 1.13125 5.30833 1 6 1C6.69167 1 7.34167 1.13125 7.95 1.39375C8.55833 1.65625 9.0875 2.0125 9.5375 2.4625C9.9875 2.9125 10.3438 3.44167 10.6062 4.05C10.8688 4.65833 11 5.30833 11 6C11 6.69167 10.8688 7.34167 10.6062 7.95C10.3438 8.55833 9.9875 9.0875 9.5375 9.5375C9.0875 9.9875 8.55833 10.3438 7.95 10.6062C7.34167 10.8688 6.69167 11 6 11ZM6 10C7.10833 10 8.05208 9.61042 8.83125 8.83125C9.61042 8.05208 10 7.10833 10 6C10 4.89167 9.61042 3.94792 8.83125 3.16875C8.05208 2.38958 7.10833 2 6 2C4.89167 2 3.94792 2.38958 3.16875 3.16875C2.38958 3.94792 2 4.89167 2 6C2 7.10833 2.38958 8.05208 3.16875 8.83125C3.94792 9.61042 4.89167 10 6 10Z" fill="#9A9A9A"/>
+                                    </svg>
+                            </span></p>
+                        </div>
+                        <div class="notifications-item w-100 text-end py-2 px-3 mb-2 position-relative">
+                            <div class="headers">
+                                <h6 class="title mb-0">رسالة جديدة</h6>
+                            </div>
+                            <p class="text mb-0"> تم ارسال رسالة لك ، من<a class="me-1" href="#">تفاصيل المشروع</a> </p>
+                            <p class="date-time mb-0">قبل 5 دقيقة <span class="ms-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                    <path d="M6.5 5.8V4C6.5 3.85833 6.45208 3.73958 6.35625 3.64375C6.26042 3.54792 6.14167 3.5 6 3.5C5.85833 3.5 5.73958 3.54792 5.64375 3.64375C5.54792 3.73958 5.5 3.85833 5.5 4V5.9875C5.5 6.05417 5.5125 6.11875 5.5375 6.18125C5.5625 6.24375 5.6 6.3 5.65 6.35L7.3 8C7.39167 8.09167 7.50833 8.1375 7.65 8.1375C7.79167 8.1375 7.90833 8.09167 8 8C8.09167 7.90833 8.1375 7.79167 8.1375 7.65C8.1375 7.50833 8.09167 7.39167 8 7.3L6.5 5.8ZM6 11C5.30833 11 4.65833 10.8688 4.05 10.6062C3.44167 10.3438 2.9125 9.9875 2.4625 9.5375C2.0125 9.0875 1.65625 8.55833 1.39375 7.95C1.13125 7.34167 1 6.69167 1 6C1 5.30833 1.13125 4.65833 1.39375 4.05C1.65625 3.44167 2.0125 2.9125 2.4625 2.4625C2.9125 2.0125 3.44167 1.65625 4.05 1.39375C4.65833 1.13125 5.30833 1 6 1C6.69167 1 7.34167 1.13125 7.95 1.39375C8.55833 1.65625 9.0875 2.0125 9.5375 2.4625C9.9875 2.9125 10.3438 3.44167 10.6062 4.05C10.8688 4.65833 11 5.30833 11 6C11 6.69167 10.8688 7.34167 10.6062 7.95C10.3438 8.55833 9.9875 9.0875 9.5375 9.5375C9.0875 9.9875 8.55833 10.3438 7.95 10.6062C7.34167 10.8688 6.69167 11 6 11ZM6 10C7.10833 10 8.05208 9.61042 8.83125 8.83125C9.61042 8.05208 10 7.10833 10 6C10 4.89167 9.61042 3.94792 8.83125 3.16875C8.05208 2.38958 7.10833 2 6 2C4.89167 2 3.94792 2.38958 3.16875 3.16875C2.38958 3.94792 2 4.89167 2 6C2 7.10833 2.38958 8.05208 3.16875 8.83125C3.94792 9.61042 4.89167 10 6 10Z" fill="#9A9A9A"/>
+                                    </svg>
+                            </span></p>
+                        </div>
+                        <div class="notifications-item w-100 text-end py-2 px-3 mb-2 position-relative">
+                            <div class="headers">
+                                <h6 class="title mb-0">مشروع جديد</h6>
+                            </div>
+                            <p class="text mb-0"> تم ارسال طلب مشروع لك , ,<a class="me-1" href="#">تفاصيل المشروع</a> </p>
+                            <p class="date-time mb-0">قبل 5 دقيقة <span class="ms-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                    <path d="M6.5 5.8V4C6.5 3.85833 6.45208 3.73958 6.35625 3.64375C6.26042 3.54792 6.14167 3.5 6 3.5C5.85833 3.5 5.73958 3.54792 5.64375 3.64375C5.54792 3.73958 5.5 3.85833 5.5 4V5.9875C5.5 6.05417 5.5125 6.11875 5.5375 6.18125C5.5625 6.24375 5.6 6.3 5.65 6.35L7.3 8C7.39167 8.09167 7.50833 8.1375 7.65 8.1375C7.79167 8.1375 7.90833 8.09167 8 8C8.09167 7.90833 8.1375 7.79167 8.1375 7.65C8.1375 7.50833 8.09167 7.39167 8 7.3L6.5 5.8ZM6 11C5.30833 11 4.65833 10.8688 4.05 10.6062C3.44167 10.3438 2.9125 9.9875 2.4625 9.5375C2.0125 9.0875 1.65625 8.55833 1.39375 7.95C1.13125 7.34167 1 6.69167 1 6C1 5.30833 1.13125 4.65833 1.39375 4.05C1.65625 3.44167 2.0125 2.9125 2.4625 2.4625C2.9125 2.0125 3.44167 1.65625 4.05 1.39375C4.65833 1.13125 5.30833 1 6 1C6.69167 1 7.34167 1.13125 7.95 1.39375C8.55833 1.65625 9.0875 2.0125 9.5375 2.4625C9.9875 2.9125 10.3438 3.44167 10.6062 4.05C10.8688 4.65833 11 5.30833 11 6C11 6.69167 10.8688 7.34167 10.6062 7.95C10.3438 8.55833 9.9875 9.0875 9.5375 9.5375C9.0875 9.9875 8.55833 10.3438 7.95 10.6062C7.34167 10.8688 6.69167 11 6 11ZM6 10C7.10833 10 8.05208 9.61042 8.83125 8.83125C9.61042 8.05208 10 7.10833 10 6C10 4.89167 9.61042 3.94792 8.83125 3.16875C8.05208 2.38958 7.10833 2 6 2C4.89167 2 3.94792 2.38958 3.16875 3.16875C2.38958 3.94792 2 4.89167 2 6C2 7.10833 2.38958 8.05208 3.16875 8.83125C3.94792 9.61042 4.89167 10 6 10Z" fill="#9A9A9A"/>
+                                    </svg>
+                            </span></p>
+                        </div>
+                        
+                    </ul>
+              </li>
+                <li dir="ltr" class="nav-item d-inline-block me-3 border-0 d-inlin-block w-auto direction-ltr dropdown ">
+                    <a class="nav-link text-dark dropdown-toggle profile position-relative " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <path d="M42.4572 39.3083C44.9209 36.3465 46.6344 32.8354 47.4528 29.0719C48.2712 25.3085 48.1703 21.4035 47.1589 17.6873C46.1474 13.971 44.255 10.5529 41.6417 7.72192C39.0285 4.89099 35.7713 2.73059 32.1457 1.42346C28.5201 0.116338 24.6328 -0.299049 20.8125 0.212439C16.9923 0.723928 13.3515 2.14724 10.1982 4.36199C7.04495 6.57673 4.47191 9.51773 2.69677 12.9362C0.921637 16.3547 -0.00336685 20.1501 9.20826e-06 24.0013C0.00130472 29.5999 1.97584 35.0192 5.57714 39.3083L5.54283 39.3374C5.66291 39.4814 5.80015 39.6048 5.92367 39.7471C6.07806 39.9236 6.24447 40.0899 6.40401 40.2613C6.88435 40.7824 7.37842 41.2829 7.89651 41.7526C8.05433 41.8966 8.21731 42.0303 8.37685 42.1674C8.92581 42.6405 9.49022 43.0896 10.0752 43.5078C10.1507 43.5592 10.2193 43.6261 10.2948 43.6792V43.6587C14.3127 46.4838 19.1058 48 24.0189 48C28.9319 48 33.7251 46.4838 37.743 43.6587V43.6792C37.8184 43.6261 37.8854 43.5592 37.9626 43.5078C38.5458 43.0879 39.1119 42.6405 39.6609 42.1674C39.8204 42.0303 39.9834 41.8948 40.1413 41.7526C40.6593 41.2812 41.1534 40.7824 41.6337 40.2613C41.7933 40.0899 41.958 39.9236 42.1141 39.7471C42.2359 39.6048 42.3748 39.4814 42.4949 39.3357L42.4572 39.3083ZM24.0172 10.2885C25.544 10.2885 27.0365 10.7409 28.3061 11.5884C29.5756 12.436 30.565 13.6407 31.1493 15.0501C31.7336 16.4596 31.8865 18.0105 31.5886 19.5068C31.2908 21.003 30.5555 22.3775 29.4759 23.4562C28.3963 24.5349 27.0207 25.2696 25.5232 25.5672C24.0257 25.8648 22.4735 25.7121 21.0629 25.1283C19.6523 24.5445 18.4466 23.5558 17.5984 22.2873C16.7501 21.0189 16.2974 19.5275 16.2974 18.002C16.2974 15.9562 17.1107 13.9943 18.5584 12.5477C20.0062 11.1012 21.9697 10.2885 24.0172 10.2885ZM10.3051 39.3083C10.3348 37.0576 11.2502 34.9091 12.8532 33.3276C14.4562 31.7462 16.6179 30.8589 18.8706 30.8577H29.1637C31.4164 30.8589 33.5781 31.7462 35.1811 33.3276C36.7841 34.9091 37.6995 37.0576 37.7292 39.3083C33.9669 42.6959 29.0818 44.5707 24.0172 44.5707C18.9525 44.5707 14.0675 42.6959 10.3051 39.3083Z" fill="#1D23D3"/>
+                            </svg>
+
+                            <span class="ms-1 selecet-profile">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="24" viewBox="0 0 23 24" fill="none">
+                                    <path d="M10.6469 17.9112C10.9742 17.9077 11.2562 17.7855 11.5058 17.5264L18.8509 10.0289C19.0613 9.81063 19.167 9.55034 19.167 9.23595C19.167 8.61681 18.6807 8.11914 18.0554 8.11914C17.7506 8.11914 17.4686 8.24312 17.2495 8.45778L10.6487 15.2265L4.04433 8.45778C3.82698 8.24486 3.55114 8.11914 3.2367 8.11914C2.61315 8.11914 2.12514 8.61681 2.12514 9.23595C2.12514 9.54687 2.23078 9.81063 2.44911 10.0289L9.78808 17.5264C10.0455 17.7872 10.3214 17.9112 10.6469 17.9112Z" fill="#1D23D3"/>
+                                    </svg>
+                            </span>
+                              </a>
+                    <ul class="dropdown-menu profile mt-4 align-items-end flex-column" aria-labelledby="navbarDropdown" data-bs-popper="static">
+                      <p class="Name text-end m-0">محمد عبدالله</p>
+                      <p class="email mb-2">mohmad@gmail.com</p>
+
+                      <li class="w-100"><a class="dropdown-item profile px-2 w-100 active text-end"  href="#">  الملف الشخصي <span><i class="fa-solid fa-user mx-2"></i></span></a></li>
+                      <li class="w-100"><a class="dropdown-item profile px-2 w-100 text-end"  href="#">مفضلتي <span><i class="fa-solid fa-user mx-2"></i></span></a></li>
+                      <li class="w-100"><a class="dropdown-item profile px-2 w-100 text-end" href="#">المشاريع <span><i class="fa-solid fa-user mx-2"></i></span></a></li>
+                      <li class="w-100"><a class="dropdown-item profile px-2 w-100 text-end" href="#">الرصيد <span><i class="fa-solid fa-user mx-2"></i></span></a></li>
+                      <li class="w-100 text-end"><hr class="mt-2 dropdown-divider text-end"><a class="dropdown px-2 w-100 text-danger " href="#">تسجيل الخروج <span><i class="fa-solid fa-right-to-bracket mx-2"></i></span></a></li>
+                    </ul>
+              </li>
+            </div>
+        </div>
+    </nav>
+    <!-- /header -->
+        <div class="view-profile mt-0 mb-0 h-100 w-100 row d-flex h-auto">
+            <div class="content-job-slide col-lg-auto col-xs-auto mb-xs-3 mb-lg-0 pt-3">
+                <div class="header item-job d-sm-block text-end align-items-center d-lg-flex mb-3 py-4 px-3 pb-3">
+                    <h6 class="filleter h-6">فلترة الوظائف</h6>
+                    <a href="#" class="job-a me-auto">اعادة الفلترة</a>
+                </div> 
+                <!-- item job -->
+                <div class="item-job d-sm-block text-end mb-3 py-4 px-3">
+                    <h6 class="d-block mb-3">نظام الوظيفة</h6>
+                    <div class="itemes">
+                        <div class="checke-box job text-end w-auto mx-auto justify-content-center align-items-center mb-2 mt-0">
+                            <input type="checkbox" id="fruit1" name="fruit-1" value="Apple">
+                            <label class="label-check-cs" for="fruit1">عن بعد</label>
+                        </div>
+                        <div class="checke-box job text-end w-auto mx-auto justify-content-center align-items-center mb-2 mt-0">
+                            <input type="checkbox" id="fruit2" name="fruit-1" value="Apple">
+                            <label class="label-check-cs" for="fruit2">حضوري</label>
+                        </div>
+                        <div class="checke-box job  text-end w-auto mx-auto justify-content-center align-items-center mb-2 mt-0">
+                            <input type="checkbox" id="fruit3" name="fruit-1" value="Apple">
+                            <label class="label-check-cs" for="fruit3">مرن</label>
+                        </div>
+                    </div>
+                </div>
+                <!-- /item job -->
+
+                      <!-- item job -->
+                      <div class="item-job d-sm-block text-end mb-3 py-4 px-3">
+                        <h6 class="d-block mb-3">نوع الوظيفة</h6>
+                        <div class="itemes">
+                            <div class="checke-box job text-end w-auto mx-auto justify-content-center align-items-center mb-2 mt-0">
+                                <input type="checkbox" id="fruit4" name="fruit-2" value="Apple">
+                                <label class="label-check-cs" for="fruit4">دوام كامل</label>
+                            </div>
+                           
+                            <div class="checke-box job text-end w-auto mx-auto justify-content-center align-items-center mb-2 mt-0">
+                                <input type="checkbox" id="fruit5" name="fruit-2" value="Apple">
+                                <label class="label-check-cs" for="fruit5">دوام جزئي</label>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /item job --> 
+                         <!-- item job -->
+                         <div class="item-job d-sm-block text-end mb-3 py-4 px-3">
+                            <h6 class="d-block mb-3">المدينة</h6>
+                            <div class="itemes">
+                                <div class="dropdown position-relative">
+                                    <div class="job input-box zero w-100" onclick="initializeDropdown('.input-box.zero', 'input.radio.class-1')" id="select"></div>
+                                    <div class="list job position-absolute bg-white overflow-hidden d-flex align-items-center justify-content-space-between  flex-direction-column"  >
+                                      <div class="search-box w-100">
+                                        <input class="Input-serch-item 1 d-block border-0 w-100" type="search" name="" onkeyup="search(this, '.labeles.class-1')" placeholder="Search Options">
+                                      </div>
+                                      <input type="radio" name="drop-1" id="id-sear-1" class="radio class-1">
+                                      <label for="id-sear-1" class="labeles class-1">
+                                        <span class="material-icons-outlined">directions_walk</span>
+                                        <span class="name">Walk</span>
+                                      </label>
+      
+                                      <input type="radio" name="drop-1" id="id-sear-2" class="radio class-1">
+                                      <label for="id-sear-2" class="labeles class-1">
+                                        <span class="material-icons-outlined">directions_bike</span>
+                                        <span class="name">Road</span>
+                                      </label>
+      
+                                      <input type="radio" name="drop-1" id="id-sear-3" class="radio class-1">
+                                      <label for="id-sear-3" class="labeles class-1">
+                                        <span class="material-icons-outlined">train</span>
+                                        <span class="name">Train</span>
+                                      </label>
+      
+                                      <input type="radio" name="drop-1" id="id-sear-4" class="radio class-1">
+                                      <label for="id-sear-4" class="labeles class-1">
+                                        <span class="material-icons-outlined">flight</span>
+                                        <span class="name">Flight</span>
+                                      </label>
+      
+                                      <input type="radio" name="drop-1" id="id-sear-5" class="radio class-1">
+                                      <label for="id-sear-5" class="labeles class-1">
+                                        <span class="material-icons-outlined">directions_boat</span>
+                                        <span class="name">Ship</span>
+                                      </label>
+      
+                                      <input type="radio" name="drop-1" id="id-sear-6" class="radio class-1">
+                                      <label for="id-sear-6" class="labeles class-1">
+                                        <span class="material-icons-outlined">local_shipping</span>
+                                        <span class="name">Delivery</span>
+                                      </label>
+                                    </div>
+      
+                                    </div>
+                        </div>
+                    </div>
+
+                        <!-- /item job --> 
+                          <!-- item job -->
+                          <div class="item-job d-sm-block text-end mb-3 py-4 px-3">
+                            <h6 class="d-block mb-3">المسمى الوظيفي</h6>
+                            <div class="itemes">
+                                <div class="dropdown position-relative">
+                                    <div class="job input-box one w-100" onclick="initializeDropdown('.input-box.one', '.radio.class-2')" id="select"></div>
+                                    <div class="list job position-absolute bg-white overflow-hidden d-flex align-items-center justify-content-space-between  flex-direction-column"  >
+                                      <div class="search-box w-100">
+                                        <input class="Input-serch-item 1 d-block border-0 w-100" type="search" name="" onkeyup="search(this, '.labeles.class-3')" placeholder="Search Options">
+                                      </div>
+                                      <input type="radio" name="drop-1" id="id-sear-1" class="radio class-2">
+                                      <label for="id-sear-1" class="labeles class-3">
+                                        <span class="material-icons-outlined">directions_walk</span>
+                                        <span class="name">Walk</span>
+                                      </label>
+      
+                                      <input type="radio" name="drop-1" id="id-sear-2" class="radio class-2">
+                                      <label for="id-sear-2" class="labeles class-3">
+                                        <span class="material-icons-outlined">directions_bike</span>
+                                        <span class="name">Road</span>
+                                      </label>
+      
+                                      <input type="radio" name="drop-1" id="id-sear-3" class="radio class-2">
+                                      <label for="id-sear-3" class="labeles class-3">
+                                        <span class="material-icons-outlined">train</span>
+                                        <span class="name">Train</span>
+                                      </label>
+      
+                                      <input type="radio" name="drop-1" id="id-sear-4" class="radio class-2">
+                                      <label for="id-sear-4" class="labeles class-3">
+                                        <span class="material-icons-outlined">flight</span>
+                                        <span class="name">Flight</span>
+                                      </label>
+      
+                                      <input type="radio" name="drop-1" id="id-sear-5" class="radio class-2">
+                                      <label for="id-sear-5" class="labeles class-3">
+                                        <span class="material-icons-outlined">directions_boat</span>
+                                        <span class="name">Ship</span>
+                                      </label>
+      
+                                      <input type="radio" name="drop-1" id="id-sear-6" class="radio class-2">
+                                      <label for="id-sear-6" class="labeles class-3">
+                                        <span class="material-icons-outlined">local_shipping</span>
+                                        <span class="name">Delivery</span>
+                                      </label>
+                                    </div>
+      
+                                    </div>
+                        </div>
+                        </div>
+                        <!-- /item job --> 
+                          <!-- item job -->
+                          <div class="item-job d-sm-block text-end mb-3 py-4 px-3">
+                            <h6 class="d-block mb-3">المسمى الوظيفي</h6>
+                            <div class="itemes">
+                                <div class="dropdown position-relative">
+                                    <div class="job input-box three w-100" onclick="initializeDropdown('.input-box.three', 'input.radio.class-3')" id="select"></div>
+                                    <div class="list job position-absolute bg-white overflow-hidden d-flex align-items-center justify-content-space-between  flex-direction-column"  >
+                                      <div class="search-box w-100">
+                                        <input class="Input-serch-item 1 d-block border-0 w-100" type="search" name="" onkeyup="search(this, '.labeles.class-4')" placeholder="Search Options">
+                                      </div>
+                                      <input type="radio" name="drop-1" id="id-sear-1" class="radio class-3">
+                                      <label for="id-sear-1" class="labeles class-4">
+                                        <span class="material-icons-outlined">directions_walk</span>
+                                        <span class="name">Walk</span>
+                                      </label>
+      
+                                      <input type="radio" name="drop-1" id="id-sear-2" class="radio class-3">
+                                      <label for="id-sear-2" class="labeles class-4">
+                                        <span class="material-icons-outlined">directions_bike</span>
+                                        <span class="name">Road</span>
+                                      </label>
+      
+                                      <input type="radio" name="drop-1" id="id-sear-3" class="radio class-3">
+                                      <label for="id-sear-3" class="labeles class-4">
+                                        <span class="material-icons-outlined">train</span>
+                                        <span class="name">Train</span>
+                                      </label>
+      
+                                      <input type="radio" name="drop-1" id="id-sear-4" class="radio class-3">
+                                      <label for="id-sear-4" class="labeles class-4">
+                                        <span class="material-icons-outlined">flight</span>
+                                        <span class="name">Flight</span>
+                                      </label>
+      
+                                      <input type="radio" name="drop-1" id="id-sear-5" class="radio class-3">
+                                      <label for="id-sear-5" class="labeles class-4">
+                                        <span class="material-icons-outlined">directions_boat</span>
+                                        <span class="name">Ship</span>
+                                      </label>
+      
+                                      <input type="radio" name="drop-1" id="id-sear-6" class="radio class-3">
+                                      <label for="id-sear-6" class="labeles class-4">
+                                        <span class="material-icons-outlined">local_shipping</span>
+                                        <span class="name">Delivery</span>
+                                      </label>
+                                    </div>
+      
+                                    </div>
+                        </div>
+                        </div>
+                        <!-- /item job --> 
+                           <!-- item job -->
+                      <div class="item-job d-sm-block text-end mb-3 py-4 px-3">
+                        <h6 class="d-block mb-3">الخبرة</h6>
+                        <div class="itemes">
+                            <div class="checke-box job text-end w-auto mx-auto justify-content-center align-items-center mb-2 mt-0">
+                                <input type="checkbox" id="fruit8" name="fruit-3" value="Apple">
+                                <label class="label-check-cs" for="fruit8">مبتدئ</label>
+                            </div>
+                            <div class="checke-box job text-end w-auto mx-auto justify-content-center align-items-center mb-2 mt-0">
+                                <input type="checkbox" id="fruit9" name="fruit-3" value="Apple">
+                                <label class="label-check-cs" for="fruit9">متوسط الخبرة</label>
+                            </div>
+                            <div class="checke-box job text-end w-auto mx-auto justify-content-center align-items-center mb-2 mt-0">
+                                <input type="checkbox" id="fruit10" name="fruit-3" value="Apple">
+                                <label class="label-check-cs" for="fruit10">خبير</label>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /item job --> 
+                             <!-- item job -->
+                             <div class="item-job d-sm-block text-end mb-3 py-4 px-3">
+                                <h6 class="d-block mb-3">نطاق الراتب</h6>
+                                <div class="itemes pb-5" dir="ltr">
+                                          <!-- Input start -->
+                                      
+                                            <!-- Input start -->
+                                            <div class="price">
+                                              <div class="input-field ">
+                                                <span>من</span>
+                                                <input
+                                                  class="min-input"
+                                                  type="number"
+                                                  value="0"
+                                                  oninput="onChangeInput(event)"
+                                                />
+                                                <span>ريال</span>
+
+                                              </div>
+                                              <div class="divider"></div>
+                                              <div class="input-field">
+                                                <span>إلى</span>
+                                                <input
+                                                  class="max-input"
+                                                  type="number"
+                                                  value="15000"
+                                                  oninput="onChangeInput(event)"
+                                                />
+                                                <span>ريال</span>
+                                            </div>
+                                            </div>
+                                            <!-- Input end -->
+                                      
+                                            <!-- Slider start -->
+                                            <div class="slider">
+                                              <div class="progress"></div>
+                                            </div>
+                                            <!-- Slider end -->
+                                      
+                                            <!-- Range start -->
+                                            <div class="range">
+                                              <input
+                                                class="min-range"
+                                                type="range"
+                                                min="0"
+                                                max="15000"
+                                                value="0"
+                                                step="50"
+                                                oninput="onChangeRange(event)"
+                                              />
+                                              <input
+                                                class="max-range"
+                                                type="range"
+                                                min="0"
+                                                max="15000"
+                                                value="15000"
+                                                step="50"
+                                                oninput="onChangeRange(event)"
+                                              />
+                                            </div>
+                                            <!-- Range end -->
+                                          </div>
+                             </div>
+                            </div>
+                            <!-- /item job --> 
+            <div class="content two col-xs-auto col-lg mx-4 px-xs-0 pt-3 pb-3">
+                    <div class="search-job mb-3 px-4 py-1">
+                        <h4 class="mt-2 mb-1 text-center">البحث عن وظيفة</h4>
+                      <form class="d-block mt-4" method="post">
+                        <div class="after-text-bankNums input-search-job w-100 position-relative">
+                          <input class="w-100 pe-5 ps-3 border-0 rounded" type="search" placeholder="ابحث عن مسمى العمل, اسم الشركة...">
+                          <button class="border-0  position-absolute p-0 bg-transparent" type="submit">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                              <path d="M1 21L3 19M11.5 20C10.2524 20 9.0171 19.7543 7.86451 19.2769C6.71191 18.7994 5.66464 18.0997 4.78249 17.2175C3.90033 16.3354 3.20056 15.2881 2.72314 14.1355C2.24572 12.9829 2 11.7476 2 10.5C2 9.25244 2.24572 8.0171 2.72314 6.86451C3.20056 5.71191 3.90033 4.66464 4.78249 3.78249C5.66464 2.90033 6.71191 2.20056 7.86451 1.72314C9.0171 1.24572 10.2524 1 11.5 1C14.0196 1 16.4359 2.00089 18.2175 3.78249C19.9991 5.56408 21 7.98044 21 10.5C21 13.0196 19.9991 15.4359 18.2175 17.2175C16.4359 18.9991 14.0196 20 11.5 20Z" stroke="#EE786B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg>
+                          </button>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="contain-itemes-job justify-content-center row py-3 mx-4">
+                                <!-- item-job -->
+                    <div class="item-job p-3 h-auto ms-3 mb-3">
+                                <!-- header -->
+                                <div class="header d-flex">
+                                    <div class="img-user d-inline-block">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="62" height="62" viewBox="0 0 62 62" fill="none">
+                                            <path d="M54.8405 50.7732C58.0228 46.9475 60.2361 42.4123 61.2932 37.5513C62.3503 32.6902 62.22 27.6462 60.9135 22.8461C59.607 18.0459 57.1627 13.6308 53.7872 9.97415C50.4118 6.31753 46.2046 3.52701 41.5215 1.83864C36.8385 0.150271 31.8173 -0.386272 26.8828 0.274401C21.9484 0.935073 17.2457 2.77352 13.1727 5.63423C9.09972 8.49494 5.77621 12.2937 3.48333 16.7093C1.19045 21.1248 -0.00434885 26.0272 1.1894e-05 31.0017C0.00168526 38.2332 2.55213 45.2331 7.2038 50.7732L7.15948 50.8108C7.31459 50.9968 7.49186 51.1562 7.65141 51.34C7.85083 51.568 8.06577 51.7828 8.27185 52.0042C8.89229 52.6773 9.53046 53.3238 10.1997 53.9304C10.4035 54.1164 10.614 54.2891 10.8201 54.4662C11.5292 55.0773 12.2582 55.6574 13.0138 56.1976C13.1113 56.264 13.1999 56.3504 13.2974 56.419V56.3924C18.4872 60.0416 24.6784 62 31.0244 62C37.3704 62 43.5615 60.0416 48.7513 56.3924V56.419C48.8488 56.3504 48.9353 56.264 49.035 56.1976C49.7884 55.6552 50.5196 55.0773 51.2287 54.4662C51.4347 54.2891 51.6453 54.1142 51.8491 53.9304C52.5183 53.3215 53.1565 52.6773 53.7769 52.0042C53.983 51.7828 54.1957 51.568 54.3974 51.34C54.5547 51.1562 54.7342 50.9968 54.8893 50.8086L54.8405 50.7732ZM31.0222 13.2893C32.9943 13.2893 34.9222 13.8736 36.562 14.9684C38.2018 16.0632 39.4798 17.6192 40.2346 19.4398C40.9893 21.2603 41.1867 23.2636 40.802 25.1963C40.4172 27.1289 39.4675 28.9042 38.073 30.2976C36.6785 31.691 34.9018 32.6399 32.9675 33.0243C31.0332 33.4087 29.0283 33.2114 27.2063 32.4573C25.3842 31.7033 23.8269 30.4262 22.7312 28.7878C21.6356 27.1494 21.0508 25.2231 21.0508 23.2525C21.0508 20.6101 22.1013 18.0759 23.9713 16.2075C25.8413 14.339 28.3776 13.2893 31.0222 13.2893ZM13.3107 50.7732C13.3492 47.8661 14.5316 45.0909 16.6021 43.0482C18.6726 41.0055 21.4648 39.8594 24.3746 39.8579H37.6698C40.5795 39.8594 43.3717 41.0055 45.4423 43.0482C47.5128 45.0909 48.6952 47.8661 48.7336 50.7732C43.8739 55.1489 37.564 57.5705 31.0222 57.5705C24.4804 57.5705 18.1705 55.1489 13.3107 50.7732Z" fill="#FA7414"/>
+                                            </svg>
+                                    </div>
+                                    <div class="informithion-user d-inlin-block me-3">
+                                        <h5 class="name-job mb-0">مصمم واجهات</h5>
+                                        <p class="skiles-items text-dark mb-0">جمعية عون التقنية</p>
+                                        <p class="date-duration mb-0">
+                                            <span class="ms-1">
+                                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                <g clip-path="url(#clip0_895_4717)">
+                                                <path d="M7.97181 16.0055L7.50709 15.6072C6.86643 15.0707 1.27246 10.2396 1.27246 6.70569C1.27246 3.00575 4.27187 0.00634766 7.97181 0.00634766C11.6717 0.00634766 14.6712 3.00575 14.6712 6.70569C14.6712 10.2396 9.07718 15.0708 8.43918 15.6098L7.97181 16.0055ZM7.97181 1.45494C5.07327 1.45822 2.72437 3.80713 2.72109 6.70566C2.72109 8.92572 6.16271 12.4722 7.97181 14.0954C9.78093 12.4716 13.2225 8.92304 13.2225 6.70566C13.2192 3.80713 10.8704 1.45825 7.97181 1.45494Z" fill="#767F8C"/>
+                                                <path d="M7.97197 9.36142C6.50534 9.36142 5.31641 8.17248 5.31641 6.70586C5.31641 5.23923 6.50534 4.05029 7.97197 4.05029C9.43859 4.05029 10.6275 5.23923 10.6275 6.70586C10.6275 8.17248 9.43862 9.36142 7.97197 9.36142ZM7.97197 5.37804C7.23866 5.37804 6.64419 5.97251 6.64419 6.70582C6.64419 7.43914 7.23866 8.03361 7.97197 8.03361C8.70528 8.03361 9.29975 7.43914 9.29975 6.70582C9.29975 5.97251 8.70531 5.37804 7.97197 5.37804Z" fill="#767F8C"/>
+                                                </g>
+                                                <defs>
+                                                <clipPath id="clip0_895_4717">
+                                                <rect width="16" height="16" fill="white"/>
+                                                </clipPath>
+                                                </defs>
+                                                </svg>
+                                            </span>
+                                            مكة، المملكة العربية السعودية</p>
+                                    </div>
+                                                <div class="save-icon me-auto ms-1 mt-1 py-2 px-2 rounded-circle d-flex justify-content-center align-items-center"><i class="fa-regular fa-heart"></i></div>
+                                </div> <!-- /header -->
+                                    <p class="commint-rev-job  me-3 ms-2 mt-4">كمصصم واجهات, المطلوب هو تصميم واجهة مشروع سخي بحيث تكون الواجهات سهلة الاستخدام و....</p>
+                                    <div  class="contact-probrtis-job row m-4">
+                                        <div  class="item-probrtis-job w-auto d-flex justify-content-center align-items-center px-4 ms-2 mb-2 py-1">
+                                          <p class="mb-0 mx-2">مبتدئ</p>
+                                        </div>
+                                        <div class="item-probrtis-job w-auto d-flex justify-content-center align-items-center px-4 ms-2 mb-2 py-1">
+                                          <p class="mb-0 mx-2"><span>13</span> متقدم</p>
+                                        </div>
+                                        <div class="item-probrtis-job w-auto d-flex justify-content-center align-items-center px-4 ms-2 mb-2 py-1">
+                                          <p class="mb-0 mx-2">حضوري</p>
+                                        </div>
+                                    </div>
+                                    <!-- /contact-probrtis-job -->
+                                    <div class="footer-job-item d-flex position-relative justify-content-center align-items-center">
+                                      <a href="#" class="  text-white d-flex justify-content-center align-items-center text-decoration-none mb-2">تفاصيل أكثر</a>
+                                      <p  class="date-job position-absolute mb-0 mt-3">منذ يومين</p>
+                                    </div>
+                                  </div> <!-- /item-job -->
+                                                          <!-- item-job -->
+                    <div class="item-job p-3 h-auto ms-3 mb-3">
+                      <!-- header -->
+                      <div class="header d-flex">
+                          <div class="img-user d-inline-block">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="62" height="62" viewBox="0 0 62 62" fill="none">
+                                  <path d="M54.8405 50.7732C58.0228 46.9475 60.2361 42.4123 61.2932 37.5513C62.3503 32.6902 62.22 27.6462 60.9135 22.8461C59.607 18.0459 57.1627 13.6308 53.7872 9.97415C50.4118 6.31753 46.2046 3.52701 41.5215 1.83864C36.8385 0.150271 31.8173 -0.386272 26.8828 0.274401C21.9484 0.935073 17.2457 2.77352 13.1727 5.63423C9.09972 8.49494 5.77621 12.2937 3.48333 16.7093C1.19045 21.1248 -0.00434885 26.0272 1.1894e-05 31.0017C0.00168526 38.2332 2.55213 45.2331 7.2038 50.7732L7.15948 50.8108C7.31459 50.9968 7.49186 51.1562 7.65141 51.34C7.85083 51.568 8.06577 51.7828 8.27185 52.0042C8.89229 52.6773 9.53046 53.3238 10.1997 53.9304C10.4035 54.1164 10.614 54.2891 10.8201 54.4662C11.5292 55.0773 12.2582 55.6574 13.0138 56.1976C13.1113 56.264 13.1999 56.3504 13.2974 56.419V56.3924C18.4872 60.0416 24.6784 62 31.0244 62C37.3704 62 43.5615 60.0416 48.7513 56.3924V56.419C48.8488 56.3504 48.9353 56.264 49.035 56.1976C49.7884 55.6552 50.5196 55.0773 51.2287 54.4662C51.4347 54.2891 51.6453 54.1142 51.8491 53.9304C52.5183 53.3215 53.1565 52.6773 53.7769 52.0042C53.983 51.7828 54.1957 51.568 54.3974 51.34C54.5547 51.1562 54.7342 50.9968 54.8893 50.8086L54.8405 50.7732ZM31.0222 13.2893C32.9943 13.2893 34.9222 13.8736 36.562 14.9684C38.2018 16.0632 39.4798 17.6192 40.2346 19.4398C40.9893 21.2603 41.1867 23.2636 40.802 25.1963C40.4172 27.1289 39.4675 28.9042 38.073 30.2976C36.6785 31.691 34.9018 32.6399 32.9675 33.0243C31.0332 33.4087 29.0283 33.2114 27.2063 32.4573C25.3842 31.7033 23.8269 30.4262 22.7312 28.7878C21.6356 27.1494 21.0508 25.2231 21.0508 23.2525C21.0508 20.6101 22.1013 18.0759 23.9713 16.2075C25.8413 14.339 28.3776 13.2893 31.0222 13.2893ZM13.3107 50.7732C13.3492 47.8661 14.5316 45.0909 16.6021 43.0482C18.6726 41.0055 21.4648 39.8594 24.3746 39.8579H37.6698C40.5795 39.8594 43.3717 41.0055 45.4423 43.0482C47.5128 45.0909 48.6952 47.8661 48.7336 50.7732C43.8739 55.1489 37.564 57.5705 31.0222 57.5705C24.4804 57.5705 18.1705 55.1489 13.3107 50.7732Z" fill="#FA7414"/>
+                                  </svg>
+                          </div>
+                          <div class="informithion-user d-inlin-block me-3">
+                              <h5 class="name-job mb-0">مصمم واجهات</h5>
+                              <p class="skiles-items text-dark mb-0">جمعية عون التقنية</p>
+                              <p class="date-duration mb-0">
+                                  <span class="ms-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                      <g clip-path="url(#clip0_895_4717)">
+                                      <path d="M7.97181 16.0055L7.50709 15.6072C6.86643 15.0707 1.27246 10.2396 1.27246 6.70569C1.27246 3.00575 4.27187 0.00634766 7.97181 0.00634766C11.6717 0.00634766 14.6712 3.00575 14.6712 6.70569C14.6712 10.2396 9.07718 15.0708 8.43918 15.6098L7.97181 16.0055ZM7.97181 1.45494C5.07327 1.45822 2.72437 3.80713 2.72109 6.70566C2.72109 8.92572 6.16271 12.4722 7.97181 14.0954C9.78093 12.4716 13.2225 8.92304 13.2225 6.70566C13.2192 3.80713 10.8704 1.45825 7.97181 1.45494Z" fill="#767F8C"/>
+                                      <path d="M7.97197 9.36142C6.50534 9.36142 5.31641 8.17248 5.31641 6.70586C5.31641 5.23923 6.50534 4.05029 7.97197 4.05029C9.43859 4.05029 10.6275 5.23923 10.6275 6.70586C10.6275 8.17248 9.43862 9.36142 7.97197 9.36142ZM7.97197 5.37804C7.23866 5.37804 6.64419 5.97251 6.64419 6.70582C6.64419 7.43914 7.23866 8.03361 7.97197 8.03361C8.70528 8.03361 9.29975 7.43914 9.29975 6.70582C9.29975 5.97251 8.70531 5.37804 7.97197 5.37804Z" fill="#767F8C"/>
+                                      </g>
+                                      <defs>
+                                      <clipPath id="clip0_895_4717">
+                                      <rect width="16" height="16" fill="white"/>
+                                      </clipPath>
+                                      </defs>
+                                      </svg>
+                                  </span>
+                                  مكة، المملكة العربية السعودية</p>
+                          </div>
+                                      <div class="save-icon me-auto ms-1 mt-1 py-2 px-2 rounded-circle d-flex justify-content-center align-items-center"><i class="fa-regular fa-heart"></i></div>
+                      </div> <!-- /header -->
+                          <p class="commint-rev-job me-3 ms-2 mt-4">كمصصم واجهات, المطلوب هو تصميم واجهة مشروع سخي بحيث تكون الواجهات سهلة الاستخدام و....</p>
+                          <div  class="contact-probrtis-job row m-4">
+                              <div  class="item-probrtis-job w-auto d-flex justify-content-center align-items-center px-4 ms-2 mb-2 py-1">
+                                <p class="mb-0 mx-2">مبتدئ</p>
+                              </div>
+                              <div class="item-probrtis-job w-auto d-flex justify-content-center align-items-center px-4 ms-2 mb-2 py-1">
+                                <p class="mb-0 mx-2"><span>13</span> متقدم</p>
+                              </div>
+                              <div class="item-probrtis-job w-auto d-flex justify-content-center align-items-center px-4 ms-2 mb-2 py-1">
+                                <p class="mb-0 mx-2">حضوري</p>
+                              </div>
+                          </div>
+                          <!-- /contact-probrtis-job -->
+                          <div class="footer-job-item d-flex position-relative justify-content-center align-items-center">
+                            <a href="#" class="  text-white d-flex justify-content-center align-items-center text-decoration-none mb-2">تفاصيل أكثر</a>
+                            <p  class="date-job position-absolute mb-0 mt-3">منذ يومين</p>
+                          </div>
+                        </div> <!-- /item-job -->                        <!-- item-job -->
+                        <div class="item-job p-3 h-auto ms-3 mb-3">
+                                    <!-- header -->
+                                    <div class="header d-flex">
+                                        <div class="img-user d-inline-block">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="62" height="62" viewBox="0 0 62 62" fill="none">
+                                                <path d="M54.8405 50.7732C58.0228 46.9475 60.2361 42.4123 61.2932 37.5513C62.3503 32.6902 62.22 27.6462 60.9135 22.8461C59.607 18.0459 57.1627 13.6308 53.7872 9.97415C50.4118 6.31753 46.2046 3.52701 41.5215 1.83864C36.8385 0.150271 31.8173 -0.386272 26.8828 0.274401C21.9484 0.935073 17.2457 2.77352 13.1727 5.63423C9.09972 8.49494 5.77621 12.2937 3.48333 16.7093C1.19045 21.1248 -0.00434885 26.0272 1.1894e-05 31.0017C0.00168526 38.2332 2.55213 45.2331 7.2038 50.7732L7.15948 50.8108C7.31459 50.9968 7.49186 51.1562 7.65141 51.34C7.85083 51.568 8.06577 51.7828 8.27185 52.0042C8.89229 52.6773 9.53046 53.3238 10.1997 53.9304C10.4035 54.1164 10.614 54.2891 10.8201 54.4662C11.5292 55.0773 12.2582 55.6574 13.0138 56.1976C13.1113 56.264 13.1999 56.3504 13.2974 56.419V56.3924C18.4872 60.0416 24.6784 62 31.0244 62C37.3704 62 43.5615 60.0416 48.7513 56.3924V56.419C48.8488 56.3504 48.9353 56.264 49.035 56.1976C49.7884 55.6552 50.5196 55.0773 51.2287 54.4662C51.4347 54.2891 51.6453 54.1142 51.8491 53.9304C52.5183 53.3215 53.1565 52.6773 53.7769 52.0042C53.983 51.7828 54.1957 51.568 54.3974 51.34C54.5547 51.1562 54.7342 50.9968 54.8893 50.8086L54.8405 50.7732ZM31.0222 13.2893C32.9943 13.2893 34.9222 13.8736 36.562 14.9684C38.2018 16.0632 39.4798 17.6192 40.2346 19.4398C40.9893 21.2603 41.1867 23.2636 40.802 25.1963C40.4172 27.1289 39.4675 28.9042 38.073 30.2976C36.6785 31.691 34.9018 32.6399 32.9675 33.0243C31.0332 33.4087 29.0283 33.2114 27.2063 32.4573C25.3842 31.7033 23.8269 30.4262 22.7312 28.7878C21.6356 27.1494 21.0508 25.2231 21.0508 23.2525C21.0508 20.6101 22.1013 18.0759 23.9713 16.2075C25.8413 14.339 28.3776 13.2893 31.0222 13.2893ZM13.3107 50.7732C13.3492 47.8661 14.5316 45.0909 16.6021 43.0482C18.6726 41.0055 21.4648 39.8594 24.3746 39.8579H37.6698C40.5795 39.8594 43.3717 41.0055 45.4423 43.0482C47.5128 45.0909 48.6952 47.8661 48.7336 50.7732C43.8739 55.1489 37.564 57.5705 31.0222 57.5705C24.4804 57.5705 18.1705 55.1489 13.3107 50.7732Z" fill="#FA7414"/>
+                                                </svg>
+                                        </div>
+                                        <div class="informithion-user d-inlin-block me-3">
+                                            <h5 class="name-job mb-0">مصمم واجهات</h5>
+                                            <p class="skiles-items text-dark mb-0">جمعية عون التقنية</p>
+                                            <p class="date-duration mb-0">
+                                                <span class="ms-1">
+                                                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                    <g clip-path="url(#clip0_895_4717)">
+                                                    <path d="M7.97181 16.0055L7.50709 15.6072C6.86643 15.0707 1.27246 10.2396 1.27246 6.70569C1.27246 3.00575 4.27187 0.00634766 7.97181 0.00634766C11.6717 0.00634766 14.6712 3.00575 14.6712 6.70569C14.6712 10.2396 9.07718 15.0708 8.43918 15.6098L7.97181 16.0055ZM7.97181 1.45494C5.07327 1.45822 2.72437 3.80713 2.72109 6.70566C2.72109 8.92572 6.16271 12.4722 7.97181 14.0954C9.78093 12.4716 13.2225 8.92304 13.2225 6.70566C13.2192 3.80713 10.8704 1.45825 7.97181 1.45494Z" fill="#767F8C"/>
+                                                    <path d="M7.97197 9.36142C6.50534 9.36142 5.31641 8.17248 5.31641 6.70586C5.31641 5.23923 6.50534 4.05029 7.97197 4.05029C9.43859 4.05029 10.6275 5.23923 10.6275 6.70586C10.6275 8.17248 9.43862 9.36142 7.97197 9.36142ZM7.97197 5.37804C7.23866 5.37804 6.64419 5.97251 6.64419 6.70582C6.64419 7.43914 7.23866 8.03361 7.97197 8.03361C8.70528 8.03361 9.29975 7.43914 9.29975 6.70582C9.29975 5.97251 8.70531 5.37804 7.97197 5.37804Z" fill="#767F8C"/>
+                                                    </g>
+                                                    <defs>
+                                                    <clipPath id="clip0_895_4717">
+                                                    <rect width="16" height="16" fill="white"/>
+                                                    </clipPath>
+                                                    </defs>
+                                                    </svg>
+                                                </span>
+                                                مكة، المملكة العربية السعودية</p>
+                                        </div>
+                                                    <div class="save-icon me-auto ms-1 mt-1 py-2 px-2 rounded-circle d-flex justify-content-center align-items-center"><i class="fa-regular fa-heart"></i></div>
+                                    </div> <!-- /header -->
+                                        <p class="commint-rev-job me-3 ms-2 mt-4">كمصصم واجهات, المطلوب هو تصميم واجهة مشروع سخي بحيث تكون الواجهات سهلة الاستخدام و....</p>
+                                        <div  class="contact-probrtis-job row m-4">
+                                            <div  class="item-probrtis-job w-auto d-flex justify-content-center align-items-center px-4 ms-2 mb-2 py-1">
+                                              <p class="mb-0 mx-2">مبتدئ</p>
+                                            </div>
+                                            <div class="item-probrtis-job w-auto d-flex justify-content-center align-items-center px-4 ms-2 mb-2 py-1">
+                                              <p class="mb-0 mx-2"><span>13</span> متقدم</p>
+                                            </div>
+                                            <div class="item-probrtis-job w-auto d-flex justify-content-center align-items-center px-4 ms-2 mb-2 py-1">
+                                              <p class="mb-0 mx-2">حضوري</p>
+                                            </div>
+                                        </div>
+                                        <!-- /contact-probrtis-job -->
+                                        <div class="footer-job-item d-flex position-relative justify-content-center align-items-center">
+                                          <a href="#" class="  text-white d-flex justify-content-center align-items-center text-decoration-none mb-2">تفاصيل أكثر</a>
+                                          <p  class="date-job position-absolute mb-0 mt-3">منذ يومين</p>
+                                        </div>
+                                      </div> <!-- /item-job -->
+                                                              <!-- item-job -->
+                    <div class="item-job p-3 h-auto ms-3 mb-3">
+                      <!-- header -->
+                      <div class="header d-flex">
+                          <div class="img-user d-inline-block">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="62" height="62" viewBox="0 0 62 62" fill="none">
+                                  <path d="M54.8405 50.7732C58.0228 46.9475 60.2361 42.4123 61.2932 37.5513C62.3503 32.6902 62.22 27.6462 60.9135 22.8461C59.607 18.0459 57.1627 13.6308 53.7872 9.97415C50.4118 6.31753 46.2046 3.52701 41.5215 1.83864C36.8385 0.150271 31.8173 -0.386272 26.8828 0.274401C21.9484 0.935073 17.2457 2.77352 13.1727 5.63423C9.09972 8.49494 5.77621 12.2937 3.48333 16.7093C1.19045 21.1248 -0.00434885 26.0272 1.1894e-05 31.0017C0.00168526 38.2332 2.55213 45.2331 7.2038 50.7732L7.15948 50.8108C7.31459 50.9968 7.49186 51.1562 7.65141 51.34C7.85083 51.568 8.06577 51.7828 8.27185 52.0042C8.89229 52.6773 9.53046 53.3238 10.1997 53.9304C10.4035 54.1164 10.614 54.2891 10.8201 54.4662C11.5292 55.0773 12.2582 55.6574 13.0138 56.1976C13.1113 56.264 13.1999 56.3504 13.2974 56.419V56.3924C18.4872 60.0416 24.6784 62 31.0244 62C37.3704 62 43.5615 60.0416 48.7513 56.3924V56.419C48.8488 56.3504 48.9353 56.264 49.035 56.1976C49.7884 55.6552 50.5196 55.0773 51.2287 54.4662C51.4347 54.2891 51.6453 54.1142 51.8491 53.9304C52.5183 53.3215 53.1565 52.6773 53.7769 52.0042C53.983 51.7828 54.1957 51.568 54.3974 51.34C54.5547 51.1562 54.7342 50.9968 54.8893 50.8086L54.8405 50.7732ZM31.0222 13.2893C32.9943 13.2893 34.9222 13.8736 36.562 14.9684C38.2018 16.0632 39.4798 17.6192 40.2346 19.4398C40.9893 21.2603 41.1867 23.2636 40.802 25.1963C40.4172 27.1289 39.4675 28.9042 38.073 30.2976C36.6785 31.691 34.9018 32.6399 32.9675 33.0243C31.0332 33.4087 29.0283 33.2114 27.2063 32.4573C25.3842 31.7033 23.8269 30.4262 22.7312 28.7878C21.6356 27.1494 21.0508 25.2231 21.0508 23.2525C21.0508 20.6101 22.1013 18.0759 23.9713 16.2075C25.8413 14.339 28.3776 13.2893 31.0222 13.2893ZM13.3107 50.7732C13.3492 47.8661 14.5316 45.0909 16.6021 43.0482C18.6726 41.0055 21.4648 39.8594 24.3746 39.8579H37.6698C40.5795 39.8594 43.3717 41.0055 45.4423 43.0482C47.5128 45.0909 48.6952 47.8661 48.7336 50.7732C43.8739 55.1489 37.564 57.5705 31.0222 57.5705C24.4804 57.5705 18.1705 55.1489 13.3107 50.7732Z" fill="#FA7414"/>
+                                  </svg>
+                          </div>
+                          <div class="informithion-user d-inlin-block me-3">
+                              <h5 class="name-job mb-0">مصمم واجهات</h5>
+                              <p class="skiles-items text-dark mb-0">جمعية عون التقنية</p>
+                              <p class="date-duration mb-0">
+                                  <span class="ms-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                      <g clip-path="url(#clip0_895_4717)">
+                                      <path d="M7.97181 16.0055L7.50709 15.6072C6.86643 15.0707 1.27246 10.2396 1.27246 6.70569C1.27246 3.00575 4.27187 0.00634766 7.97181 0.00634766C11.6717 0.00634766 14.6712 3.00575 14.6712 6.70569C14.6712 10.2396 9.07718 15.0708 8.43918 15.6098L7.97181 16.0055ZM7.97181 1.45494C5.07327 1.45822 2.72437 3.80713 2.72109 6.70566C2.72109 8.92572 6.16271 12.4722 7.97181 14.0954C9.78093 12.4716 13.2225 8.92304 13.2225 6.70566C13.2192 3.80713 10.8704 1.45825 7.97181 1.45494Z" fill="#767F8C"/>
+                                      <path d="M7.97197 9.36142C6.50534 9.36142 5.31641 8.17248 5.31641 6.70586C5.31641 5.23923 6.50534 4.05029 7.97197 4.05029C9.43859 4.05029 10.6275 5.23923 10.6275 6.70586C10.6275 8.17248 9.43862 9.36142 7.97197 9.36142ZM7.97197 5.37804C7.23866 5.37804 6.64419 5.97251 6.64419 6.70582C6.64419 7.43914 7.23866 8.03361 7.97197 8.03361C8.70528 8.03361 9.29975 7.43914 9.29975 6.70582C9.29975 5.97251 8.70531 5.37804 7.97197 5.37804Z" fill="#767F8C"/>
+                                      </g>
+                                      <defs>
+                                      <clipPath id="clip0_895_4717">
+                                      <rect width="16" height="16" fill="white"/>
+                                      </clipPath>
+                                      </defs>
+                                      </svg>
+                                  </span>
+                                  مكة، المملكة العربية السعودية</p>
+                          </div>
+                                      <div class="save-icon me-auto ms-1 mt-1 py-2 px-2 rounded-circle d-flex justify-content-center align-items-center"><i class="fa-regular fa-heart"></i></div>
+                      </div> <!-- /header -->
+                          <p class="commint-rev-job me-3 ms-2 mt-4">كمصصم واجهات, المطلوب هو تصميم واجهة مشروع سخي بحيث تكون الواجهات سهلة الاستخدام و....</p>
+                          <div  class="contact-probrtis-job row m-4">
+                              <div  class="item-probrtis-job w-auto d-flex justify-content-center align-items-center px-4 ms-2 mb-2 py-1">
+                                <p class="mb-0 mx-2">مبتدئ</p>
+                              </div>
+                              <div class="item-probrtis-job w-auto d-flex justify-content-center align-items-center px-4 ms-2 mb-2 py-1">
+                                <p class="mb-0 mx-2"><span>13</span> متقدم</p>
+                              </div>
+                              <div class="item-probrtis-job w-auto d-flex justify-content-center align-items-center px-4 ms-2 mb-2 py-1">
+                                <p class="mb-0 mx-2">حضوري</p>
+                              </div>
+                          </div>
+                          <!-- /contact-probrtis-job -->
+                          <div class="footer-job-item d-flex position-relative justify-content-center align-items-center">
+                            <a href="#" class="  text-white d-flex justify-content-center align-items-center text-decoration-none mb-2">تفاصيل أكثر</a>
+                            <p  class="date-job position-absolute mb-0 mt-3">منذ يومين</p>
+                          </div>
+                        </div> <!-- /item-job -->
+                                                <!-- item-job -->
+                    <div class="item-job p-3 h-auto ms-3 mb-3">
+                      <!-- header -->
+                      <div class="header d-flex">
+                          <div class="img-user d-inline-block">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="62" height="62" viewBox="0 0 62 62" fill="none">
+                                  <path d="M54.8405 50.7732C58.0228 46.9475 60.2361 42.4123 61.2932 37.5513C62.3503 32.6902 62.22 27.6462 60.9135 22.8461C59.607 18.0459 57.1627 13.6308 53.7872 9.97415C50.4118 6.31753 46.2046 3.52701 41.5215 1.83864C36.8385 0.150271 31.8173 -0.386272 26.8828 0.274401C21.9484 0.935073 17.2457 2.77352 13.1727 5.63423C9.09972 8.49494 5.77621 12.2937 3.48333 16.7093C1.19045 21.1248 -0.00434885 26.0272 1.1894e-05 31.0017C0.00168526 38.2332 2.55213 45.2331 7.2038 50.7732L7.15948 50.8108C7.31459 50.9968 7.49186 51.1562 7.65141 51.34C7.85083 51.568 8.06577 51.7828 8.27185 52.0042C8.89229 52.6773 9.53046 53.3238 10.1997 53.9304C10.4035 54.1164 10.614 54.2891 10.8201 54.4662C11.5292 55.0773 12.2582 55.6574 13.0138 56.1976C13.1113 56.264 13.1999 56.3504 13.2974 56.419V56.3924C18.4872 60.0416 24.6784 62 31.0244 62C37.3704 62 43.5615 60.0416 48.7513 56.3924V56.419C48.8488 56.3504 48.9353 56.264 49.035 56.1976C49.7884 55.6552 50.5196 55.0773 51.2287 54.4662C51.4347 54.2891 51.6453 54.1142 51.8491 53.9304C52.5183 53.3215 53.1565 52.6773 53.7769 52.0042C53.983 51.7828 54.1957 51.568 54.3974 51.34C54.5547 51.1562 54.7342 50.9968 54.8893 50.8086L54.8405 50.7732ZM31.0222 13.2893C32.9943 13.2893 34.9222 13.8736 36.562 14.9684C38.2018 16.0632 39.4798 17.6192 40.2346 19.4398C40.9893 21.2603 41.1867 23.2636 40.802 25.1963C40.4172 27.1289 39.4675 28.9042 38.073 30.2976C36.6785 31.691 34.9018 32.6399 32.9675 33.0243C31.0332 33.4087 29.0283 33.2114 27.2063 32.4573C25.3842 31.7033 23.8269 30.4262 22.7312 28.7878C21.6356 27.1494 21.0508 25.2231 21.0508 23.2525C21.0508 20.6101 22.1013 18.0759 23.9713 16.2075C25.8413 14.339 28.3776 13.2893 31.0222 13.2893ZM13.3107 50.7732C13.3492 47.8661 14.5316 45.0909 16.6021 43.0482C18.6726 41.0055 21.4648 39.8594 24.3746 39.8579H37.6698C40.5795 39.8594 43.3717 41.0055 45.4423 43.0482C47.5128 45.0909 48.6952 47.8661 48.7336 50.7732C43.8739 55.1489 37.564 57.5705 31.0222 57.5705C24.4804 57.5705 18.1705 55.1489 13.3107 50.7732Z" fill="#FA7414"/>
+                                  </svg>
+                          </div>
+                          <div class="informithion-user d-inlin-block me-3">
+                              <h5 class="name-job mb-0">مصمم واجهات</h5>
+                              <p class="skiles-items text-dark mb-0">جمعية عون التقنية</p>
+                              <p class="date-duration mb-0">
+                                  <span class="ms-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                      <g clip-path="url(#clip0_895_4717)">
+                                      <path d="M7.97181 16.0055L7.50709 15.6072C6.86643 15.0707 1.27246 10.2396 1.27246 6.70569C1.27246 3.00575 4.27187 0.00634766 7.97181 0.00634766C11.6717 0.00634766 14.6712 3.00575 14.6712 6.70569C14.6712 10.2396 9.07718 15.0708 8.43918 15.6098L7.97181 16.0055ZM7.97181 1.45494C5.07327 1.45822 2.72437 3.80713 2.72109 6.70566C2.72109 8.92572 6.16271 12.4722 7.97181 14.0954C9.78093 12.4716 13.2225 8.92304 13.2225 6.70566C13.2192 3.80713 10.8704 1.45825 7.97181 1.45494Z" fill="#767F8C"/>
+                                      <path d="M7.97197 9.36142C6.50534 9.36142 5.31641 8.17248 5.31641 6.70586C5.31641 5.23923 6.50534 4.05029 7.97197 4.05029C9.43859 4.05029 10.6275 5.23923 10.6275 6.70586C10.6275 8.17248 9.43862 9.36142 7.97197 9.36142ZM7.97197 5.37804C7.23866 5.37804 6.64419 5.97251 6.64419 6.70582C6.64419 7.43914 7.23866 8.03361 7.97197 8.03361C8.70528 8.03361 9.29975 7.43914 9.29975 6.70582C9.29975 5.97251 8.70531 5.37804 7.97197 5.37804Z" fill="#767F8C"/>
+                                      </g>
+                                      <defs>
+                                      <clipPath id="clip0_895_4717">
+                                      <rect width="16" height="16" fill="white"/>
+                                      </clipPath>
+                                      </defs>
+                                      </svg>
+                                  </span>
+                                  مكة، المملكة العربية السعودية</p>
+                          </div>
+                                      <div class="save-icon me-auto ms-1 mt-1 py-2 px-2 rounded-circle d-flex justify-content-center align-items-center"><i class="fa-regular fa-heart"></i></div>
+                      </div> <!-- /header -->
+                          <p class="commint-rev-job me-3 ms-2 mt-4">كمصصم واجهات, المطلوب هو تصميم واجهة مشروع سخي بحيث تكون الواجهات سهلة الاستخدام و....</p>
+                          <div  class="contact-probrtis-job row m-4">
+                              <div  class="item-probrtis-job w-auto d-flex justify-content-center align-items-center px-4 ms-2 mb-2 py-1">
+                                <p class="mb-0 mx-2">مبتدئ</p>
+                              </div>
+                              <div class="item-probrtis-job w-auto d-flex justify-content-center align-items-center px-4 ms-2 mb-2 py-1">
+                                <p class="mb-0 mx-2"><span>13</span> متقدم</p>
+                              </div>
+                              <div class="item-probrtis-job w-auto d-flex justify-content-center align-items-center px-4 ms-2 mb-2 py-1">
+                                <p class="mb-0 mx-2">حضوري</p>
+                              </div>
+                          </div>
+                          <!-- /contact-probrtis-job -->
+                          <div class="footer-job-item d-flex position-relative justify-content-center align-items-center">
+                            <a href="#" class="  text-white d-flex justify-content-center align-items-center text-decoration-none mb-2">تفاصيل أكثر</a>
+                            <p  class="date-job position-absolute mb-0 mt-3">منذ يومين</p>
+                          </div>
+                        </div> <!-- /item-job -->
+                                                <!-- item-job -->
+                    <div class="item-job p-3 h-auto ms-3 mb-3">
+                      <!-- header -->
+                      <div class="header d-flex">
+                          <div class="img-user d-inline-block">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="62" height="62" viewBox="0 0 62 62" fill="none">
+                                  <path d="M54.8405 50.7732C58.0228 46.9475 60.2361 42.4123 61.2932 37.5513C62.3503 32.6902 62.22 27.6462 60.9135 22.8461C59.607 18.0459 57.1627 13.6308 53.7872 9.97415C50.4118 6.31753 46.2046 3.52701 41.5215 1.83864C36.8385 0.150271 31.8173 -0.386272 26.8828 0.274401C21.9484 0.935073 17.2457 2.77352 13.1727 5.63423C9.09972 8.49494 5.77621 12.2937 3.48333 16.7093C1.19045 21.1248 -0.00434885 26.0272 1.1894e-05 31.0017C0.00168526 38.2332 2.55213 45.2331 7.2038 50.7732L7.15948 50.8108C7.31459 50.9968 7.49186 51.1562 7.65141 51.34C7.85083 51.568 8.06577 51.7828 8.27185 52.0042C8.89229 52.6773 9.53046 53.3238 10.1997 53.9304C10.4035 54.1164 10.614 54.2891 10.8201 54.4662C11.5292 55.0773 12.2582 55.6574 13.0138 56.1976C13.1113 56.264 13.1999 56.3504 13.2974 56.419V56.3924C18.4872 60.0416 24.6784 62 31.0244 62C37.3704 62 43.5615 60.0416 48.7513 56.3924V56.419C48.8488 56.3504 48.9353 56.264 49.035 56.1976C49.7884 55.6552 50.5196 55.0773 51.2287 54.4662C51.4347 54.2891 51.6453 54.1142 51.8491 53.9304C52.5183 53.3215 53.1565 52.6773 53.7769 52.0042C53.983 51.7828 54.1957 51.568 54.3974 51.34C54.5547 51.1562 54.7342 50.9968 54.8893 50.8086L54.8405 50.7732ZM31.0222 13.2893C32.9943 13.2893 34.9222 13.8736 36.562 14.9684C38.2018 16.0632 39.4798 17.6192 40.2346 19.4398C40.9893 21.2603 41.1867 23.2636 40.802 25.1963C40.4172 27.1289 39.4675 28.9042 38.073 30.2976C36.6785 31.691 34.9018 32.6399 32.9675 33.0243C31.0332 33.4087 29.0283 33.2114 27.2063 32.4573C25.3842 31.7033 23.8269 30.4262 22.7312 28.7878C21.6356 27.1494 21.0508 25.2231 21.0508 23.2525C21.0508 20.6101 22.1013 18.0759 23.9713 16.2075C25.8413 14.339 28.3776 13.2893 31.0222 13.2893ZM13.3107 50.7732C13.3492 47.8661 14.5316 45.0909 16.6021 43.0482C18.6726 41.0055 21.4648 39.8594 24.3746 39.8579H37.6698C40.5795 39.8594 43.3717 41.0055 45.4423 43.0482C47.5128 45.0909 48.6952 47.8661 48.7336 50.7732C43.8739 55.1489 37.564 57.5705 31.0222 57.5705C24.4804 57.5705 18.1705 55.1489 13.3107 50.7732Z" fill="#FA7414"/>
+                                  </svg>
+                          </div>
+                          <div class="informithion-user d-inlin-block me-3">
+                              <h5 class="name-job mb-0">مصمم واجهات</h5>
+                              <p class="skiles-items text-dark mb-0">جمعية عون التقنية</p>
+                              <p class="date-duration mb-0">
+                                  <span class="ms-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                      <g clip-path="url(#clip0_895_4717)">
+                                      <path d="M7.97181 16.0055L7.50709 15.6072C6.86643 15.0707 1.27246 10.2396 1.27246 6.70569C1.27246 3.00575 4.27187 0.00634766 7.97181 0.00634766C11.6717 0.00634766 14.6712 3.00575 14.6712 6.70569C14.6712 10.2396 9.07718 15.0708 8.43918 15.6098L7.97181 16.0055ZM7.97181 1.45494C5.07327 1.45822 2.72437 3.80713 2.72109 6.70566C2.72109 8.92572 6.16271 12.4722 7.97181 14.0954C9.78093 12.4716 13.2225 8.92304 13.2225 6.70566C13.2192 3.80713 10.8704 1.45825 7.97181 1.45494Z" fill="#767F8C"/>
+                                      <path d="M7.97197 9.36142C6.50534 9.36142 5.31641 8.17248 5.31641 6.70586C5.31641 5.23923 6.50534 4.05029 7.97197 4.05029C9.43859 4.05029 10.6275 5.23923 10.6275 6.70586C10.6275 8.17248 9.43862 9.36142 7.97197 9.36142ZM7.97197 5.37804C7.23866 5.37804 6.64419 5.97251 6.64419 6.70582C6.64419 7.43914 7.23866 8.03361 7.97197 8.03361C8.70528 8.03361 9.29975 7.43914 9.29975 6.70582C9.29975 5.97251 8.70531 5.37804 7.97197 5.37804Z" fill="#767F8C"/>
+                                      </g>
+                                      <defs>
+                                      <clipPath id="clip0_895_4717">
+                                      <rect width="16" height="16" fill="white"/>
+                                      </clipPath>
+                                      </defs>
+                                      </svg>
+                                  </span>
+                                  مكة، المملكة العربية السعودية</p>
+                          </div>
+                                      <div class="save-icon me-auto ms-1 mt-1 py-2 px-2 rounded-circle d-flex justify-content-center align-items-center"><i class="fa-regular fa-heart"></i></div>
+                      </div> <!-- /header -->
+                          <p class="commint-rev-job me-3 ms-2 mt-4">كمصصم واجهات, المطلوب هو تصميم واجهة مشروع سخي بحيث تكون الواجهات سهلة الاستخدام و....</p>
+                          <div  class="contact-probrtis-job row m-4">
+                              <div  class="item-probrtis-job w-auto d-flex justify-content-center align-items-center px-4 ms-2 mb-2 py-1">
+                                <p class="mb-0 mx-2">مبتدئ</p>
+                              </div>
+                              <div class="item-probrtis-job w-auto d-flex justify-content-center align-items-center px-4 ms-2 mb-2 py-1">
+                                <p class="mb-0 mx-2"><span>13</span> متقدم</p>
+                              </div>
+                              <div class="item-probrtis-job w-auto d-flex justify-content-center align-items-center px-4 ms-2 mb-2 py-1">
+                                <p class="mb-0 mx-2">حضوري</p>
+                              </div>
+                          </div>
+                          <!-- /contact-probrtis-job -->
+                          <div class="footer-job-item d-flex position-relative justify-content-center align-items-center">
+                            <a href="#" class="  text-white d-flex justify-content-center align-items-center text-decoration-none mb-2">تفاصيل أكثر</a>
+                            <p  class="date-job position-absolute mb-0 mt-3">منذ يومين</p>
+                          </div>
+                        </div> <!-- /item-job -->
+                                                <!-- item-job -->
+                    <div class="item-job p-3 h-auto ms-3 mb-3">
+                      <!-- header -->
+                      <div class="header d-flex">
+                          <div class="img-user d-inline-block">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="62" height="62" viewBox="0 0 62 62" fill="none">
+                                  <path d="M54.8405 50.7732C58.0228 46.9475 60.2361 42.4123 61.2932 37.5513C62.3503 32.6902 62.22 27.6462 60.9135 22.8461C59.607 18.0459 57.1627 13.6308 53.7872 9.97415C50.4118 6.31753 46.2046 3.52701 41.5215 1.83864C36.8385 0.150271 31.8173 -0.386272 26.8828 0.274401C21.9484 0.935073 17.2457 2.77352 13.1727 5.63423C9.09972 8.49494 5.77621 12.2937 3.48333 16.7093C1.19045 21.1248 -0.00434885 26.0272 1.1894e-05 31.0017C0.00168526 38.2332 2.55213 45.2331 7.2038 50.7732L7.15948 50.8108C7.31459 50.9968 7.49186 51.1562 7.65141 51.34C7.85083 51.568 8.06577 51.7828 8.27185 52.0042C8.89229 52.6773 9.53046 53.3238 10.1997 53.9304C10.4035 54.1164 10.614 54.2891 10.8201 54.4662C11.5292 55.0773 12.2582 55.6574 13.0138 56.1976C13.1113 56.264 13.1999 56.3504 13.2974 56.419V56.3924C18.4872 60.0416 24.6784 62 31.0244 62C37.3704 62 43.5615 60.0416 48.7513 56.3924V56.419C48.8488 56.3504 48.9353 56.264 49.035 56.1976C49.7884 55.6552 50.5196 55.0773 51.2287 54.4662C51.4347 54.2891 51.6453 54.1142 51.8491 53.9304C52.5183 53.3215 53.1565 52.6773 53.7769 52.0042C53.983 51.7828 54.1957 51.568 54.3974 51.34C54.5547 51.1562 54.7342 50.9968 54.8893 50.8086L54.8405 50.7732ZM31.0222 13.2893C32.9943 13.2893 34.9222 13.8736 36.562 14.9684C38.2018 16.0632 39.4798 17.6192 40.2346 19.4398C40.9893 21.2603 41.1867 23.2636 40.802 25.1963C40.4172 27.1289 39.4675 28.9042 38.073 30.2976C36.6785 31.691 34.9018 32.6399 32.9675 33.0243C31.0332 33.4087 29.0283 33.2114 27.2063 32.4573C25.3842 31.7033 23.8269 30.4262 22.7312 28.7878C21.6356 27.1494 21.0508 25.2231 21.0508 23.2525C21.0508 20.6101 22.1013 18.0759 23.9713 16.2075C25.8413 14.339 28.3776 13.2893 31.0222 13.2893ZM13.3107 50.7732C13.3492 47.8661 14.5316 45.0909 16.6021 43.0482C18.6726 41.0055 21.4648 39.8594 24.3746 39.8579H37.6698C40.5795 39.8594 43.3717 41.0055 45.4423 43.0482C47.5128 45.0909 48.6952 47.8661 48.7336 50.7732C43.8739 55.1489 37.564 57.5705 31.0222 57.5705C24.4804 57.5705 18.1705 55.1489 13.3107 50.7732Z" fill="#FA7414"/>
+                                  </svg>
+                          </div>
+                          <div class="informithion-user d-inlin-block me-3">
+                              <h5 class="name-job mb-0">مصمم واجهات</h5>
+                              <p class="skiles-items text-dark mb-0">جمعية عون التقنية</p>
+                              <p class="date-duration mb-0">
+                                  <span class="ms-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                      <g clip-path="url(#clip0_895_4717)">
+                                      <path d="M7.97181 16.0055L7.50709 15.6072C6.86643 15.0707 1.27246 10.2396 1.27246 6.70569C1.27246 3.00575 4.27187 0.00634766 7.97181 0.00634766C11.6717 0.00634766 14.6712 3.00575 14.6712 6.70569C14.6712 10.2396 9.07718 15.0708 8.43918 15.6098L7.97181 16.0055ZM7.97181 1.45494C5.07327 1.45822 2.72437 3.80713 2.72109 6.70566C2.72109 8.92572 6.16271 12.4722 7.97181 14.0954C9.78093 12.4716 13.2225 8.92304 13.2225 6.70566C13.2192 3.80713 10.8704 1.45825 7.97181 1.45494Z" fill="#767F8C"/>
+                                      <path d="M7.97197 9.36142C6.50534 9.36142 5.31641 8.17248 5.31641 6.70586C5.31641 5.23923 6.50534 4.05029 7.97197 4.05029C9.43859 4.05029 10.6275 5.23923 10.6275 6.70586C10.6275 8.17248 9.43862 9.36142 7.97197 9.36142ZM7.97197 5.37804C7.23866 5.37804 6.64419 5.97251 6.64419 6.70582C6.64419 7.43914 7.23866 8.03361 7.97197 8.03361C8.70528 8.03361 9.29975 7.43914 9.29975 6.70582C9.29975 5.97251 8.70531 5.37804 7.97197 5.37804Z" fill="#767F8C"/>
+                                      </g>
+                                      <defs>
+                                      <clipPath id="clip0_895_4717">
+                                      <rect width="16" height="16" fill="white"/>
+                                      </clipPath>
+                                      </defs>
+                                      </svg>
+                                  </span>
+                                  مكة، المملكة العربية السعودية</p>
+                          </div>
+                                      <div class="save-icon me-auto ms-1 mt-1 py-2 px-2 rounded-circle d-flex justify-content-center align-items-center"><i class="fa-regular fa-heart"></i></div>
+                      </div> <!-- /header -->
+                          <p class="commint-rev-job me-3 ms-2 mt-4">كمصصم واجهات, المطلوب هو تصميم واجهة مشروع سخي بحيث تكون الواجهات سهلة الاستخدام و....</p>
+                          <div  class="contact-probrtis-job row m-4">
+                              <div  class="item-probrtis-job w-auto d-flex justify-content-center align-items-center px-4 ms-2 mb-2 py-1">
+                                <p class="mb-0 mx-2">مبتدئ</p>
+                              </div>
+                              <div class="item-probrtis-job w-auto d-flex justify-content-center align-items-center px-4 ms-2 mb-2 py-1">
+                                <p class="mb-0 mx-2"><span>13</span> متقدم</p>
+                              </div>
+                              <div class="item-probrtis-job w-auto d-flex justify-content-center align-items-center px-4 ms-2 mb-2 py-1">
+                                <p class="mb-0 mx-2">حضوري</p>
+                              </div>
+                          </div>
+                          <!-- /contact-probrtis-job -->
+                          <div class="footer-job-item d-flex position-relative justify-content-center align-items-center">
+                            <a href="#" class="  text-white d-flex justify-content-center align-items-center text-decoration-none mb-2">تفاصيل أكثر</a>
+                            <p  class="date-job position-absolute mb-0 mt-3">منذ يومين</p>
+                          </div>
+                        </div> <!-- /item-job -->
+                                                <!-- item-job -->
+                    <div class="item-job p-3 h-auto ms-3 mb-3">
+                      <!-- header -->
+                      <div class="header d-flex">
+                          <div class="img-user d-inline-block">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="62" height="62" viewBox="0 0 62 62" fill="none">
+                                  <path d="M54.8405 50.7732C58.0228 46.9475 60.2361 42.4123 61.2932 37.5513C62.3503 32.6902 62.22 27.6462 60.9135 22.8461C59.607 18.0459 57.1627 13.6308 53.7872 9.97415C50.4118 6.31753 46.2046 3.52701 41.5215 1.83864C36.8385 0.150271 31.8173 -0.386272 26.8828 0.274401C21.9484 0.935073 17.2457 2.77352 13.1727 5.63423C9.09972 8.49494 5.77621 12.2937 3.48333 16.7093C1.19045 21.1248 -0.00434885 26.0272 1.1894e-05 31.0017C0.00168526 38.2332 2.55213 45.2331 7.2038 50.7732L7.15948 50.8108C7.31459 50.9968 7.49186 51.1562 7.65141 51.34C7.85083 51.568 8.06577 51.7828 8.27185 52.0042C8.89229 52.6773 9.53046 53.3238 10.1997 53.9304C10.4035 54.1164 10.614 54.2891 10.8201 54.4662C11.5292 55.0773 12.2582 55.6574 13.0138 56.1976C13.1113 56.264 13.1999 56.3504 13.2974 56.419V56.3924C18.4872 60.0416 24.6784 62 31.0244 62C37.3704 62 43.5615 60.0416 48.7513 56.3924V56.419C48.8488 56.3504 48.9353 56.264 49.035 56.1976C49.7884 55.6552 50.5196 55.0773 51.2287 54.4662C51.4347 54.2891 51.6453 54.1142 51.8491 53.9304C52.5183 53.3215 53.1565 52.6773 53.7769 52.0042C53.983 51.7828 54.1957 51.568 54.3974 51.34C54.5547 51.1562 54.7342 50.9968 54.8893 50.8086L54.8405 50.7732ZM31.0222 13.2893C32.9943 13.2893 34.9222 13.8736 36.562 14.9684C38.2018 16.0632 39.4798 17.6192 40.2346 19.4398C40.9893 21.2603 41.1867 23.2636 40.802 25.1963C40.4172 27.1289 39.4675 28.9042 38.073 30.2976C36.6785 31.691 34.9018 32.6399 32.9675 33.0243C31.0332 33.4087 29.0283 33.2114 27.2063 32.4573C25.3842 31.7033 23.8269 30.4262 22.7312 28.7878C21.6356 27.1494 21.0508 25.2231 21.0508 23.2525C21.0508 20.6101 22.1013 18.0759 23.9713 16.2075C25.8413 14.339 28.3776 13.2893 31.0222 13.2893ZM13.3107 50.7732C13.3492 47.8661 14.5316 45.0909 16.6021 43.0482C18.6726 41.0055 21.4648 39.8594 24.3746 39.8579H37.6698C40.5795 39.8594 43.3717 41.0055 45.4423 43.0482C47.5128 45.0909 48.6952 47.8661 48.7336 50.7732C43.8739 55.1489 37.564 57.5705 31.0222 57.5705C24.4804 57.5705 18.1705 55.1489 13.3107 50.7732Z" fill="#FA7414"/>
+                                  </svg>
+                          </div>
+                          <div class="informithion-user d-inlin-block me-3">
+                              <h5 class="name-job mb-0">مصمم واجهات</h5>
+                              <p class="skiles-items text-dark mb-0">جمعية عون التقنية</p>
+                              <p class="date-duration mb-0">
+                                  <span class="ms-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                      <g clip-path="url(#clip0_895_4717)">
+                                      <path d="M7.97181 16.0055L7.50709 15.6072C6.86643 15.0707 1.27246 10.2396 1.27246 6.70569C1.27246 3.00575 4.27187 0.00634766 7.97181 0.00634766C11.6717 0.00634766 14.6712 3.00575 14.6712 6.70569C14.6712 10.2396 9.07718 15.0708 8.43918 15.6098L7.97181 16.0055ZM7.97181 1.45494C5.07327 1.45822 2.72437 3.80713 2.72109 6.70566C2.72109 8.92572 6.16271 12.4722 7.97181 14.0954C9.78093 12.4716 13.2225 8.92304 13.2225 6.70566C13.2192 3.80713 10.8704 1.45825 7.97181 1.45494Z" fill="#767F8C"/>
+                                      <path d="M7.97197 9.36142C6.50534 9.36142 5.31641 8.17248 5.31641 6.70586C5.31641 5.23923 6.50534 4.05029 7.97197 4.05029C9.43859 4.05029 10.6275 5.23923 10.6275 6.70586C10.6275 8.17248 9.43862 9.36142 7.97197 9.36142ZM7.97197 5.37804C7.23866 5.37804 6.64419 5.97251 6.64419 6.70582C6.64419 7.43914 7.23866 8.03361 7.97197 8.03361C8.70528 8.03361 9.29975 7.43914 9.29975 6.70582C9.29975 5.97251 8.70531 5.37804 7.97197 5.37804Z" fill="#767F8C"/>
+                                      </g>
+                                      <defs>
+                                      <clipPath id="clip0_895_4717">
+                                      <rect width="16" height="16" fill="white"/>
+                                      </clipPath>
+                                      </defs>
+                                      </svg>
+                                  </span>
+                                  مكة، المملكة العربية السعودية</p>
+                          </div>
+                                      <div class="save-icon me-auto ms-1 mt-1 py-2 px-2 rounded-circle d-flex justify-content-center align-items-center"><i class="fa-regular fa-heart"></i></div>
+                      </div> <!-- /header -->
+                          <p class="commint-rev-job me-3 ms-2 mt-4">كمصصم واجهات, المطلوب هو تصميم واجهة مشروع سخي بحيث تكون الواجهات سهلة الاستخدام و....</p>
+                          <div  class="contact-probrtis-job row m-4">
+                              <div  class="item-probrtis-job w-auto d-flex justify-content-center align-items-center px-4 ms-2 mb-2 py-1">
+                                <p class="mb-0 mx-2">مبتدئ</p>
+                              </div>
+                              <div class="item-probrtis-job w-auto d-flex justify-content-center align-items-center px-4 ms-2 mb-2 py-1">
+                                <p class="mb-0 mx-2"><span>13</span> متقدم</p>
+                              </div>
+                              <div class="item-probrtis-job w-auto d-flex justify-content-center align-items-center px-4 ms-2 mb-2 py-1">
+                                <p class="mb-0 mx-2">حضوري</p>
+                              </div>
+                          </div>
+                          <!-- /contact-probrtis-job -->
+                          <div class="footer-job-item d-flex position-relative justify-content-center align-items-center">
+                            <a href="#" class="  text-white d-flex justify-content-center align-items-center text-decoration-none mb-2">تفاصيل أكثر</a>
+                            <p  class="date-job position-absolute mb-0 mt-3">منذ يومين</p>
+                          </div>
+                        </div> <!-- /item-job -->
+                                                <!-- item-job -->
+                    <div class="item-job p-3 h-auto ms-3 mb-3">
+                      <!-- header -->
+                      <div class="header d-flex">
+                          <div class="img-user d-inline-block">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="62" height="62" viewBox="0 0 62 62" fill="none">
+                                  <path d="M54.8405 50.7732C58.0228 46.9475 60.2361 42.4123 61.2932 37.5513C62.3503 32.6902 62.22 27.6462 60.9135 22.8461C59.607 18.0459 57.1627 13.6308 53.7872 9.97415C50.4118 6.31753 46.2046 3.52701 41.5215 1.83864C36.8385 0.150271 31.8173 -0.386272 26.8828 0.274401C21.9484 0.935073 17.2457 2.77352 13.1727 5.63423C9.09972 8.49494 5.77621 12.2937 3.48333 16.7093C1.19045 21.1248 -0.00434885 26.0272 1.1894e-05 31.0017C0.00168526 38.2332 2.55213 45.2331 7.2038 50.7732L7.15948 50.8108C7.31459 50.9968 7.49186 51.1562 7.65141 51.34C7.85083 51.568 8.06577 51.7828 8.27185 52.0042C8.89229 52.6773 9.53046 53.3238 10.1997 53.9304C10.4035 54.1164 10.614 54.2891 10.8201 54.4662C11.5292 55.0773 12.2582 55.6574 13.0138 56.1976C13.1113 56.264 13.1999 56.3504 13.2974 56.419V56.3924C18.4872 60.0416 24.6784 62 31.0244 62C37.3704 62 43.5615 60.0416 48.7513 56.3924V56.419C48.8488 56.3504 48.9353 56.264 49.035 56.1976C49.7884 55.6552 50.5196 55.0773 51.2287 54.4662C51.4347 54.2891 51.6453 54.1142 51.8491 53.9304C52.5183 53.3215 53.1565 52.6773 53.7769 52.0042C53.983 51.7828 54.1957 51.568 54.3974 51.34C54.5547 51.1562 54.7342 50.9968 54.8893 50.8086L54.8405 50.7732ZM31.0222 13.2893C32.9943 13.2893 34.9222 13.8736 36.562 14.9684C38.2018 16.0632 39.4798 17.6192 40.2346 19.4398C40.9893 21.2603 41.1867 23.2636 40.802 25.1963C40.4172 27.1289 39.4675 28.9042 38.073 30.2976C36.6785 31.691 34.9018 32.6399 32.9675 33.0243C31.0332 33.4087 29.0283 33.2114 27.2063 32.4573C25.3842 31.7033 23.8269 30.4262 22.7312 28.7878C21.6356 27.1494 21.0508 25.2231 21.0508 23.2525C21.0508 20.6101 22.1013 18.0759 23.9713 16.2075C25.8413 14.339 28.3776 13.2893 31.0222 13.2893ZM13.3107 50.7732C13.3492 47.8661 14.5316 45.0909 16.6021 43.0482C18.6726 41.0055 21.4648 39.8594 24.3746 39.8579H37.6698C40.5795 39.8594 43.3717 41.0055 45.4423 43.0482C47.5128 45.0909 48.6952 47.8661 48.7336 50.7732C43.8739 55.1489 37.564 57.5705 31.0222 57.5705C24.4804 57.5705 18.1705 55.1489 13.3107 50.7732Z" fill="#FA7414"/>
+                                  </svg>
+                          </div>
+                          <div class="informithion-user d-inlin-block me-3">
+                              <h5 class="name-job mb-0">مصمم واجهات</h5>
+                              <p class="skiles-items text-dark mb-0">جمعية عون التقنية</p>
+                              <p class="date-duration mb-0">
+                                  <span class="ms-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                      <g clip-path="url(#clip0_895_4717)">
+                                      <path d="M7.97181 16.0055L7.50709 15.6072C6.86643 15.0707 1.27246 10.2396 1.27246 6.70569C1.27246 3.00575 4.27187 0.00634766 7.97181 0.00634766C11.6717 0.00634766 14.6712 3.00575 14.6712 6.70569C14.6712 10.2396 9.07718 15.0708 8.43918 15.6098L7.97181 16.0055ZM7.97181 1.45494C5.07327 1.45822 2.72437 3.80713 2.72109 6.70566C2.72109 8.92572 6.16271 12.4722 7.97181 14.0954C9.78093 12.4716 13.2225 8.92304 13.2225 6.70566C13.2192 3.80713 10.8704 1.45825 7.97181 1.45494Z" fill="#767F8C"/>
+                                      <path d="M7.97197 9.36142C6.50534 9.36142 5.31641 8.17248 5.31641 6.70586C5.31641 5.23923 6.50534 4.05029 7.97197 4.05029C9.43859 4.05029 10.6275 5.23923 10.6275 6.70586C10.6275 8.17248 9.43862 9.36142 7.97197 9.36142ZM7.97197 5.37804C7.23866 5.37804 6.64419 5.97251 6.64419 6.70582C6.64419 7.43914 7.23866 8.03361 7.97197 8.03361C8.70528 8.03361 9.29975 7.43914 9.29975 6.70582C9.29975 5.97251 8.70531 5.37804 7.97197 5.37804Z" fill="#767F8C"/>
+                                      </g>
+                                      <defs>
+                                      <clipPath id="clip0_895_4717">
+                                      <rect width="16" height="16" fill="white"/>
+                                      </clipPath>
+                                      </defs>
+                                      </svg>
+                                  </span>
+                                  مكة، المملكة العربية السعودية</p>
+                          </div>
+                                      <div class="save-icon me-auto ms-1 mt-1 py-2 px-2 rounded-circle d-flex justify-content-center align-items-center"><i class="fa-regular fa-heart"></i></div>
+                      </div> <!-- /header -->
+                          <p class="commint-rev-job me-3 ms-2 mt-4">كمصصم واجهات, المطلوب هو تصميم واجهة مشروع سخي بحيث تكون الواجهات سهلة الاستخدام و....</p>
+                          <div  class="contact-probrtis-job row m-4">
+                              <div  class="item-probrtis-job w-auto d-flex justify-content-center align-items-center px-4 ms-2 mb-2 py-1">
+                                <p class="mb-0 mx-2">مبتدئ</p>
+                              </div>
+                              <div class="item-probrtis-job w-auto d-flex justify-content-center align-items-center px-4 ms-2 mb-2 py-1">
+                                <p class="mb-0 mx-2"><span>13</span> متقدم</p>
+                              </div>
+                              <div class="item-probrtis-job w-auto d-flex justify-content-center align-items-center px-4 ms-2 mb-2 py-1">
+                                <p class="mb-0 mx-2">حضوري</p>
+                              </div>
+                          </div>
+                          <!-- /contact-probrtis-job -->
+                          <div class="footer-job-item d-flex position-relative justify-content-center align-items-center">
+                            <a href="#" class="  text-white d-flex justify-content-center align-items-center text-decoration-none mb-2">تفاصيل أكثر</a>
+                            <p  class="date-job position-absolute mb-0 mt-3">منذ يومين</p>
+                          </div>
+                        </div> <!-- /item-job -->
+                                                <!-- item-job -->
+                    <div class="item-job p-3 h-auto ms-3 mb-3">
+                      <!-- header -->
+                      <div class="header d-flex">
+                          <div class="img-user d-inline-block">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="62" height="62" viewBox="0 0 62 62" fill="none">
+                                  <path d="M54.8405 50.7732C58.0228 46.9475 60.2361 42.4123 61.2932 37.5513C62.3503 32.6902 62.22 27.6462 60.9135 22.8461C59.607 18.0459 57.1627 13.6308 53.7872 9.97415C50.4118 6.31753 46.2046 3.52701 41.5215 1.83864C36.8385 0.150271 31.8173 -0.386272 26.8828 0.274401C21.9484 0.935073 17.2457 2.77352 13.1727 5.63423C9.09972 8.49494 5.77621 12.2937 3.48333 16.7093C1.19045 21.1248 -0.00434885 26.0272 1.1894e-05 31.0017C0.00168526 38.2332 2.55213 45.2331 7.2038 50.7732L7.15948 50.8108C7.31459 50.9968 7.49186 51.1562 7.65141 51.34C7.85083 51.568 8.06577 51.7828 8.27185 52.0042C8.89229 52.6773 9.53046 53.3238 10.1997 53.9304C10.4035 54.1164 10.614 54.2891 10.8201 54.4662C11.5292 55.0773 12.2582 55.6574 13.0138 56.1976C13.1113 56.264 13.1999 56.3504 13.2974 56.419V56.3924C18.4872 60.0416 24.6784 62 31.0244 62C37.3704 62 43.5615 60.0416 48.7513 56.3924V56.419C48.8488 56.3504 48.9353 56.264 49.035 56.1976C49.7884 55.6552 50.5196 55.0773 51.2287 54.4662C51.4347 54.2891 51.6453 54.1142 51.8491 53.9304C52.5183 53.3215 53.1565 52.6773 53.7769 52.0042C53.983 51.7828 54.1957 51.568 54.3974 51.34C54.5547 51.1562 54.7342 50.9968 54.8893 50.8086L54.8405 50.7732ZM31.0222 13.2893C32.9943 13.2893 34.9222 13.8736 36.562 14.9684C38.2018 16.0632 39.4798 17.6192 40.2346 19.4398C40.9893 21.2603 41.1867 23.2636 40.802 25.1963C40.4172 27.1289 39.4675 28.9042 38.073 30.2976C36.6785 31.691 34.9018 32.6399 32.9675 33.0243C31.0332 33.4087 29.0283 33.2114 27.2063 32.4573C25.3842 31.7033 23.8269 30.4262 22.7312 28.7878C21.6356 27.1494 21.0508 25.2231 21.0508 23.2525C21.0508 20.6101 22.1013 18.0759 23.9713 16.2075C25.8413 14.339 28.3776 13.2893 31.0222 13.2893ZM13.3107 50.7732C13.3492 47.8661 14.5316 45.0909 16.6021 43.0482C18.6726 41.0055 21.4648 39.8594 24.3746 39.8579H37.6698C40.5795 39.8594 43.3717 41.0055 45.4423 43.0482C47.5128 45.0909 48.6952 47.8661 48.7336 50.7732C43.8739 55.1489 37.564 57.5705 31.0222 57.5705C24.4804 57.5705 18.1705 55.1489 13.3107 50.7732Z" fill="#FA7414"/>
+                                  </svg>
+                          </div>
+                          <div class="informithion-user d-inlin-block me-3">
+                              <h5 class="name-job mb-0">مصمم واجهات</h5>
+                              <p class="skiles-items text-dark mb-0">جمعية عون التقنية</p>
+                              <p class="date-duration mb-0">
+                                  <span class="ms-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                      <g clip-path="url(#clip0_895_4717)">
+                                      <path d="M7.97181 16.0055L7.50709 15.6072C6.86643 15.0707 1.27246 10.2396 1.27246 6.70569C1.27246 3.00575 4.27187 0.00634766 7.97181 0.00634766C11.6717 0.00634766 14.6712 3.00575 14.6712 6.70569C14.6712 10.2396 9.07718 15.0708 8.43918 15.6098L7.97181 16.0055ZM7.97181 1.45494C5.07327 1.45822 2.72437 3.80713 2.72109 6.70566C2.72109 8.92572 6.16271 12.4722 7.97181 14.0954C9.78093 12.4716 13.2225 8.92304 13.2225 6.70566C13.2192 3.80713 10.8704 1.45825 7.97181 1.45494Z" fill="#767F8C"/>
+                                      <path d="M7.97197 9.36142C6.50534 9.36142 5.31641 8.17248 5.31641 6.70586C5.31641 5.23923 6.50534 4.05029 7.97197 4.05029C9.43859 4.05029 10.6275 5.23923 10.6275 6.70586C10.6275 8.17248 9.43862 9.36142 7.97197 9.36142ZM7.97197 5.37804C7.23866 5.37804 6.64419 5.97251 6.64419 6.70582C6.64419 7.43914 7.23866 8.03361 7.97197 8.03361C8.70528 8.03361 9.29975 7.43914 9.29975 6.70582C9.29975 5.97251 8.70531 5.37804 7.97197 5.37804Z" fill="#767F8C"/>
+                                      </g>
+                                      <defs>
+                                      <clipPath id="clip0_895_4717">
+                                      <rect width="16" height="16" fill="white"/>
+                                      </clipPath>
+                                      </defs>
+                                      </svg>
+                                  </span>
+                                  مكة، المملكة العربية السعودية</p>
+                          </div>
+                                      <div class="save-icon me-auto ms-1 mt-1 py-2 px-2 rounded-circle d-flex justify-content-center align-items-center"><i class="fa-regular fa-heart"></i></div>
+                      </div> <!-- /header -->
+                          <p class="commint-rev-job me-3 ms-2 mt-4">كمصصم واجهات, المطلوب هو تصميم واجهة مشروع سخي بحيث تكون الواجهات سهلة الاستخدام و....</p>
+                          <div  class="contact-probrtis-job row m-4">
+                              <div  class="item-probrtis-job w-auto d-flex justify-content-center align-items-center px-4 ms-2 mb-2 py-1">
+                                <p class="mb-0 mx-2">مبتدئ</p>
+                              </div>
+                              <div class="item-probrtis-job w-auto d-flex justify-content-center align-items-center px-4 ms-2 mb-2 py-1">
+                                <p class="mb-0 mx-2"><span>13</span> متقدم</p>
+                              </div>
+                              <div class="item-probrtis-job w-auto d-flex justify-content-center align-items-center px-4 ms-2 mb-2 py-1">
+                                <p class="mb-0 mx-2">حضوري</p>
+                              </div>
+                          </div>
+                          <!-- /contact-probrtis-job -->
+                          <div class="footer-job-item d-flex position-relative justify-content-center align-items-center">
+                            <a href="#" class="  text-white d-flex justify-content-center align-items-center text-decoration-none mb-2">تفاصيل أكثر</a>
+                            <p  class="date-job position-absolute mb-0 mt-3">منذ يومين</p>
+                          </div>
+                        </div> <!-- /item-job -->
+                          </div>
+                      </div>
+   <footer class="footer-primary px-5 ">
+        <div class="image-item d-md-flex d-sm-block">
+            <a class="navbar-brand ms-0 me-4 p-0 " href="#"><img src="../asites/images/logo-footer.png" class="logo w-lg"></a>
+                <div class="list-item d-flex align-content-center justify-content-center flex-wrap">
+                    <ul class="navbar-nav list-unstyled d-flex flex-row p-0 ps-5">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">
+                                <svg class="text-white" xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#"><i class="fa-brands fa-instagram text-white"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#"><i class="fa-brands fa-facebook text-white"></i></a>
+                        </li>
+                    </ul>
+            </div>
+        </div>
+        <div class="profile-text text-center pt-3 pb-2">
+            <p class="m-0 text-white">جميع الحقوق محفوظة لمنصة فرصة</p>
+        </div>
+   </footer>
+
+</body>
+<script>
+const range = document.querySelectorAll(".range input");
+const price = document.querySelectorAll(".input-field input");
+const progress = document.querySelector(".slider .progress");
+
+let difference = 2000;
+
+const marginLeft = (min) => (min / range[0].max) * 100 + "%";
+const marginRight = (max) => 100 - (max / range[1].max) * 100 + "%";
+
+
+const onChangeRange = (e) => {
+  let min = parseInt(range[0].value);
+  let max = parseInt(range[1].value);
+
+  if (max - min < difference) {
+    if (e.target.className == "min-range") range[0].value = max - difference;
+    else range[1].value = min + difference;
+  } else {
+    price[0].value = min;
+    price[1].value = max;
+    progress.style.left = marginLeft(min);
+    progress.style.right = marginRight(max);
+  }
+};
+
+const onChangeInput = (e) => {
+  let min = parseInt(price[0].value);
+  let max = parseInt(price[1].value);
+
+  if (max - min >= difference && max <= 15000) {
+    if (e.target.className == "min-input") {
+      range[0].value = min;
+      progress.style.left = marginLeft(min);
+    } else {
+      range[1].value = max;
+      progress.style.right = marginRight(max);
+    }
+  }
+};
+
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+<script src="../asites/js/all.min.js"></script>
+<script src="../asites/js/main.js"></script>
+<script src="../asites/js/pass.js"></script>
+<script src="../asites/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script>
+ new WOW().init(); // تفعيل مكتبة WOW.js
+</script>
+
+</html>

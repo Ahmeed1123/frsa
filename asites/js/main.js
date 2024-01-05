@@ -1,10 +1,9 @@
   // this is start the drobdown selected
-function initializeDropdown(inputSelector, radSelector, labelSelector) {
-    var input = document.querySelector(inputSelector);
+function initializeDropdown(inputSelector, radSelector) {
+    let input = document.querySelector(inputSelector);
   
-    input.onclick = function () {
-      this.classList.toggle("open");
-      let list = this.nextElementSibling;
+      input.classList.toggle("open");
+      let list = input.nextElementSibling;
       if (list.style.maxHeight) {
         list.style.maxHeight = null;
         list.style.boxShadow = null;
@@ -13,7 +12,6 @@ function initializeDropdown(inputSelector, radSelector, labelSelector) {
         list.style.boxShadow =
           "0 1px 2px 0 rgba(0, 0, 0, 0.15),0 1px 3px 1px rgba(0, 0, 0, 0.1)";
       }
-    };
   
     var rad = document.querySelectorAll(radSelector);
     rad.forEach((item) => {
@@ -26,13 +24,11 @@ function initializeDropdown(inputSelector, radSelector, labelSelector) {
   // this is the saerch selected
   function search(searchin, labelSelector) {
     var labels = document.querySelectorAll(labelSelector);
-  
     let searchVal = searchin.value.trim().toUpperCase();
-  
     labels.forEach((item) => {
-      let checkVal = item.querySelector(".name").innerHTML.trim().toUpperCase();
-  
+      let checkVal = item.querySelector(".name").textContent.trim().toUpperCase();
       if (checkVal.indexOf(searchVal) === -1) {
+        // anime.js =>     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
         anime({
             targets: item,
             opacity: 0,
