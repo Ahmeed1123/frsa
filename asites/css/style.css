@@ -12,6 +12,9 @@
 * {
     font-family: 'Cairo', sans-serif;
 }
+html {
+  font-size: 13px !important;
+}
 body, html {
     height: 100%;
     margin: 0;
@@ -30,7 +33,7 @@ div.login-bg {
 }
 nav.navbar {
     box-shadow: 0px 8px 30px 0px #00000012;
-    height: 118px;
+    height: 7.375rem;
 }
 /* login */
 .content-login {
@@ -430,6 +433,10 @@ footer .image-item .list-item  {
 footer .image-item .navbar-brand {
   margin-top:2.94rem;
 }
+footer .image-item .navbar-brand img {
+  width: 12.01444rem;
+  height: 7.35rem;
+}
 .profile-text {
   border-top: 1px solid #D7DEEE;
   margin: 0 2rem 0 1.25rem;
@@ -469,6 +476,10 @@ a.dropdown-item.profile.active {
 }
 .dropdown-toggle.profile .selecet-profile svg {
   transition: .3s all ease-in-out;
+}
+.dropdown-toggle.profile .img-icon  {
+  width: 3rem;
+  height: 3rem;
 }
 .dropdown-toggle.profile.show .selecet-profile svg {
   transform: rotate(180deg);
