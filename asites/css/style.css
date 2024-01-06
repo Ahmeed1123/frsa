@@ -775,6 +775,18 @@ height: 3.83994rem;
   border-radius: 0.8125rem;
   box-shadow: 0px 0px 12.32px 4px rgba(29, 35, 211, 0.22);
 }
+.content-show-job .place-show-job .img-user {
+  width: 5.42613rem;
+height: 5.42613rem;
+border: 1px solid #e4e4e4;
+}
+.content-show-job .place-show-job .img-user img {
+  width: auto;
+  height: auto;
+  max-width: 4.1665rem;
+  max-height: 3.39131rem;
+  object-fit: contain;
+}
 .place-show-job .header .type-job {
   height: 2rem;
   background: #d8f3d3;
@@ -784,6 +796,7 @@ height: 3.83994rem;
   font-weight: 500;
 
 }
+
 .content-job-text .description-job li.text-list-description {
   list-style: square;
 }
@@ -814,6 +827,7 @@ height: 3.83994rem;
   font-weight: 500;
   line-height: normal;
 }
+
 button.subm-job-informations {
   background-color: var(--secondary-700);
 }
