@@ -188,7 +188,7 @@
                             <h6 class="d-block mb-3">المدينة</h6>
                             <div class="itemes">
                                 <div class="dropdown position-relative">
-                                    <div class="job input-box zero w-100" onclick="initializeDropdown('.input-box.zero', 'input.radio.class-1')" id="select"></div>
+                                    <div class="job input-box zero w-100" onclick="initializeDropdown('.input-box.zero', '.radio.class-1')" id="select-1"></div>
                                     <div class="list job position-absolute bg-white overflow-hidden d-flex align-items-center justify-content-space-between  flex-direction-column"  >
                                       <div class="search-box w-100">
                                         <input class="Input-serch-item 1 d-block border-0 w-100" type="search" name="" onkeyup="search(this, '.labeles.class-1')" placeholder="Search Options">
@@ -239,102 +239,114 @@
                           <div class="item-job d-sm-block text-end mb-3 py-4 px-3">
                             <h6 class="d-block mb-3">المسمى الوظيفي</h6>
                             <div class="itemes">
-                                <div class="dropdown position-relative">
-                                    <div class="job input-box one w-100" onclick="initializeDropdown('.input-box.one', '.radio.class-2')" id="select"></div>
-                                    <div class="list job position-absolute bg-white overflow-hidden d-flex align-items-center justify-content-space-between  flex-direction-column"  >
-                                      <div class="search-box w-100">
-                                        <input class="Input-serch-item 1 d-block border-0 w-100" type="search" name="" onkeyup="search(this, '.labeles.class-3')" placeholder="Search Options">
-                                      </div>
-                                      <input type="radio" name="drop-1" id="id-sear-1" class="radio class-2">
-                                      <label for="id-sear-1" class="labeles class-3">
-                                        <span class="material-icons-outlined">directions_walk</span>
-                                        <span class="name">Walk</span>
-                                      </label>
-      
-                                      <input type="radio" name="drop-1" id="id-sear-2" class="radio class-2">
-                                      <label for="id-sear-2" class="labeles class-3">
-                                        <span class="material-icons-outlined">directions_bike</span>
-                                        <span class="name">Road</span>
-                                      </label>
-      
-                                      <input type="radio" name="drop-1" id="id-sear-3" class="radio class-2">
-                                      <label for="id-sear-3" class="labeles class-3">
-                                        <span class="material-icons-outlined">train</span>
-                                        <span class="name">Train</span>
-                                      </label>
-      
-                                      <input type="radio" name="drop-1" id="id-sear-4" class="radio class-2">
-                                      <label for="id-sear-4" class="labeles class-3">
-                                        <span class="material-icons-outlined">flight</span>
-                                        <span class="name">Flight</span>
-                                      </label>
-      
-                                      <input type="radio" name="drop-1" id="id-sear-5" class="radio class-2">
-                                      <label for="id-sear-5" class="labeles class-3">
-                                        <span class="material-icons-outlined">directions_boat</span>
-                                        <span class="name">Ship</span>
-                                      </label>
-      
-                                      <input type="radio" name="drop-1" id="id-sear-6" class="radio class-2">
-                                      <label for="id-sear-6" class="labeles class-3">
-                                        <span class="material-icons-outlined">local_shipping</span>
-                                        <span class="name">Delivery</span>
-                                      </label>
-                                    </div>
-      
-                                    </div>
+                              <div class="dropdown position-relative">
+                                <div class="job input-box one w-100" onclick="initializeDropdown('.input-box.one', 'input.radio.class-2')" id="selec"></div>
+                                <div class="list job position-absolute bg-white overflow-hidden d-flex align-items-center justify-content-space-between flex-direction-column">
+                                  <div class="search-box w-100">
+                                    <input class="d-block border-0 w-100"
+                                       type="search"
+                                       name=""
+                                       id="search-2"
+                                       onkeyup="search(this, '.labeles.class-2');"
+                                       placeholder="Search Options"
+                                     />
+                                  </div>
+                                  <input type="radio" name="drop-2" id="id-search-1" class="radio class-2" />
+                                  <label for="id-search-1" class="labeles class-2">
+                                    <span class="material-icons-outlined"> directions_walk </span>
+                                    <span class="name">Walk</span>
+                                  </label>
+                        
+                                  <input type="radio" name="drop-2" id="id-search-2" class="radio class-2" />
+                                  <label for="id-search-2" class="labeles class-2">
+                                    <span class="material-icons-outlined"> directions_bike </span>
+                                    <span class="name">Road</span>
+                                  </label>
+                        
+                                  <input type="radio" name="drop-2" id="id-search-3" class="radio class-2" />
+                                  <label for="id-search-3" class="labeles class-2">
+                                    <span class="material-icons-outlined"> train </span>
+                                    <span class="name">Train</span>
+                                  </label>
+                        
+                                  <input type="radio" name="drop-2" id="id-search-4" class="radio class-2" />
+                                  <label for="id-search-4" class="labeles class-2">
+                                    <span class="material-icons-outlined"> flight </span>
+                                    <span class="name">Flight</span>
+                                  </label>
+                        
+                                  <input type="radio" name="drop-2" id="id-search-5" class="radio class-2" />
+                                  <label for="id-search-5" class="labeles class-2">
+                                    <span class="material-icons-outlined"> directions_boat </span>
+                                    <span class="name">Ship</span>
+                                  </label>
+                        
+                                  <input type="radio" name="drop-2" id="id-search-6" class="radio class-2" />
+                                  <label for="id-search-6" class="labeles class-2">
+                                    <span class="material-icons-outlined"> local_shipping </span>
+                                    <span class="name">Delivery</span>
+                                  </label>
+                                </div>
+                              </div>
+
                         </div>
                         </div>
                         <!-- /item job --> 
                           <!-- item job -->
                           <div class="item-job d-sm-block text-end mb-3 py-4 px-3">
-                            <h6 class="d-block mb-3">المسمى الوظيفي</h6>
+                            <h6 class="d-block mb-3">المهارات</h6>
                             <div class="itemes">
-                                <div class="dropdown position-relative">
-                                    <div class="job input-box three w-100" onclick="initializeDropdown('.input-box.three', 'input.radio.class-3')" id="select"></div>
-                                    <div class="list job position-absolute bg-white overflow-hidden d-flex align-items-center justify-content-space-between  flex-direction-column"  >
-                                      <div class="search-box w-100">
-                                        <input class="Input-serch-item 1 d-block border-0 w-100" type="search" name="" onkeyup="search(this, '.labeles.class-4')" placeholder="Search Options">
-                                      </div>
-                                      <input type="radio" name="drop-1" id="id-sear-1" class="radio class-3">
-                                      <label for="id-sear-1" class="labeles class-4">
-                                        <span class="material-icons-outlined">directions_walk</span>
-                                        <span class="name">Walk</span>
-                                      </label>
-      
-                                      <input type="radio" name="drop-1" id="id-sear-2" class="radio class-3">
-                                      <label for="id-sear-2" class="labeles class-4">
-                                        <span class="material-icons-outlined">directions_bike</span>
-                                        <span class="name">Road</span>
-                                      </label>
-      
-                                      <input type="radio" name="drop-1" id="id-sear-3" class="radio class-3">
-                                      <label for="id-sear-3" class="labeles class-4">
-                                        <span class="material-icons-outlined">train</span>
-                                        <span class="name">Train</span>
-                                      </label>
-      
-                                      <input type="radio" name="drop-1" id="id-sear-4" class="radio class-3">
-                                      <label for="id-sear-4" class="labeles class-4">
-                                        <span class="material-icons-outlined">flight</span>
-                                        <span class="name">Flight</span>
-                                      </label>
-      
-                                      <input type="radio" name="drop-1" id="id-sear-5" class="radio class-3">
-                                      <label for="id-sear-5" class="labeles class-4">
-                                        <span class="material-icons-outlined">directions_boat</span>
-                                        <span class="name">Ship</span>
-                                      </label>
-      
-                                      <input type="radio" name="drop-1" id="id-sear-6" class="radio class-3">
-                                      <label for="id-sear-6" class="labeles class-4">
-                                        <span class="material-icons-outlined">local_shipping</span>
-                                        <span class="name">Delivery</span>
-                                      </label>
-                                    </div>
-      
-                                    </div>
-                        </div>
+                              <div class="job dropdown position-relative">
+                                <div class="job input-box three w-100" onclick="initializeDropdown('.input-box.three', '.radio.class-3',)" id="selecshen"></div>
+                                <div class="list job position-absolute bg-white overflow-hidden d-flex align-items-center justify-content-space-between flex-direction-column">
+                                  <div class="search-box w-100">
+                                    <input class="Input-serch-item 1 d-block border-0 w-100"
+                                      type="search"
+                                      name=""
+                                      onkeyup="search(this, '.labeles.class-3')"
+                                      placeholder="Search Options"
+                                    
+                                    />
+                                  </div>
+                                  <input type="radio" name="drop-3" id="id-sear-7" class="radio class-3" />
+                                  <label for="id-sear-7" class="labeles class-3">
+                                    <span class="material-icons-outlined">directions_walk</span>
+                                    <span class="name">Walk</span>
+                                  </label>
+  
+                                  <input type="radio" name="drop-3" id="id-sear-8" class="radio class-3" />
+                                  <label for="id-sear-8" class="labeles class-3">
+                                    <span class="material-icons-outlined">directions_bike</span>
+                                    <span class="name">Road</span>
+                                  </label>
+  
+                                  <input type="radio" name="drop-3" id="id-sear-9" class="radio class-3" />
+                                  <label for="id-sear-9" class="labeles class-3">
+                                    <span class="material-icons-outlined">train</span>
+                                    <span class="name">Train</span>
+                                  </label>
+  
+                                  <input type="radio" name="drop-3" id="id-sear-10" class="radio class-3" />
+                                  <label for="id-sear-10" class="labeles class-3">
+                                    <span class="material-icons-outlined">flight</span>
+                                    <span class="name">Flight</span>
+                                  </label>
+  
+                                  <input type="radio" name="drop-3" id="id-sear-11" class="radio class-3" />
+                                  <label for="id-sear-11" class="labeles class-3">
+                                    <span class="material-icons-outlined">directions_boat</span>
+                                    <span class="name">Ship</span>
+                                  </label>
+  
+                                  <input type="radio" name="drop-3" id="id-sear-12" class="radio class-3" />
+                                  <label for="id-sear-12" class="labeles class-3">
+                                    <span class="material-icons-outlined">local_shipping</span>
+                                    <span class="name">Delivery</span>
+                                  </label>
+                                </div>
+  
+                                </div>
+                          </div>
                         </div>
                         <!-- /item job --> 
                            <!-- item job -->
@@ -480,7 +492,7 @@
                                     </div>
                                     <!-- /contact-probrtis-job -->
                                     <div class="footer-job-item d-flex position-relative justify-content-center align-items-center">
-                                      <a href="#" class="  text-white d-flex justify-content-center align-items-center text-decoration-none mb-2">تفاصيل أكثر</a>
+                                      <a href="show-job.html" class="  text-white d-flex justify-content-center align-items-center text-decoration-none mb-2">تفاصيل أكثر</a>
                                       <p  class="date-job position-absolute mb-0 mt-3">منذ يومين</p>
                                     </div>
                                   </div> <!-- /item-job -->

@@ -2,7 +2,7 @@
 :root {
     --primary:#FA7414;
     --secondary-700:#1D23D3;
-    --w-avilbal-200:calc(100% - 117.99px);
+    --w-avilbal-200:calc(100% - 7.374375rem);
     --w-avilbal-select:26.5625rem;
     --secondary: #4f709c;
     --white: #ffffff;
@@ -200,7 +200,7 @@ input[type=checkbox] + label.label-check-cs {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    align-content: flex-end;
+    align-content: center;
   }
   input[type=checkbox] + label.label-check-cs:active:before {
     transform: scale(0);
@@ -654,7 +654,7 @@ left: .8rem;
   font-size: 0.6875rem;
 }
 .list.job {
-  min-width: 290px;
+  min-width: 18.125rem;
 }
 .footer-job-item .date-job {
 left: 0;
@@ -662,14 +662,39 @@ color: #767F8C;
 font-size: 0.75rem;
 line-height: normal;
 }
-.footer-job-item a {
-  width: 9.5rem;
+.footer-job-item a , 
+.btn-submit-user a ,
+button.subm-job-informations {
+  width: auto;
   border-radius: 0.8125rem;
   height: 2.70438rem;
   cursor: pointer;
-  background: var(--bs-orange);
+  padding: 0 1.875rem;
+  background: var(--primary);
 }
-.item-job .header .save-icon {
+.modal-header button.btn-close  {
+  background: #ABBED1;
+}
+.modal-header button.close.btn-Popup svg  {
+  width:1.25rem ;
+  height: 1.25rem;
+
+ }
+ .modal-title {
+  color: var(--secondary-700);
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 2.8125rem !important;
+ }
+ .modal-dialog.modal-dialog-centered .modal-content {
+  width: 32.25rem;
+  border-radius: 1.875rem;
+  background: var(--background1, #FFF);
+  box-shadow: 0px 0px 12px 0px rgba(95, 134, 195, 0.31), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  height: 49.6875rem;
+}
+.item-job .header .save-icon ,
+.save-icon{
   background: rgba(238, 120, 107, 0.12);
   width: 2.125rem;
   cursor: pointer;
@@ -707,10 +732,7 @@ line-height: normal;
   top: 0;
 }
 .content.two .search-job {
-  color: var(--secondary-700);
-  border-radius: 0.6875rem;
-  background: #FFF;
-  box-shadow: 0px 0px 10px 0.5px rgba(41, 45, 50, 0.03);
+  color: var(--secondary-700); 
 }
 ul.dropdown-menu.profile.opportunity:before {
   content: "";
@@ -726,7 +748,86 @@ ul.dropdown-menu.profile.opportunity:before {
 ul.dropdown-menu.profile.opportunity.show {
   left: -3.75rem;
 }
+.upload.job {
+  min-width: 8.5625rem;
+  height: 12.83463rem;
+  width: auto;
+  border: 1px dashed var(--secondary-700);
+}
+.upload.job .img-icons svg {
+  width: 4.21813rem;
+height: 3.83994rem;
+}
 /* end content-jobs */
+/* show job page start */
+.Work-details {
+  max-width: 25.3125rem !important ;
+  min-width: 25.3125rem;
+  border-radius: 0.8125rem;
+  border: 0.25px solid #D4D4D4;
+  background: #F8F9FF;
+}
+.content-show-job .place-show-job {
+  border-top-right-radius: 0.8125rem;
+  border-bottom-right-radius: 0.8125rem;
+}
+.content-show-job {
+  border-radius: 0.8125rem;
+  box-shadow: 0px 0px 12.32px 4px rgba(29, 35, 211, 0.22);
+}
+.place-show-job .header .type-job {
+  height: 2rem;
+  background: #d8f3d3;
+  border-radius: 0.75088rem;
+  font-size: 0.875rem;
+  color: #2BC128;
+  font-weight: 500;
+
+}
+.content-job-text .description-job li.text-list-description {
+  list-style: square;
+}
+.description-job .title {
+  color: var(--primary);
+  font-weight: 600;
+  line-height: normal;
+}
+.description-job .description-text ,
+.content-job-text .description-job li.text-list-description {
+  color: #231F20;
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -.05375rem;
+}
+.content-job-text .description-job li.text-list-description::marker {
+  font-size: .75rem;
+}
+.Work-details .header .title {
+  color: var(--primary);
+  font-weight: 600;
+  line-height: normal;
+}
+.content-detghils .item-detghils {
+  color: #767F8C;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  line-height: normal;
+}
+button.subm-job-informations {
+  background-color: var(--secondary-700);
+}
+.content-detghils .item-detghils p span.value-detghils.d-block.mt-1 {
+  color: #1D23D3;
+  font-size: 0.9375rem;
+  line-height: normal;
+}
+@media screen and (max-width:992px) {
+  .Work-details {
+    min-width: 100%;
+  }
+}
+/* show job page end */
 /* input range custome start */
 .price {
   display: flex;
@@ -757,9 +858,6 @@ ul.dropdown-menu.profile.opportunity.show {
 .input-field input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
 }
-
-
-
 .slider {
   position: relative;
   height: 7px;
