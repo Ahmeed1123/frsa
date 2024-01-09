@@ -74,3 +74,17 @@ function showPage(pageId, btn) {
   newPage.addClass('active  animate__animated animate__fadeRight animate__fadeInLeft');    
 }
 
+  // this is start filter 
+let sliderOpen = false;  // إضافة متغير لتتبع حالة السلايدر
+  function toggleSlider() {
+    const carousel = document.getElementById('myCarousel');
+    const contentJob = document.querySelector('.content-job-slide');
+  
+  
+  
+    // إضافة أو إزالة الـ active class
+    carousel.classList.toggle('active');
+  
+    // تحديث حالة السلايدر
+    sliderOpen = !sliderOpen;
+  }

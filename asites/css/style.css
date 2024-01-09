@@ -182,9 +182,9 @@ input[type=checkbox] + label.label-check-cs {
   input[type=checkbox] + label.label-check-cs:before {
     content: "\2714";
     display: inline-flex;
-    width: 1rem;
+    width: 1.25rem;
     font-size: 10px;
-    height: 1rem;
+    height: 1.25rem;
     padding-left: 0;
     border-radius: 0.25rem;
     border: 1px solid var(--primary);
@@ -618,11 +618,12 @@ a.dropdown-item.profile.active {
   background: #F9FBFE;
   max-width: 24rem !important;
   min-width: 24rem !important;
+  width: 15.625rem;
 }
-.content-job-slide .item-job {
-  border-radius: 0.6875rem;
-  background: #FFF;
-  box-shadow: 0px 0px 10px 0.5px rgba(41, 45, 50, 0.03);
+.item-job {
+  border-radius: 0.6875rem ;
+  background: #FFF ;
+  box-shadow: 0px 0px 10px 0.5px rgba(41, 45, 50, 0.03) ;
 }
 /* checkbox custome */
 .checke-box.job input[type=checkbox] + label.label-check-cs:before {
@@ -664,11 +665,13 @@ line-height: normal;
 }
 .footer-job-item a , 
 .btn-submit-user a ,
-button.subm-job-informations {
+button.subm-job-informations ,
+button.subm-job-projects {
   width: auto;
   border-radius: 0.8125rem;
   height: 2.70438rem;
   cursor: pointer;
+  text-transform: uppercase;
   padding: 0 1.875rem;
   background: var(--primary);
 }
@@ -733,6 +736,11 @@ button.subm-job-informations {
 }
 .content.two .search-job {
   color: var(--secondary-700); 
+  z-index: 2;
+}
+.img-user.lg svg {
+  width: 3.69794rem;
+  height: 4.43731rem;
 }
 ul.dropdown-menu.profile.opportunity:before {
   content: "";
@@ -772,15 +780,20 @@ height: 3.83994rem;
   border-bottom-right-radius: 0.8125rem;
 }
 .content-show-job {
+  transition: max-Width 0.5s ease-out;
+  min-height: 68.5rem;  
   border-radius: 0.8125rem;
-  box-shadow: 0px 0px 12.32px 4px rgba(29, 35, 211, 0.22);
+  box-shadow:0px 0px 9px 0px rgba(29, 35, 211, 0.22);
 }
-.content-show-job .place-show-job .img-user {
+.content-show-job .place-show-job .img-user , 
+.contain-itemes-job .item-job .img-user {
   width: 5.42613rem;
 height: 5.42613rem;
+border-radius: 50%;
 border: 1px solid #e4e4e4;
 }
-.content-show-job .place-show-job .img-user img {
+.content-show-job .place-show-job .img-user img , 
+.img-user img {
   width: auto;
   height: auto;
   max-width: 4.1665rem;
@@ -831,7 +844,8 @@ border: 1px solid #e4e4e4;
 button.subm-job-informations {
   background-color: var(--secondary-700);
 }
-.content-detghils .item-detghils p span.value-detghils.d-block.mt-1 {
+.content-detghils .item-detghils p span.value-detghils.d-block.mt-1 ,
+span.value-detghils {
   color: #1D23D3;
   font-size: 0.9375rem;
   line-height: normal;
@@ -840,7 +854,52 @@ button.subm-job-informations {
   .Work-details {
     min-width: 100%;
   }
+  .side-bar::-webkit-scrollbar {
+    width: 0px;
+  }
+  .side-bar.active{
+    left: 0;
+   }
+   .close-btn{
+    font-size: 23px;
+    left: 0px;
+    margin: 15px;
+    cursor: pointer;
+   }
+   div#myCarousel {
+    position: fixed;
+    height: 100%;
+    z-index: 3;
+    overflow-y:auto;
+   }
+   div#myCarousel.active {
+    position: fixed;
+    transform: translateX(0);
+    z-index: 5;
+    top: 0;
+    overflow-y: auto;
+   
+   }
 }
+/* custome sidebar */
+
+.menu-btn{
+  color: rgb(0, 0, 0);
+  font-size: 1.5rem;
+  cursor: pointer;
+ }
+ div#myCarousel {
+  display: none;
+  transition: 0.6s ease;
+  transition-property:right;
+ }
+ div#myCarousel.active {
+  display: block;
+ }
+ .view-profile {
+  position: relative;
+ }
+/* custome sidebar end */
 /* show job page end */
 /* input range custome start */
 .price {
@@ -928,3 +987,98 @@ input[type="range"]::-moz-range-thumb {
 }
 /* input range custome end */
 /* pages job end */
+
+/* pages  projects start */
+.contact-probrtis-job.br {
+  border-radius: 0.625rem;
+  border: 1px solid rgba(198, 198, 198, 0.50);
+}
+.contact-probrtis-job.br {
+  border-radius: 0.625rem;
+  border: 1px solid rgba(198, 198, 198, 0.50);
+}
+.item-probrtis-job.sm-border {
+  border-left: 1px solid rgba(198, 198, 198, 0.50) !important;
+  border-right: 1px solid rgba(198, 198, 198, 0.50) !important;
+}
+.item-probrtis-job.procts {
+  font-size: .75rem;
+  FONT-WEIGHT: 500;
+}
+.Brief-informithion-user.projects {
+  min-width: 26rem;
+  max-width: 26rem;
+  background: #FFF;
+  box-shadow: 0px 0px 7px 0px rgba(29, 35, 211, 0.22);
+}
+@media screen and (max-width:992px) {
+  .Brief-informithion-user.projects {
+    min-width: 100%;
+  }
+}
+.img-user.poject-show svg ,
+.img-user.poject-show img {
+  max-width: 6.89906rem;
+  max-height: 6.89906rem;
+}
+.svg-sm svg {
+  width: 0.9375rem;
+height: 0.9375rem;
+}
+.comtion-content a.comtion-item.enjaz span svg {
+  width: 1.34375rem;
+  height: 1.34375rem;
+}
+.comtion-content a.comtion-item.loader span svg {
+  width: 1.3125rem;
+  height: 1.3125rem;
+}
+.header .stars.project svg {
+  width: 8.59138rem;
+  height: 1.41888rem;
+}
+.nav-project {
+  background: var(--secondary-700);
+  padding: 2.269rem 0;
+}
+button.subm-job-projects  {
+  height: 2.2rem;
+  font-size: 0.875rem;
+}
+.btn-submit-user.condition.a a {
+  height: 2.4rem;
+  line-height: normal;
+} 
+.btn-submit-user.condition.a .save-icon.project svg {
+  width: 0.8125rem;
+  height: 0.8125rem;
+}
+.btn-submit-user.condition.a .save-icon.project {
+  color: var(--primary);
+}
+.comtion-content.project::after {
+content: "";
+display: none;
+}
+hr.project {
+  color: #D8D8D8;
+}
+.place-show-job.project {
+  border-radius: 0.8125rem;
+  border: 0.25px solid #D4D4D4;
+  background: #F8F9FF;
+}
+.content-info.project {
+  border-radius: 0.8125rem;
+  background: #FFF;
+  box-shadow: 0px 0px 7px 0px rgba(29, 35, 211, 0.22);
+}
+.content-info.project  .item-detghils svg {
+  width: 1.75rem;
+  height: 1.75rem;
+}
+p.name a svg {
+  width: 1.875rem;
+height: 1.875rem;
+}
+/* pages projects end */
