@@ -1125,7 +1125,7 @@ height: 1.875rem;
   font-family: 'Rubik' , 'Cairo', sans-serif;
   color: var(--Mid-2-Grey, #A5A5A5);
 }
-a {
+.icon-arrow p.massage a {
   color: var(--secondary-700) !important;
 }
 /* page blance */
