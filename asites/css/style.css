@@ -1082,3 +1082,50 @@ p.name a svg {
 height: 1.875rem;
 }
 /* pages projects end */
+
+/* pages user */
+.sizing p {
+  color: #4D4D4D !important;
+  font-size: 0.875rem !important;
+  font-style: normal;
+}
+/* pages user */
+
+/* page blance */
+.blance {
+  border-radius: 1.875rem;
+  background: #FFF; 
+  box-shadow: 0px 2px 12px 0px rgba(73, 122, 145, 0.23);
+}
+.blance .item-blance h5 {
+  color: #4D4D4D;
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 1.25rem;
+}
+.blance .item-blance  {
+  color: #4D4D4D;
+  font-weight: 500;
+}
+.description-job h4.title.color-secon {
+  color: var(--secondary-700) !important;
+  font-weight: 500;
+}
+.icon-arrow span {
+  background: var(--primary);
+  border-radius: 0.98038rem;
+}
+.blance .item-blance-card {
+  border-radius: 0.98038rem;
+  background: #EEF5FC;
+  box-shadow: 0px 15.686px 47.057px 9.411px rgba(157, 157, 157, 0.05);
+}
+.blance .date-time  p ,
+.blance .date-time  h5 {
+  font-family: 'Rubik' , 'Cairo', sans-serif;
+  color: var(--Mid-2-Grey, #A5A5A5);
+}
+a {
+  color: var(--secondary-700) !important;
+}
+/* page blance */
