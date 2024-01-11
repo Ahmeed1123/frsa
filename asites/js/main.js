@@ -88,3 +88,23 @@ let sliderOpen = false;  // إضافة متغير لتتبع حالة السلا
     // تحديث حالة السلايدر
     sliderOpen = !sliderOpen;
   }
+
+// input file
+  function updateFilename() {
+    var input = document.getElementById('formFile');
+    var filenameDisplay = document.getElementById('filename');
+    var uploadContainer = document.getElementById('uploadContainer');
+  var uploadText = document.getElementById('uploadText');
+
+if (input.files.length > 0) {
+  filenameDisplay.innerHTML = input.files[0].name;
+  uploadContainer.classList.add('file-uploaded');
+  uploadText.innerHTML = 'تم اختيار الملف: ';
+} else {
+  filenameDisplay.innerHTML = 'لم يتم اختيار أي ملف';
+  uploadContainer.classList.remove('file-uploaded', 'drag-over');
+  uploadText.innerHTML = 'إسحب و أفلت الملف هنا';
+  dContainer.classList.remove('file-uploaded', 'drag-over');
+}
+    }
+// input file end

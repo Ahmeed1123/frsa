@@ -25,7 +25,7 @@
         </nav>
         <!-- /header -->
         <div class="login-bg justify-content-center align-content-center flex-wrap d-flex">
-            <div class="content-login bg-white overflow-hidden d-flex flex-column align-items-center">
+            <div class="content-login bg-white overflow-hidden d-flex flex-column align-items-center h-auto pb-5">
                 <div class="head-content-login w-100 text-center d-grid justify-content-center">
                     <h4 class="mb-0">إنشاء حساب</h4>
                     <div class="btn-groub flex-row d-flex justify-content-center">
@@ -90,10 +90,34 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="item-form mb-2">
+                            <label for="nameShrka" class="form-label">اسم الشركة<span class="impor">*</span></label>
+                            <input type="text" class="form-control" id="nameShrka" aria-describedby="emailHelp">
+                        </div>
+                        <div class="item-form mb-2">
+                            <label for="shreeka" class="form-label">نبذة عن الشركة<span class="impor">*</span></label>
+                            <input type="text" class="form-control" id="shreeka" aria-describedby="emailHelp">
+                        </div>
+                        <div class="item-form-radio mb-2">
+                            <label for="shreeka" class="form-label">اختر ماتقدمه<span class="impor">*</span></label>
+                                <div class="content-items-radio form-control">
+                                    <div class="radio-input d-flex gap-3 my-2">
+                                        <input type="radio" name="radio" class="radio-in-sign-in" id="inpu-1" aria-describedby="emailHelp">
+                                        <label for="inpu-1">الوظيفة فقط</label>
+                                    </div>
+                                    <div class="radio-input d-flex gap-3 my-2">
+                                        <input type="radio" name="radio" class="radio-in-sign-in" id="inpu-2" aria-describedby="emailHelp">
+                                        <label for="inpu-2">التدريب فقط</label>
+                                    </div>
+                                    <div class="radio-input d-flex gap-3 my-2">
+                                        <input type="radio" name="radio" class="radio-in-sign-in" id="inpu-3" aria-describedby="emailHelp">
+                                        <label for="inpu-3">التدريب والوظيفة</label>
+                                    </div>
+                                </div>
+                        </div>
                         <div class="checke-box text-center w-auto mx-auto justify-content-center align-items-center">
                             <input type="checkbox" id="fruit2" name="fruit-2" value="Apple">
                             <label class="label-check-cs text-dark" for="fruit2">أوافق على <a class="text--primary text-decoration-none" href="#">الشروط والأحكام</a></label>
-
                         </div>
                         <div class="submit-login mt-4 text-center">
                             <a class="subm-login text-white d-flex border-0 justify-content-center align-items-center mb-3 text-decoration-none" type="submit" href="comp-skiles.html">إنشاء حساب</a>

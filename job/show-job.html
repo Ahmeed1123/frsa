@@ -393,7 +393,7 @@
                
                     <div class="upload job position-relative text-center mx-auto p-3 mx-md-4" id="uploadContainer" ondragover="handleDragOver(event)" ondragleave="handleDragLeave(event)" ondrop="handleDrop(event)">
                         <div class="img-icons">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="53" height="43" viewBox="0 0 68 62" fill="none">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="4.21813rem" height="3.83994rem" viewBox="0 0 68 62" fill="none">
                             <path d="M0 34.7722C0 41.886 5.83746 47.6105 14.6344 47.6105H31.3175V59.013C31.3175 60.3223 32.4293 61.4386 33.7757 61.4386C35.1173 61.4386 36.2072 60.3223 36.2072 59.013V47.6105H54.3812C62.2158 47.6105 67.4904 42.7184 67.4904 36.0358C67.4904 30.4904 64.2813 25.5741 59.0489 23.4042C59.0827 11.2477 50.4613 2.4812 39.4037 2.4812C32.3519 2.4812 27.0914 6.19412 23.7756 11.0582C17.5113 9.47489 10.0366 14.3078 9.79011 21.9128C3.74744 22.9833 0 28.4109 0 34.7722ZM31.3175 46.2071V32.6491L31.5095 28.6637L30.2277 30.2621L26.1613 34.6549C25.7387 35.1339 25.0999 35.3878 24.5069 35.3878C23.2916 35.3878 22.3366 34.4838 22.3366 33.2475C22.3366 32.583 22.5984 32.104 23.0427 31.6518L31.9231 22.9521C32.547 22.317 33.1204 22.0947 33.7757 22.0947C34.4045 22.0947 34.9777 22.317 35.6065 22.9521L44.4822 31.6518C44.9265 32.104 45.1883 32.583 45.1883 33.2475C45.1883 34.4838 44.1898 35.3878 42.9961 35.3878C42.4034 35.3878 41.7862 35.1339 41.3684 34.6549L37.2973 30.2621L36.0154 28.6637L36.2072 32.6491V46.2071C36.2072 47.5846 35.1031 48.6863 33.7757 48.6863C32.4218 48.6863 31.3175 47.5846 31.3175 46.2071Z" fill="#6061F0" fill-opacity="0.12"></path>
                           </svg>
                         </div>
@@ -402,7 +402,7 @@
                           <p class="text-sm-upload"><span class="border-upload ms-2"></span> أو <span class="border-upload me-2"></span></p>
                           <label for="formFile" class="btn btn-upload">ارفع الملف  من جهازك</label>  
                         </div>
-                        <input class="form-control text-a position-absolute width-100 h-100 opacity-0 " type="file" id="formFile" onchange="updateFilename()">
+                        <input class="form-control text-a position-absolute w-100 h-100 opacity-0 " type="file" id="formFile" onchange="updateFilename()">
                       </div>
                       <p class="mt-2">الملف : <span id="filename">لم يتم اختيار أي ملف</span></p>                
 
@@ -446,26 +446,6 @@
         </div>
    </footer>
 </body>
-<script>
-    function updateFilename() {
-      var input = document.getElementById('formFile');
-      var filenameDisplay = document.getElementById('filename');
-      var uploadContainer = document.getElementById('uploadContainer');
-    var uploadText = document.getElementById('uploadText');
-
-  if (input.files.length > 0) {
-    filenameDisplay.innerHTML = input.files[0].name;
-    uploadContainer.classList.add('file-uploaded');
-    uploadText.innerHTML = 'تم اختيار الملف: ';
-  } else {
-    filenameDisplay.innerHTML = 'لم يتم اختيار أي ملف';
-    uploadContainer.classList.remove('file-uploaded', 'drag-over');
-    uploadText.innerHTML = 'إسحب و أفلت الملف هنا';
-    dContainer.classList.remove('file-uploaded', 'drag-over');
-  }
-      }
-    
-  </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
 <script src="../asites/js/all.min.js"></script>
 <script src="../asites/js/main.js"></script>

@@ -2,7 +2,7 @@
 :root {
     --primary:#FA7414;
     --secondary-700:#1D23D3;
-    --w-avilbal-200:calc(100% - 7.374375rem);
+    --w-avilbal-200:100% ;
     --w-avilbal-select:26.5625rem;
     --secondary: #4f709c;
     --white: #ffffff;
@@ -23,10 +23,9 @@ body, html {
 div.login-bg {
     background: url(../images/bg-login.png);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 100%;
     background-attachment: fixed;
     background-position: bottom;
-    /* تعيين ارتفاع بنسبة 100% */
     height: var(--w-avilbal-200);
     width: 100%;
     margin: 0; 
@@ -45,6 +44,51 @@ nav.navbar {
     padding: 2.8125rem 6.59375rem 14.125rem 6.53125rem;
     gap: 4.3125rem;
 }
+.radio-input input:checked + label::before {
+  display: none;
+}
+.radio-input input:checked + label  {
+  color:black !important;
+  background: transparent !important;
+
+}
+.radio-input input[type='radio'] {
+  -webkit-appearance: none;
+  position: relative;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #8C92AB;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+  transition: 0.2s all ease-in-out;
+}
+
+.radio-input input[type='radio']:checked {
+  border: 1px solid var(--secondary-700);
+}
+
+.radio-input input[type='radio']:before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 60%;
+  height: 60%;
+  transform: translatey(35% );
+  left: 0;
+  right: 0;
+  margin: auto;
+  border-radius: 50%;
+}
+
+.radio-input input[type='radio']:checked:before {
+  background: var(--secondary-700);
+}
+.content-items-radio {
+  border-radius: 0.8125rem !important;
+  border: var(--spacing-0_5, 1px) solid #B0B0B0 !important;
+}
+
 .head-content-login {
     padding: var(--spacing-0, 0rem);
     flex-direction: column;
@@ -132,7 +176,7 @@ a.pass-forget {
   gap: 0.45rem;
 }
 .pass .icon-eye {
-    top: 2px;
+    top: 1px;
     cursor: pointer;
     left: 1.5px;
     height: 2.9rem;
@@ -1129,3 +1173,32 @@ height: 1.875rem;
   color: var(--secondary-700) !important;
 }
 /* page blance */
+
+/* pages added frsa */
+.itemes-content-line .item-line {
+  width: 4.375rem;
+  height: 0.3925rem;
+  background: #C4C4C4;
+}
+.itemes-content-line .item-line.active {
+  background-color: var(--primary);
+}
+.input-box.item-line::before {
+  color: var(--primary);
+}
+@media screen and (max-width:700px) {
+  .content-login.edit-profile.job-line {
+    width: 100%;
+    padding: 1.5rem 1.5rem;
+  }
+}
+.bg--praimary {
+  background-color: var(--primary) !important;
+}
+.content-login.edit-profile.job-line .list {
+  min-width: 100% !important;
+}
+.upload.job.line-job {
+  border-color: var(--primary);
+}
+/* pages added frsa end*/
