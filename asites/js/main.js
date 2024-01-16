@@ -8,7 +8,7 @@ function initializeDropdown(inputSelector, radSelector) {
         list.style.maxHeight = null;
         list.style.boxShadow = null;
       } else {
-        list.style.maxHeight = list.scrollHeight + "px";
+        list.style.maxHeight = '20.6rem';
         list.style.boxShadow =
           "0 1px 2px 0 rgba(0, 0, 0, 0.15),0 1px 3px 1px rgba(0, 0, 0, 0.1)";
       }
@@ -16,7 +16,7 @@ function initializeDropdown(inputSelector, radSelector) {
     var rad = document.querySelectorAll(radSelector);
     rad.forEach((item) => {
       item.addEventListener("change", () => {
-        input.innerHTML = item.nextElementSibling.innerHTML;
+        input.innerHTML = item.nextElementSibling.innerHTML;        
         input.click();
       });
     });
@@ -48,7 +48,7 @@ function initializeDropdown(inputSelector, radSelector) {
           });
       }
       let list = item.closest(".list");
-      list.style.maxHeight = list.scrollHeight + "px";
+      list.style.maxHeight = '20.6rem';
     });
   }
   // this is end the saerch selected

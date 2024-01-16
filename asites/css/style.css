@@ -3,7 +3,7 @@
     --primary:#FA7414;
     --secondary-700:#1D23D3;
     --w-avilbal-200:100% ;
-    --w-avilbal-select:26.5625rem;
+    --w-avilbal-select:100%;
     --secondary: #4f709c;
     --white: #ffffff;
     --black: #222222;
@@ -20,6 +20,285 @@ body, html {
     margin: 0;
     overflow-x: hidden;
 }
+
+/* landing page */
+.contetnt-landing-page {
+  background-color: var(--secondary-700);
+}
+.text-landing-page h1.text-top, .text-landing-page h1.text-bottom {
+  font-family: Tajawal , 'Cairo', sans-serif;
+  font-size: 3.8rem;
+  font-style: normal;
+  min-width: 470px;
+  font-weight: 400;
+}
+.contetnt-landing-page .image-content {
+  z-index: 1;
+  top: 1rem;
+}
+
+.contetnt-landing-page .image-content img {
+  width: 45.7rem;
+  height: 45.7rem;
+}
+.text-landing-page h1.text-bottom span.job-text {
+  font-family: inherit;
+  color: var(--secondary-700);
+}
+.text-landing-page h1.text-bottom span img {
+  width: 6.8rem;
+  height: 6.8rem;
+  bottom: 1.3rem;
+  right: .8rem;
+}
+.text-landing-page .title h1 {
+  font-size: 7.3rem;
+  line-height: normal;
+  font-weight: 700;
+  letter-spacing: -1.5px;
+}
+.input-box.item-line:empty::after {
+  content: "اختار";
+  color: rgba(0, 0, 0, 0.5);
+}
+.outline-0 {
+  outline: 0 !important;
+}
+.item-form.landing-page {
+  min-width: 9rem;
+  border-left:1px solid #DCDCEB ;
+}
+form.form-landing-page {
+  border-radius: 0.88013rem 1.1735rem 1.1735rem 1.1735rem;
+  background: rgba(255, 255, 255, 0.80);
+  box-shadow: 0px 28.164px 56.328px -14.082px rgba(143, 144, 188, 0.15);
+}
+.landing-page.after-text-bankNums input::placeholder {
+  color: white;
+}
+.text-landing-page h1.text-bottom .stars-1 {
+  top: -3.5rem;
+  left: 35px;
+}
+.bg-secondary-700  {
+  background-color: var(--secondary-700);
+}
+@media screen and (max-width:1412px) {
+  .contetnt-landing-page .image-content img {
+    width: 38.7rem;
+    height: 38.7rem;
+}
+
+.text-landing-page h1.text-top, .text-landing-page h1.text-bottom {
+  font-size: 2.5rem;
+}
+.text-landing-page .title h1 {
+  font-size: 5.3rem;
+}
+}
+@media screen and (max-width:1045px) {
+  .text-landing-page h1.text-bottom .stars-1 {
+    top: -2.5rem;
+    left: 30px;
+  }
+  .text-landing-page h1.text-bottom .stars-1 img {
+    width: 5.4rem;
+  }
+  .text-landing-page .stars-2 img.two-stars {
+    width: 10.2rem;
+    right: 2rem !important;
+}
+
+}
+@media screen and (min-width:770px) {
+  .position-sm-absolute {
+    position: absolute;
+  }
+  .position-sm-relative {
+    position: relative !important;
+  }
+}
+.position-sm-relative {
+  position: absolute;
+}
+.content-landing-page-add .item-page-add {
+  width: 23.5625rem;
+  border-radius: 1.01644rem;
+}
+.content-landing-page-add .item-page-add .svg-user-add {
+  width: 5.125rem;
+  height: 5.125rem;
+}
+.content-landing-page-add .item-page-add .svg-user-add svg {
+  width: 2.3125rem;
+  height: 2.3125rem;
+}
+.item-page-add a {
+  max-width: 9.3rem;
+}
+.item-page-add .text {
+  color: #1E1E1E;
+  font-size: 1.1875rem;
+  font-weight: 400;
+  line-height: normal;
+  opacity: 0.6;
+}
+.gap-12 {
+  gap: 10rem;
+}
+/* 3 */
+.comtent-jobs-landing-page .item-job-landing {
+  border-radius: 2.18056rem;
+  background: #FFF;
+  box-shadow: 2px 0px 17px 0px rgba(153, 171, 198, 0.20);
+  width: 17.44444rem;
+  cursor: pointer;
+  transition: .3s all ease-in-out;
+}
+.comtent-jobs-landing-page .item-job-landing:hover {
+  background-color: var(--primary);
+  color: white;
+}
+.comtent-jobs-landing-page .item-job-landing .cria-hover {
+  fill: #fdf1e8;
+}
+.comtent-jobs-landing-page .item-job-landing:hover {
+  fill: white;
+}
+/* 4 */
+section.methode-work .content-work .item-content {
+  width: 10rem;
+}
+.text-secondary-700  {
+  color:var(--secondary-700);
+}
+section.methode-work .content-work .item-content .massage {
+  color: #263238;
+  font-weight: 500;
+  line-height: normal;
+}
+/* 5 */
+.carousel-indicators.custome button {
+  width: 1rem;
+  height: 1rem;
+  background-color: rgba(29, 35, 211, 0.40);
+  border-radius: 50%;
+}
+.carousel-indicators.custome button.active {
+  background-color: #1D23D3;
+}
+/* 6 */
+section.slide-join {
+  height: 28.75rem;
+  background: #f8f8fd;
+}
+section.slide-join .bottom-content ,
+section.slide-join .bottom-content-2 , 
+section.slide-join .top-content ,
+section.slide-join .top-content-2 {
+  width: 33rem;
+  height: 30rem;
+  background: #0A63F9;
+  opacity: .2;
+  z-index: 1;
+  rotate: 40deg;
+  left: -18rem;
+  border-radius: 3.125rem;
+  bottom: -9rem;
+}
+section.slide-join .bottom-content-2 {
+  width: 39.87513rem;
+  height: 36.5295rem;
+  opacity: 0.1;
+  bottom: -12rem;
+  z-index: 0;
+}
+section.slide-join .top-content ,
+section.slide-join .top-content-2 {
+  left: auto;
+  right: 2rem;
+  bottom: 5rem;
+  opacity: 0.1;
+  width: 7.83194rem;
+  height: 36.5295rem;
+}
+section.slide-join .top-content-2 {
+  right: -11rem;
+  bottom: 1.5rem;
+  width: 8.60613rem;
+  height: 41.5295rem;
+}
+  /* final */
+  .accordion.cusutome .accordion-button {
+    color: var(--secondary-700) !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    font-size: 1.125rem;
+    line-height: 1.875rem;
+    font-weight: 500;
+  }
+  .accordion.cusutome .accordion-body {
+    color: var(--accent, #9A9A9A);
+    font-family: Tajawal , 'Cairo', sans-serif;
+    font-size: 1.1rem;
+    line-height: normal;
+  }
+  .accordion.cusutome .accordion-button:not(.collapsed) {
+    outline: 0 ;
+    box-shadow: none ;
+    border: 0 ;
+    background: white;
+  }
+  .accordion.cusutome .accordion-button:focus {
+    outline: 0 ;
+    box-shadow: none ;
+    border: 0 ;
+    background-color: #FFF;
+    color: var(--secondary-700);  
+  }
+  .accordion.cusutome .accordion-button::after {
+    display: none;
+  }
+  .accordion.cusutome button.accordion-button.collapsed .svg-close-show svg {
+    width: auto;
+    height: auto;
+    rotate: 0deg;
+    transition: .3s all ease-in-out;
+  }
+  .accordion.cusutome button.accordion-button .svg-close-show svg{
+    rotate: 45deg;
+    transition: .3s all ease-in-out;
+
+  }
+  .accordion.cusutome button.accordion-button.collapsed .svg-close-show svg circle{
+    fill: #EFEFEF;
+  }
+  .accordion.cusutome button.accordion-button .svg-close-show svg circle{
+    fill: var(--secondary-700);
+  }
+  .accordion.cusutome button.accordion-button.collapsed .svg-close-show svg{
+    rotate: 0deg;
+  }
+  .accordion.cusutome button.accordion-button .svg-close-show svg .line-svg {
+    stroke: white;
+  }
+  .accordion.cusutome button.accordion-button.collapsed .svg-close-show svg .line-svg {
+    stroke: #9a9a9a;
+
+  }
+  .outline-secndery-700  ,
+  .outline--praimary {
+    border: 1px solid var(--secondary-700);
+    border-radius: 0.8125rem;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  .outline--praimary {
+    border-color: var(--primary);
+    padding: 0.5rem 2rem;
+    font-size: 0.875rem;
+  }
+/* landing page end */
 div.login-bg {
     background: url(../images/bg-login.png);
     background-repeat: no-repeat;
@@ -33,6 +312,7 @@ div.login-bg {
 nav.navbar {
     box-shadow: 0px 8px 30px 0px #00000012;
     height: 7.375rem;
+    z-index: 100;
 }
 /* login */
 .content-login {
@@ -278,6 +558,7 @@ input[type=checkbox] + label.label-check-cs {
     min-width: var(--w-avilbal-select);
     width: 100%;
     display: flex;
+    overflow-y: auto !important;
     height: fit-content;
     margin-top: 10px;
     border-radius: 2mm;
@@ -710,13 +991,14 @@ line-height: normal;
 .footer-job-item a , 
 .btn-submit-user a ,
 button.subm-job-informations ,
-button.subm-job-projects {
+button.subm-job-projects ,
+.item-page-add a {
   width: auto;
   border-radius: 0.8125rem;
-  height: 2.70438rem;
+  height: auto;
+  padding: .7rem 1.53rem ;
   cursor: pointer;
   text-transform: uppercase;
-  padding: 0 1.875rem;
   background: var(--primary);
 }
 .modal-header button.btn-close  {
@@ -1169,7 +1451,8 @@ height: 1.875rem;
   font-family: 'Rubik' , 'Cairo', sans-serif;
   color: var(--Mid-2-Grey, #A5A5A5);
 }
-.icon-arrow p.massage a {
+.icon-arrow p.massage a ,
+.text-bottom span.text-job {
   color: var(--secondary-700) !important;
 }
 /* page blance */
