@@ -441,7 +441,8 @@ a.pass-forget {
 }
 .date-form-sign .item-form .form-control , 
 .select-item ,
-.input-box  {
+.input-box , 
+.select-item-table-Applicants  {
     display: flex;
     width: var(--w-avilbal-select);
     height: 3.125rem;
@@ -495,7 +496,8 @@ label.check-item-input {
     height: 1em;
 }
 input[type=checkbox] + label.label-check-cs {
-    display: block;
+    display: flex;
+    gap: .5rem;
     cursor: pointer;
     background: transparent !important;
     color: black !important;
@@ -505,7 +507,7 @@ input[type=checkbox] + label.label-check-cs {
   }
   input[type=checkbox] + label.label-check-cs:before {
     content: "\2714";
-    display: inline-flex;
+    display: flex;
     width: 1.25rem;
     font-size: 10px;
     height: 1.25rem;
@@ -982,7 +984,8 @@ left: .8rem;
 .list.job {
   min-width: 18.125rem;
 }
-.footer-job-item .date-job {
+.footer-job-item .date-job  , 
+.date-job-tamplate {
 left: 0;
 color: #767F8C;
 font-size: 0.75rem;
@@ -992,7 +995,8 @@ line-height: normal;
 .btn-submit-user a ,
 button.subm-job-informations ,
 button.subm-job-projects ,
-.item-page-add a {
+.item-page-add a , 
+.job-table-Applicants-show-a {
   width: auto;
   border-radius: 0.8125rem;
   height: auto;
@@ -1485,3 +1489,60 @@ height: 1.875rem;
   border-color: var(--primary);
 }
 /* pages added frsa end*/
+/* page Applicants */
+.table-Applicants-show tr td {
+  border-bottom: 1px solid var(--gray-gray-10, rgba(162, 161, 168, 0.10));
+} 
+.overflow-x-auto {
+  overflow-x: auto ;
+}
+.text-gray {
+  color: #535353;
+}
+.table-Applicants-show .filter-btns button {
+  color: #898989;
+  transition: .3s ease-in-out all;
+}
+.table-Applicants-show .filter-btns button.active ,
+.table-Applicants-show .filter-btns button:hover {
+  color: var(--secondary-700);
+  border-bottom: 1px solid var(--secondary-700) !important;
+
+}
+table.table-Applicants-show {
+  min-width: 64rem;
+}
+.table-Applicants-show tbody tr td {
+  padding: 1.6rem 0;
+}
+.table-Applicants-show {
+  border-radius: 0.8125rem;
+  background: #F8F9FF;
+}
+.select-item-table-Applicants {
+  width: 8rem;
+  appearance:none;
+}
+.select-item-div .svg-drob {
+  top: 20%;
+  left: 10%;
+}
+.select-item-div {
+  max-width: 10.7rem;
+}
+.edit-icon ,  
+.delete-icon {
+  box-shadow: 0 0 5px #eee;
+  cursor: pointer;
+}
+p.commint-rev-job-show {
+  color: #231F20;
+  font-family: Tajawal , 'Cairo', sans-serif;
+  font-size: .9rem;
+  font-weight: 500;
+  line-height: normal;
+}
+.after-text-bankNums.input-search-job.show button {
+  right: 9px;
+}
+/* page Applicants */
