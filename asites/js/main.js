@@ -108,3 +108,11 @@ if (input.files.length > 0) {
 }
     }
 // input file end
+function showContent2(contentType , fillter = 'المشاربع') {
+  $('.content').addClass('animate__animated animate__fadeRight').hide();
+  $('#' + contentType + 'Content').removeClass('animate__fadeOutLeft').addClass('animate__animated animate__fadeInLeft').show();
+  $('.btn').removeClass('active');
+  $('.btn').filter(function () {
+      return $(this).text().trim() === (contentType === 'beneficiary' ? 'الملف الشخصي' : fillter);
+  }).addClass('active');
+}
