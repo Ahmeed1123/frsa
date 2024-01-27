@@ -74,20 +74,71 @@ function showPage(pageId, btn) {
   newPage.addClass('active  animate__animated animate__fadeRight animate__fadeInLeft');    
 }
 
-  // this is start filter 
+
 let sliderOpen = false;  // إضافة متغير لتتبع حالة السلايدر
-  function toggleSlider() {
-    const carousel = document.getElementById('myCarousel');
-    const contentJob = document.querySelector('.content-job-slide');
+
+function toggleSlider() {
+  const carousel = document.getElementById('myCarousel');
+  const contentJob = document.querySelector('.content.two');
+  if(sliderOpen) {
+  carousel.classList.toggle('active');
+  contentJob.classList.toggle('w-100');
+
+  // تحويل قيمة الـ display بين block و none
+  setTimeout(() => {
+    carousel.classList.toggle('w-job');
+    setTimeout(() => {
+    carousel.classList.toggle('w-job');
+      carousel.classList.toggle('w-0');
   
-  
-  
-    // إضافة أو إزالة الـ active class
+    }, 50);
+  }, 60);
+ 
+}else {
+  setTimeout(() => {
+    carousel.classList.toggle('w-0');
+
+    carousel.classList.toggle('w-job');
+    setTimeout(() => {
+    carousel.classList.toggle('w-job');
+    }, 250);
+  }, 250);
     carousel.classList.toggle('active');
-  
-    // تحديث حالة السلايدر
-    sliderOpen = !sliderOpen;
-  }
+    contentJob.classList.toggle('w-100');
+
+
+
+
+
+  // تحويل قيمة الـ display بين block و none
+
+
+
+}
+  // إضافة أو إزالة الـ active class
+
+  // تحديث حالة السلايدر
+  sliderOpen = !sliderOpen;
+}
+
+
+//   // this is start filter 
+//   let sliderOpen = false;
+
+// function toggleSlider() {
+//   const carousel = document.getElementById('myCarousel');
+//   const contentJob = document.querySelector('.content-job-slide');
+
+//   // Toggle the 'active' class after a short delay
+//   setTimeout(() => {
+//     carousel.classList.toggle('active');
+//   }, 50);
+
+//   // Update the slider state
+//   sliderOpen = !sliderOpen;
+// }
+
+
 
 // input file
   function updateFilename() {

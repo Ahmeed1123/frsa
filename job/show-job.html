@@ -31,54 +31,81 @@
 </head>
 
 <body>
-    <!-- header -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 px-4">
-        <a class="navbar-brand ms-0 me-4 p-0 " href="#"><img src="../asites/images/logo.png" class="logo"> </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+           <!-- header -->
+    <div class="margin-bottom-nav">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 px-4 fixed-top">
+            <a class="navbar-brand ms-0 me-4 p-0 " href="../landing-page-after-login.html"><img src="../asites/images/logo.png" class="logo"> </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg">
             <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto me-auto">
-                <li class="nav-item">
-                    <a class="nav-link pe-0 ms-4 ps-3 text-dark" href="#">عن فرصة</a>
+            </button>
+            <div class="offcanvas offcanvas-end flex-lg-row flex-column" tabindex="-1" id="navbarOffcanvasLg" aria-labelledby="navbarOffcanvasLgLabel">
+            <div class="offcanvas-header">
+                <a class="offcanvas-title" id="offcanvasNavbarLabel" href="../landing-page-after-login.html"><img src="../asites/images/logo.png" class="logo"></a>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="content-items-nav-responsve h-auto w-lg-100 d-flex align-items-lg-center flex-column-reverse flex-lg-row">
+                <div class="ceenter-item-nav- mx-auto mx-lg-0 me-lg-auto">
+                    <ul class="navbar-nav custome-css pe-0 d-lg-flex position-lg-absolute justify-content-lg-center gap-3"> 
+                        <li class="nav-item">
+                          <a class="nav-link  text-dark  text-lg-end text-center" href="../landing-page-after-login.html">عن فرصة</a>
+                        </li>
+                        <li dir="ltr" class="nav-item d-inline-block border-0 d-inlin-block w-auto direction-ltr dropdown ">
+                          <a class="nav-link  text-dark dropdown-toggle profile position-relative text-lg-end text-center active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+                              <span class="ms-lg-1 selecet-profile">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="23" height="24" viewBox="0 0 23 24" fill="none">
+                                      <path d="M10.6469 17.9112C10.9742 17.9077 11.2562 17.7855 11.5058 17.5264L18.8509 10.0289C19.0613 9.81063 19.167 9.55034 19.167 9.23595C19.167 8.61681 18.6807 8.11914 18.0554 8.11914C17.7506 8.11914 17.4686 8.24312 17.2495 8.45778L10.6487 15.2265L4.04433 8.45778C3.82698 8.24486 3.55114 8.11914 3.2367 8.11914C2.61315 8.11914 2.12514 8.61681 2.12514 9.23595C2.12514 9.54687 2.23078 9.81063 2.44911 10.0289L9.78808 17.5264C10.0455 17.7872 10.3214 17.9112 10.6469 17.9112Z" fill="#1D23D3"></path>
+                                      </svg>
+                              </span>
+                              الفرص
+                                    </a>
+                          <ul class="dropdown-menu profile opportunity mt-4 px-0 align-items-end flex-column position-lg-absolute h-auto w-auto py-3 text-center text-lg-end" aria-labelledby="navbarDropdown" data-bs-popper="static">
+                            <li class="w-100"><a class="dropdown-item profile opportunity px-2 w-100  text-center rounded-0 rounded-top rounded-0" href="../training/training.html"> التدريب</a></li>
+                            <li class="w-100"><a class="dropdown-item profile opportunity px-2 w-100  text-center rounded-0 active" href="job.html">الوظيفة</a></li>
+                            <li class="w-100"><a class="dropdown-item profile opportunity px-2 w-100 text-center rounded-0 rounded-bottom" href="../projects/projects.html">طلب خدمة لمرة واحدة </a></li>
+                          </ul>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link pe-0  text-dark text-lg-end text-center" href="../user/user.html">منتهزي الفرص</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link pe-0  text-dark text-lg-end text-center " href="../opportunity-provider/user/user.html">أصحاب الفرص</a>
+                        </li>
+                      </ul>
+                </div>
+                
+                <div class="grub-login mx-0 me-2 me-lg-auto d-flex align-items-start align-items-lg-center flex-row-reverse justify-content-end  flex-lg-row gap-3 mt-auto mt-lg-0 mb-5 mb-lg-0">
+                <li dir="ltr" class="nav-item d-inline-block me-0 border-0 d-inlin-block w-auto direction-ltr dropdown">
+                    <a class="nav-link text-dark dropdown-toggle profile  position-relative notifications-news ms-lg-2 me-lg-0 me-1 mt-2 pt-1 mt-lg-0 pt-lg-0" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1.5625rem" height="1.5625rem" viewBox="0 0 25 25" fill="none">
+                        <g clip-path="url(#clip0_1181_4139)">
+                        <path d="M24.9521 5.77295L16.1833 14.5417C15.2056 15.517 13.881 16.0647 12.5 16.0647C11.119 16.0647 9.7944 15.517 8.81667 14.5417L0.0479167 5.77295C0.0333333 5.93753 0 6.08649 0 6.25003V18.75C0.00165402 20.1309 0.550919 21.4547 1.52731 22.4311C2.50371 23.4074 3.82751 23.9567 5.20833 23.9584H19.7917C21.1725 23.9567 22.4963 23.4074 23.4727 22.4311C24.4491 21.4547 24.9983 20.1309 25 18.75V6.25003C25 6.08649 24.9667 5.93753 24.9521 5.77295Z" fill="#1D23D3"/>
+                        <path d="M14.7108 13.0686L24.2254 3.55296C23.7645 2.78871 23.1144 2.15613 22.3379 1.71622C21.5613 1.27632 20.6845 1.04394 19.7921 1.0415H5.20872C4.31625 1.04394 3.43945 1.27632 2.66292 1.71622C1.88638 2.15613 1.23631 2.78871 0.775391 3.55296L10.29 13.0686C10.877 13.6533 11.6718 13.9816 12.5004 13.9816C13.3289 13.9816 14.1238 13.6533 14.7108 13.0686Z" fill="#1D23D3"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_1181_4139">
+                        <rect width="25" height="25" fill="white"/>
+                        </clipPath>
+                        </defs>
+                        </svg>
+                    </a>
                 </li>
-                <li dir="ltr" class="nav-item d-inline-block mx-3 border-0 d-inlin-block w-auto direction-ltr dropdown ">
-                    <a class="nav-link text-dark dropdown-toggle profile position-relative " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="true">
-                        <span class="ms-1 text-dark">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="24" viewBox="0 0 23 24" fill="none">
-                                <path d="M10.6469 17.9112C10.9742 17.9077 11.2562 17.7855 11.5058 17.5264L18.8509 10.0289C19.0613 9.81063 19.167 9.55034 19.167 9.23595C19.167 8.61681 18.6807 8.11914 18.0554 8.11914C17.7506 8.11914 17.4686 8.24312 17.2495 8.45778L10.6487 15.2265L4.04433 8.45778C3.82698 8.24486 3.55114 8.11914 3.2367 8.11914C2.61315 8.11914 2.12514 8.61681 2.12514 9.23595C2.12514 9.54687 2.23078 9.81063 2.44911 10.0289L9.78808 17.5264C10.0455 17.7872 10.3214 17.9112 10.6469 17.9112Z" fill="#1D23D3"></path>
-                                </svg>
-                        </span>
-                        الفرص
-                              </a>
-                    <ul class="dropdown-menu profile opportunity mt-4 px-0 align-items-end flex-column h-auto w-auto py-3 " aria-labelledby="navbarDropdown" data-bs-popper="static">
-                      <li class="w-100"><a class="dropdown-item profile opportunity px-2 w-100  text-center rounded-0 rounded-top rounded-0" href="#"> التدريب</a></li>
-                      <li class="w-100"><a class="dropdown-item profile opportunity px-2 w-100  active text-center rounded-0" href="#">الوظيفة</a></li>
-                      <li class="w-100"><a class="dropdown-item profile opportunity px-2 w-100 text-center rounded-0 rounded-bottom" href="#">طلب خدمة لمرة واحدة </a></li>
-                      <li class="w-100"><a class="dropdown-item profile opportunity px-2 w-100 text-center rounded-0 rounded-bottom" href="#">أًصحاب الفرص </a></li>
-                    </ul>
-              </li>
-                <li class="nav-item">
-                    <a class="nav-link pe-0 ps-3 text-dark" href="#">المستخدمين</a>
-                </li>
-            </ul>
-            <div class="grub-login me-auto">
-                <li dir="ltr" class="nav-item d-inline-block me-3 border-0 d-inlin-block w-auto direction-ltr dropdown ">
-                    <a class="nav-link text-dark dropdown-toggle profile  position-relative notifications-news" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+                <li dir="ltr" class="nav-item d-inline-block me-0 border-0 d-inlin-block w-auto direction-ltr dropdown ">
+                    <a class="nav-link text-dark dropdown-toggle profile position-relative notifications-news mt-2 mt-lg-0" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="true">
                         <svg class="notifications position-relative" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
                             <g clip-path="url(#clip0_471_2241)">
-                            <path d="M4.23745 18.75H20.5458C21.0477 18.75 21.5422 18.6291 21.9875 18.3976C22.4328 18.166 22.8158 17.8306 23.1041 17.4198C23.3923 17.0089 23.5774 16.5346 23.6436 16.0371C23.7098 15.5396 23.6551 15.0334 23.4843 14.5615L20.5135 6.34792C20.0061 4.52261 18.9148 2.91374 17.4065 1.76736C15.8982 0.620989 14.0559 0.000220915 12.1614 1.0597e-09C10.1892 -3.08253e-05 8.27604 0.672487 6.73767 1.90652C5.1993 3.14055 4.12775 4.8623 3.69995 6.7875L1.25203 14.7042C1.10791 15.1716 1.07551 15.6663 1.15744 16.1485C1.23937 16.6307 1.43334 17.0869 1.72375 17.4805C2.01416 17.874 2.3929 18.1939 2.82949 18.4144C3.26608 18.6349 3.74834 18.7499 4.23745 18.75Z" fill="#1D23D3"/>
-                            <path d="M7.39648 20.8335C7.63556 22.0109 8.27433 23.0694 9.20455 23.8297C10.1348 24.59 11.2992 25.0054 12.5006 25.0054C13.7021 25.0054 14.8665 24.59 15.7968 23.8297C16.727 23.0694 17.3657 22.0109 17.6048 20.8335H7.39648Z" fill="#1D23D3"/>
+                            <path d="M4.23745 18.75H20.5458C21.0477 18.75 21.5422 18.6291 21.9875 18.3976C22.4328 18.166 22.8158 17.8306 23.1041 17.4198C23.3923 17.0089 23.5774 16.5346 23.6436 16.0371C23.7098 15.5396 23.6551 15.0334 23.4843 14.5615L20.5135 6.34792C20.0061 4.52261 18.9148 2.91374 17.4065 1.76736C15.8982 0.620989 14.0559 0.000220915 12.1614 1.0597e-09C10.1892 -3.08253e-05 8.27604 0.672487 6.73767 1.90652C5.1993 3.14055 4.12775 4.8623 3.69995 6.7875L1.25203 14.7042C1.10791 15.1716 1.07551 15.6663 1.15744 16.1485C1.23937 16.6307 1.43334 17.0869 1.72375 17.4805C2.01416 17.874 2.3929 18.1939 2.82949 18.4144C3.26608 18.6349 3.74834 18.7499 4.23745 18.75Z" fill="#1D23D3"></path>
+                            <path d="M7.39648 20.8335C7.63556 22.0109 8.27433 23.0694 9.20455 23.8297C10.1348 24.59 11.2992 25.0054 12.5006 25.0054C13.7021 25.0054 14.8665 24.59 15.7968 23.8297C16.727 23.0694 17.3657 22.0109 17.6048 20.8335H7.39648Z" fill="#1D23D3"></path>
                             </g>
                             <defs>
                             <clipPath id="clip0_471_2241">
-                            <rect width="25" height="25" fill="white"/>
+                            <rect width="25" height="25" fill="white"></rect>
                             </clipPath>
                             </defs>
                         </svg>
-                              </a>
-                    <ul class="dropdown-menu py-4 px-3 profile notifications-content mt-4 align-items-end flex-column wow animate__fadeInDown" aria-labelledby="navbarDropdown" data-bs-popper="static">
+                        <div class="notifications-red position-absolute rounded-circle"></div>
+  
+                            </a>
+                    <ul class="dropdown-menu py-4 px-3 profile notifications-content mt-3 align-items-end flex-column wow animate__fadeInDown animated" aria-labelledby="navbarDropdown" data-bs-popper="static" style="visibility: visible; animation-name: fadeInDown;">
                         <div class="notifications-item w-100 text-end py-2 px-3 mb-2 position-relative">
                             <div class="headers">
                                 <h6 class="title mb-0">مشروع جديد</h6>
@@ -86,7 +113,7 @@
                             <p class="text mb-0"> تم ارسال طلب مشروع لك , <a class="me-1" href="#">تفاصيل المشروع</a> </p>
                             <p class="date-time mb-0">قبل 5 دقيقة <span class="ms-0">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
-                                    <path d="M6.5 5.8V4C6.5 3.85833 6.45208 3.73958 6.35625 3.64375C6.26042 3.54792 6.14167 3.5 6 3.5C5.85833 3.5 5.73958 3.54792 5.64375 3.64375C5.54792 3.73958 5.5 3.85833 5.5 4V5.9875C5.5 6.05417 5.5125 6.11875 5.5375 6.18125C5.5625 6.24375 5.6 6.3 5.65 6.35L7.3 8C7.39167 8.09167 7.50833 8.1375 7.65 8.1375C7.79167 8.1375 7.90833 8.09167 8 8C8.09167 7.90833 8.1375 7.79167 8.1375 7.65C8.1375 7.50833 8.09167 7.39167 8 7.3L6.5 5.8ZM6 11C5.30833 11 4.65833 10.8688 4.05 10.6062C3.44167 10.3438 2.9125 9.9875 2.4625 9.5375C2.0125 9.0875 1.65625 8.55833 1.39375 7.95C1.13125 7.34167 1 6.69167 1 6C1 5.30833 1.13125 4.65833 1.39375 4.05C1.65625 3.44167 2.0125 2.9125 2.4625 2.4625C2.9125 2.0125 3.44167 1.65625 4.05 1.39375C4.65833 1.13125 5.30833 1 6 1C6.69167 1 7.34167 1.13125 7.95 1.39375C8.55833 1.65625 9.0875 2.0125 9.5375 2.4625C9.9875 2.9125 10.3438 3.44167 10.6062 4.05C10.8688 4.65833 11 5.30833 11 6C11 6.69167 10.8688 7.34167 10.6062 7.95C10.3438 8.55833 9.9875 9.0875 9.5375 9.5375C9.0875 9.9875 8.55833 10.3438 7.95 10.6062C7.34167 10.8688 6.69167 11 6 11ZM6 10C7.10833 10 8.05208 9.61042 8.83125 8.83125C9.61042 8.05208 10 7.10833 10 6C10 4.89167 9.61042 3.94792 8.83125 3.16875C8.05208 2.38958 7.10833 2 6 2C4.89167 2 3.94792 2.38958 3.16875 3.16875C2.38958 3.94792 2 4.89167 2 6C2 7.10833 2.38958 8.05208 3.16875 8.83125C3.94792 9.61042 4.89167 10 6 10Z" fill="#9A9A9A"/>
+                                    <path d="M6.5 5.8V4C6.5 3.85833 6.45208 3.73958 6.35625 3.64375C6.26042 3.54792 6.14167 3.5 6 3.5C5.85833 3.5 5.73958 3.54792 5.64375 3.64375C5.54792 3.73958 5.5 3.85833 5.5 4V5.9875C5.5 6.05417 5.5125 6.11875 5.5375 6.18125C5.5625 6.24375 5.6 6.3 5.65 6.35L7.3 8C7.39167 8.09167 7.50833 8.1375 7.65 8.1375C7.79167 8.1375 7.90833 8.09167 8 8C8.09167 7.90833 8.1375 7.79167 8.1375 7.65C8.1375 7.50833 8.09167 7.39167 8 7.3L6.5 5.8ZM6 11C5.30833 11 4.65833 10.8688 4.05 10.6062C3.44167 10.3438 2.9125 9.9875 2.4625 9.5375C2.0125 9.0875 1.65625 8.55833 1.39375 7.95C1.13125 7.34167 1 6.69167 1 6C1 5.30833 1.13125 4.65833 1.39375 4.05C1.65625 3.44167 2.0125 2.9125 2.4625 2.4625C2.9125 2.0125 3.44167 1.65625 4.05 1.39375C4.65833 1.13125 5.30833 1 6 1C6.69167 1 7.34167 1.13125 7.95 1.39375C8.55833 1.65625 9.0875 2.0125 9.5375 2.4625C9.9875 2.9125 10.3438 3.44167 10.6062 4.05C10.8688 4.65833 11 5.30833 11 6C11 6.69167 10.8688 7.34167 10.6062 7.95C10.3438 8.55833 9.9875 9.0875 9.5375 9.5375C9.0875 9.9875 8.55833 10.3438 7.95 10.6062C7.34167 10.8688 6.69167 11 6 11ZM6 10C7.10833 10 8.05208 9.61042 8.83125 8.83125C9.61042 8.05208 10 7.10833 10 6C10 4.89167 9.61042 3.94792 8.83125 3.16875C8.05208 2.38958 7.10833 2 6 2C4.89167 2 3.94792 2.38958 3.16875 3.16875C2.38958 3.94792 2 4.89167 2 6C2 7.10833 2.38958 8.05208 3.16875 8.83125C3.94792 9.61042 4.89167 10 6 10Z" fill="#9A9A9A"></path>
                                     </svg>
                             </span></p>
                         </div>
@@ -97,7 +124,7 @@
                             <p class="text mb-0"> تم ارسال رسالة لك ، من<a class="me-1" href="#">تفاصيل المشروع</a> </p>
                             <p class="date-time mb-0">قبل 5 دقيقة <span class="ms-0">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
-                                    <path d="M6.5 5.8V4C6.5 3.85833 6.45208 3.73958 6.35625 3.64375C6.26042 3.54792 6.14167 3.5 6 3.5C5.85833 3.5 5.73958 3.54792 5.64375 3.64375C5.54792 3.73958 5.5 3.85833 5.5 4V5.9875C5.5 6.05417 5.5125 6.11875 5.5375 6.18125C5.5625 6.24375 5.6 6.3 5.65 6.35L7.3 8C7.39167 8.09167 7.50833 8.1375 7.65 8.1375C7.79167 8.1375 7.90833 8.09167 8 8C8.09167 7.90833 8.1375 7.79167 8.1375 7.65C8.1375 7.50833 8.09167 7.39167 8 7.3L6.5 5.8ZM6 11C5.30833 11 4.65833 10.8688 4.05 10.6062C3.44167 10.3438 2.9125 9.9875 2.4625 9.5375C2.0125 9.0875 1.65625 8.55833 1.39375 7.95C1.13125 7.34167 1 6.69167 1 6C1 5.30833 1.13125 4.65833 1.39375 4.05C1.65625 3.44167 2.0125 2.9125 2.4625 2.4625C2.9125 2.0125 3.44167 1.65625 4.05 1.39375C4.65833 1.13125 5.30833 1 6 1C6.69167 1 7.34167 1.13125 7.95 1.39375C8.55833 1.65625 9.0875 2.0125 9.5375 2.4625C9.9875 2.9125 10.3438 3.44167 10.6062 4.05C10.8688 4.65833 11 5.30833 11 6C11 6.69167 10.8688 7.34167 10.6062 7.95C10.3438 8.55833 9.9875 9.0875 9.5375 9.5375C9.0875 9.9875 8.55833 10.3438 7.95 10.6062C7.34167 10.8688 6.69167 11 6 11ZM6 10C7.10833 10 8.05208 9.61042 8.83125 8.83125C9.61042 8.05208 10 7.10833 10 6C10 4.89167 9.61042 3.94792 8.83125 3.16875C8.05208 2.38958 7.10833 2 6 2C4.89167 2 3.94792 2.38958 3.16875 3.16875C2.38958 3.94792 2 4.89167 2 6C2 7.10833 2.38958 8.05208 3.16875 8.83125C3.94792 9.61042 4.89167 10 6 10Z" fill="#9A9A9A"/>
+                                    <path d="M6.5 5.8V4C6.5 3.85833 6.45208 3.73958 6.35625 3.64375C6.26042 3.54792 6.14167 3.5 6 3.5C5.85833 3.5 5.73958 3.54792 5.64375 3.64375C5.54792 3.73958 5.5 3.85833 5.5 4V5.9875C5.5 6.05417 5.5125 6.11875 5.5375 6.18125C5.5625 6.24375 5.6 6.3 5.65 6.35L7.3 8C7.39167 8.09167 7.50833 8.1375 7.65 8.1375C7.79167 8.1375 7.90833 8.09167 8 8C8.09167 7.90833 8.1375 7.79167 8.1375 7.65C8.1375 7.50833 8.09167 7.39167 8 7.3L6.5 5.8ZM6 11C5.30833 11 4.65833 10.8688 4.05 10.6062C3.44167 10.3438 2.9125 9.9875 2.4625 9.5375C2.0125 9.0875 1.65625 8.55833 1.39375 7.95C1.13125 7.34167 1 6.69167 1 6C1 5.30833 1.13125 4.65833 1.39375 4.05C1.65625 3.44167 2.0125 2.9125 2.4625 2.4625C2.9125 2.0125 3.44167 1.65625 4.05 1.39375C4.65833 1.13125 5.30833 1 6 1C6.69167 1 7.34167 1.13125 7.95 1.39375C8.55833 1.65625 9.0875 2.0125 9.5375 2.4625C9.9875 2.9125 10.3438 3.44167 10.6062 4.05C10.8688 4.65833 11 5.30833 11 6C11 6.69167 10.8688 7.34167 10.6062 7.95C10.3438 8.55833 9.9875 9.0875 9.5375 9.5375C9.0875 9.9875 8.55833 10.3438 7.95 10.6062C7.34167 10.8688 6.69167 11 6 11ZM6 10C7.10833 10 8.05208 9.61042 8.83125 8.83125C9.61042 8.05208 10 7.10833 10 6C10 4.89167 9.61042 3.94792 8.83125 3.16875C8.05208 2.38958 7.10833 2 6 2C4.89167 2 3.94792 2.38958 3.16875 3.16875C2.38958 3.94792 2 4.89167 2 6C2 7.10833 2.38958 8.05208 3.16875 8.83125C3.94792 9.61042 4.89167 10 6 10Z" fill="#9A9A9A"></path>
                                     </svg>
                             </span></p>
                         </div>
@@ -108,40 +135,41 @@
                             <p class="text mb-0"> تم ارسال طلب مشروع لك , ,<a class="me-1" href="#">تفاصيل المشروع</a> </p>
                             <p class="date-time mb-0">قبل 5 دقيقة <span class="ms-0">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
-                                    <path d="M6.5 5.8V4C6.5 3.85833 6.45208 3.73958 6.35625 3.64375C6.26042 3.54792 6.14167 3.5 6 3.5C5.85833 3.5 5.73958 3.54792 5.64375 3.64375C5.54792 3.73958 5.5 3.85833 5.5 4V5.9875C5.5 6.05417 5.5125 6.11875 5.5375 6.18125C5.5625 6.24375 5.6 6.3 5.65 6.35L7.3 8C7.39167 8.09167 7.50833 8.1375 7.65 8.1375C7.79167 8.1375 7.90833 8.09167 8 8C8.09167 7.90833 8.1375 7.79167 8.1375 7.65C8.1375 7.50833 8.09167 7.39167 8 7.3L6.5 5.8ZM6 11C5.30833 11 4.65833 10.8688 4.05 10.6062C3.44167 10.3438 2.9125 9.9875 2.4625 9.5375C2.0125 9.0875 1.65625 8.55833 1.39375 7.95C1.13125 7.34167 1 6.69167 1 6C1 5.30833 1.13125 4.65833 1.39375 4.05C1.65625 3.44167 2.0125 2.9125 2.4625 2.4625C2.9125 2.0125 3.44167 1.65625 4.05 1.39375C4.65833 1.13125 5.30833 1 6 1C6.69167 1 7.34167 1.13125 7.95 1.39375C8.55833 1.65625 9.0875 2.0125 9.5375 2.4625C9.9875 2.9125 10.3438 3.44167 10.6062 4.05C10.8688 4.65833 11 5.30833 11 6C11 6.69167 10.8688 7.34167 10.6062 7.95C10.3438 8.55833 9.9875 9.0875 9.5375 9.5375C9.0875 9.9875 8.55833 10.3438 7.95 10.6062C7.34167 10.8688 6.69167 11 6 11ZM6 10C7.10833 10 8.05208 9.61042 8.83125 8.83125C9.61042 8.05208 10 7.10833 10 6C10 4.89167 9.61042 3.94792 8.83125 3.16875C8.05208 2.38958 7.10833 2 6 2C4.89167 2 3.94792 2.38958 3.16875 3.16875C2.38958 3.94792 2 4.89167 2 6C2 7.10833 2.38958 8.05208 3.16875 8.83125C3.94792 9.61042 4.89167 10 6 10Z" fill="#9A9A9A"/>
+                                    <path d="M6.5 5.8V4C6.5 3.85833 6.45208 3.73958 6.35625 3.64375C6.26042 3.54792 6.14167 3.5 6 3.5C5.85833 3.5 5.73958 3.54792 5.64375 3.64375C5.54792 3.73958 5.5 3.85833 5.5 4V5.9875C5.5 6.05417 5.5125 6.11875 5.5375 6.18125C5.5625 6.24375 5.6 6.3 5.65 6.35L7.3 8C7.39167 8.09167 7.50833 8.1375 7.65 8.1375C7.79167 8.1375 7.90833 8.09167 8 8C8.09167 7.90833 8.1375 7.79167 8.1375 7.65C8.1375 7.50833 8.09167 7.39167 8 7.3L6.5 5.8ZM6 11C5.30833 11 4.65833 10.8688 4.05 10.6062C3.44167 10.3438 2.9125 9.9875 2.4625 9.5375C2.0125 9.0875 1.65625 8.55833 1.39375 7.95C1.13125 7.34167 1 6.69167 1 6C1 5.30833 1.13125 4.65833 1.39375 4.05C1.65625 3.44167 2.0125 2.9125 2.4625 2.4625C2.9125 2.0125 3.44167 1.65625 4.05 1.39375C4.65833 1.13125 5.30833 1 6 1C6.69167 1 7.34167 1.13125 7.95 1.39375C8.55833 1.65625 9.0875 2.0125 9.5375 2.4625C9.9875 2.9125 10.3438 3.44167 10.6062 4.05C10.8688 4.65833 11 5.30833 11 6C11 6.69167 10.8688 7.34167 10.6062 7.95C10.3438 8.55833 9.9875 9.0875 9.5375 9.5375C9.0875 9.9875 8.55833 10.3438 7.95 10.6062C7.34167 10.8688 6.69167 11 6 11ZM6 10C7.10833 10 8.05208 9.61042 8.83125 8.83125C9.61042 8.05208 10 7.10833 10 6C10 4.89167 9.61042 3.94792 8.83125 3.16875C8.05208 2.38958 7.10833 2 6 2C4.89167 2 3.94792 2.38958 3.16875 3.16875C2.38958 3.94792 2 4.89167 2 6C2 7.10833 2.38958 8.05208 3.16875 8.83125C3.94792 9.61042 4.89167 10 6 10Z" fill="#9A9A9A"></path>
                                     </svg>
                             </span></p>
                         </div>
                         
                     </ul>
-              </li>
-                <li dir="ltr" class="nav-item d-inline-block me-3 border-0 d-inlin-block w-auto direction-ltr dropdown ">
-                    <a class="nav-link text-dark dropdown-toggle profile position-relative " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+            </li>
+            <!-- /li -->
+            <li dir="ltr" class="nav-item d-inline-block  me-lg-0 border-0 d-inlin-block w-auto direction-ltr dropdown ">
+                    <a class="nav-link text-dark dropdown-toggle profile position-relative d-flex align-items-center flex-row-reverse flex-lg-row gap-2" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="true">
                         <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none" class="img-icon">
-                            <path d="M42.4572 39.3083C44.9209 36.3465 46.6344 32.8354 47.4528 29.0719C48.2712 25.3085 48.1703 21.4035 47.1589 17.6873C46.1474 13.971 44.255 10.5529 41.6417 7.72192C39.0285 4.89099 35.7713 2.73059 32.1457 1.42346C28.5201 0.116338 24.6328 -0.299049 20.8125 0.212439C16.9923 0.723928 13.3515 2.14724 10.1982 4.36199C7.04495 6.57673 4.47191 9.51773 2.69677 12.9362C0.921637 16.3547 -0.00336685 20.1501 9.20826e-06 24.0013C0.00130472 29.5999 1.97584 35.0192 5.57714 39.3083L5.54283 39.3374C5.66291 39.4814 5.80015 39.6048 5.92367 39.7471C6.07806 39.9236 6.24447 40.0899 6.40401 40.2613C6.88435 40.7824 7.37842 41.2829 7.89651 41.7526C8.05433 41.8966 8.21731 42.0303 8.37685 42.1674C8.92581 42.6405 9.49022 43.0896 10.0752 43.5078C10.1507 43.5592 10.2193 43.6261 10.2948 43.6792V43.6587C14.3127 46.4838 19.1058 48 24.0189 48C28.9319 48 33.7251 46.4838 37.743 43.6587V43.6792C37.8184 43.6261 37.8854 43.5592 37.9626 43.5078C38.5458 43.0879 39.1119 42.6405 39.6609 42.1674C39.8204 42.0303 39.9834 41.8948 40.1413 41.7526C40.6593 41.2812 41.1534 40.7824 41.6337 40.2613C41.7933 40.0899 41.958 39.9236 42.1141 39.7471C42.2359 39.6048 42.3748 39.4814 42.4949 39.3357L42.4572 39.3083ZM24.0172 10.2885C25.544 10.2885 27.0365 10.7409 28.3061 11.5884C29.5756 12.436 30.565 13.6407 31.1493 15.0501C31.7336 16.4596 31.8865 18.0105 31.5886 19.5068C31.2908 21.003 30.5555 22.3775 29.4759 23.4562C28.3963 24.5349 27.0207 25.2696 25.5232 25.5672C24.0257 25.8648 22.4735 25.7121 21.0629 25.1283C19.6523 24.5445 18.4466 23.5558 17.5984 22.2873C16.7501 21.0189 16.2974 19.5275 16.2974 18.002C16.2974 15.9562 17.1107 13.9943 18.5584 12.5477C20.0062 11.1012 21.9697 10.2885 24.0172 10.2885ZM10.3051 39.3083C10.3348 37.0576 11.2502 34.9091 12.8532 33.3276C14.4562 31.7462 16.6179 30.8589 18.8706 30.8577H29.1637C31.4164 30.8589 33.5781 31.7462 35.1811 33.3276C36.7841 34.9091 37.6995 37.0576 37.7292 39.3083C33.9669 42.6959 29.0818 44.5707 24.0172 44.5707C18.9525 44.5707 14.0675 42.6959 10.3051 39.3083Z" fill="#1D23D3"/>
-                            </svg>
-
-                            <span class="ms-1 selecet-profile">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="24" viewBox="0 0 23 24" fill="none">
-                                    <path d="M10.6469 17.9112C10.9742 17.9077 11.2562 17.7855 11.5058 17.5264L18.8509 10.0289C19.0613 9.81063 19.167 9.55034 19.167 9.23595C19.167 8.61681 18.6807 8.11914 18.0554 8.11914C17.7506 8.11914 17.4686 8.24312 17.2495 8.45778L10.6487 15.2265L4.04433 8.45778C3.82698 8.24486 3.55114 8.11914 3.2367 8.11914C2.61315 8.11914 2.12514 8.61681 2.12514 9.23595C2.12514 9.54687 2.23078 9.81063 2.44911 10.0289L9.78808 17.5264C10.0455 17.7872 10.3214 17.9112 10.6469 17.9112Z" fill="#1D23D3"/>
-                                    </svg>
-                            </span>
-                              </a>
+                            <path d="M42.4572 39.3083C44.9209 36.3465 46.6344 32.8354 47.4528 29.0719C48.2712 25.3085 48.1703 21.4035 47.1589 17.6873C46.1474 13.971 44.255 10.5529 41.6417 7.72192C39.0285 4.89099 35.7713 2.73059 32.1457 1.42346C28.5201 0.116338 24.6328 -0.299049 20.8125 0.212439C16.9923 0.723928 13.3515 2.14724 10.1982 4.36199C7.04495 6.57673 4.47191 9.51773 2.69677 12.9362C0.921637 16.3547 -0.00336685 20.1501 9.20826e-06 24.0013C0.00130472 29.5999 1.97584 35.0192 5.57714 39.3083L5.54283 39.3374C5.66291 39.4814 5.80015 39.6048 5.92367 39.7471C6.07806 39.9236 6.24447 40.0899 6.40401 40.2613C6.88435 40.7824 7.37842 41.2829 7.89651 41.7526C8.05433 41.8966 8.21731 42.0303 8.37685 42.1674C8.92581 42.6405 9.49022 43.0896 10.0752 43.5078C10.1507 43.5592 10.2193 43.6261 10.2948 43.6792V43.6587C14.3127 46.4838 19.1058 48 24.0189 48C28.9319 48 33.7251 46.4838 37.743 43.6587V43.6792C37.8184 43.6261 37.8854 43.5592 37.9626 43.5078C38.5458 43.0879 39.1119 42.6405 39.6609 42.1674C39.8204 42.0303 39.9834 41.8948 40.1413 41.7526C40.6593 41.2812 41.1534 40.7824 41.6337 40.2613C41.7933 40.0899 41.958 39.9236 42.1141 39.7471C42.2359 39.6048 42.3748 39.4814 42.4949 39.3357L42.4572 39.3083ZM24.0172 10.2885C25.544 10.2885 27.0365 10.7409 28.3061 11.5884C29.5756 12.436 30.565 13.6407 31.1493 15.0501C31.7336 16.4596 31.8865 18.0105 31.5886 19.5068C31.2908 21.003 30.5555 22.3775 29.4759 23.4562C28.3963 24.5349 27.0207 25.2696 25.5232 25.5672C24.0257 25.8648 22.4735 25.7121 21.0629 25.1283C19.6523 24.5445 18.4466 23.5558 17.5984 22.2873C16.7501 21.0189 16.2974 19.5275 16.2974 18.002C16.2974 15.9562 17.1107 13.9943 18.5584 12.5477C20.0062 11.1012 21.9697 10.2885 24.0172 10.2885ZM10.3051 39.3083C10.3348 37.0576 11.2502 34.9091 12.8532 33.3276C14.4562 31.7462 16.6179 30.8589 18.8706 30.8577H29.1637C31.4164 30.8589 33.5781 31.7462 35.1811 33.3276C36.7841 34.9091 37.6995 37.0576 37.7292 39.3083C33.9669 42.6959 29.0818 44.5707 24.0172 44.5707C18.9525 44.5707 14.0675 42.6959 10.3051 39.3083Z" fill="#1D23D3"></path>
+                        </svg>
+                        <span class="ms-1 selecet-profile">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="24" viewBox="0 0 23 24" fill="none">
+                                <path d="M10.6469 17.9112C10.9742 17.9077 11.2562 17.7855 11.5058 17.5264L18.8509 10.0289C19.0613 9.81063 19.167 9.55034 19.167 9.23595C19.167 8.61681 18.6807 8.11914 18.0554 8.11914C17.7506 8.11914 17.4686 8.24312 17.2495 8.45778L10.6487 15.2265L4.04433 8.45778C3.82698 8.24486 3.55114 8.11914 3.2367 8.11914C2.61315 8.11914 2.12514 8.61681 2.12514 9.23595C2.12514 9.54687 2.23078 9.81063 2.44911 10.0289L9.78808 17.5264C10.0455 17.7872 10.3214 17.9112 10.6469 17.9112Z" fill="#1D23D3"></path>
+                                </svg>
+                        </span>
+                    </a>
                     <ul class="dropdown-menu profile mt-4 align-items-end flex-column" aria-labelledby="navbarDropdown" data-bs-popper="static">
-                      <p class="Name text-end m-0">محمد عبدالله</p>
-                      <p class="email mb-2">mohmad@gmail.com</p>
-
-                      <li class="w-100"><a class="dropdown-item profile px-2 w-100 active text-end"  href="#">  الملف الشخصي <span><i class="fa-solid fa-user mx-2"></i></span></a></li>
-                      <li class="w-100"><a class="dropdown-item profile px-2 w-100 text-end"  href="#">مفضلتي <span><i class="fa-solid fa-user mx-2"></i></span></a></li>
-                      <li class="w-100"><a class="dropdown-item profile px-2 w-100 text-end" href="#">المشاريع <span><i class="fa-solid fa-user mx-2"></i></span></a></li>
-                      <li class="w-100"><a class="dropdown-item profile px-2 w-100 text-end" href="#">الرصيد <span><i class="fa-solid fa-user mx-2"></i></span></a></li>
-                      <li class="w-100 text-end"><hr class="mt-2 dropdown-divider text-end"><a class="dropdown px-2 w-100 text-danger " href="#">تسجيل الخروج <span><i class="fa-solid fa-right-to-bracket mx-2"></i></span></a></li>
+                        <p class="Name text-end m-0">محمد عبدالله</p>
+                        <p class="email mb-2">mohmad@gmail.com</p>
+                        <li class="w-100"><a class="dropdown-item profile px-2 w-100 text-end" href="../edit-profile/view-profile.html">  الملف الشخصي <span><i class="fa-solid fa-user mx-2"></i></span></a></li>
+                        <li class="w-100"><a class="dropdown-item profile px-2 w-100 text-end" href="#">مفضلتي <span> <i class="fa-solid fa-user mx-2"></i></span></a></li>
+                        <li class="w-100"><a class="dropdown-item profile px-2 w-100 text-end" href="my-project.html">المشاريع <span> <i class="fa-solid fa-user mx-2"></i></span></a></li>
+                        <li class="w-100"><a class="dropdown-item profile px-2 w-100 text-end" href="blance.html">الرصيد <span><i class="fa-solid fa-user mx-2"></i> </span></a></li>
+                        <li class="w-100 text-end"><hr class="mt-2 dropdown-divider text-end"><a class="dropdown px-2 w-100 text-danger " href="#">تسجيل الخروج <span> <i class="fa-solid fa-right-to-bracket mx-2"></i> </span></a></li>
                     </ul>
-              </li>
-            </div>
+                    </li>
+                    </div>
+                </div>
+                </div>
+            </nav>        
         </div>
-    </nav>
-    <!-- /header -->
+        <!-- /header -->
 
     <!-- content-show-job -->
     <div class="content-show-job row mx-3  mx-md-5 my-5 h-auto" style="height: 1100px;">
@@ -345,7 +373,7 @@
                
             </div>
             <div class="btn-submit-user text-center mt-3">
-                <a class="text-white text-decoration-none pt-2 d-inline-block mt-4" data-bs-toggle="modal" href="#exampleModalToggle" role="button">تقدم الآن!</a>
+                <a class="text-white text-decoration-none d-inline-block mt-4" data-bs-toggle="modal" href="#exampleModalToggle" role="button">تقدم الآن!</a>
             </div>
         </div>
     </div>
@@ -371,7 +399,7 @@
               </button>
           <h4 class="modal-title text-center" id="exampleModalToggleLabel">التقديم على فرصة مطور برمجيات</h4>
         </div>
-        <div class="modal-body">
+        <div class="modal-body px-3 px-sm-5">
             <form class="date-form-sign w-100" method="post">
                 <div class="item-form mb-2">
                     <label for="name" class="form-label">الإسم</label>
@@ -391,7 +419,7 @@
                 <div class="item-form mb-2">
                     <label for="exampleInputEmail1" class="form-label">السيرة الذاتية<span class="impor">*</span></label>
                
-                    <div class="upload job position-relative text-center mx-auto p-3 mx-md-4" id="uploadContainer" ondragover="handleDragOver(event)" ondragleave="handleDragLeave(event)" ondrop="handleDrop(event)">
+                    <div class="upload job position-relative text-center p-3" id="uploadContainer" ondragover="handleDragOver(event)" ondragleave="handleDragLeave(event)" ondrop="handleDrop(event)">
                         <div class="img-icons">
                           <svg xmlns="http://www.w3.org/2000/svg" width="4.21813rem" height="3.83994rem" viewBox="0 0 68 62" fill="none">
                             <path d="M0 34.7722C0 41.886 5.83746 47.6105 14.6344 47.6105H31.3175V59.013C31.3175 60.3223 32.4293 61.4386 33.7757 61.4386C35.1173 61.4386 36.2072 60.3223 36.2072 59.013V47.6105H54.3812C62.2158 47.6105 67.4904 42.7184 67.4904 36.0358C67.4904 30.4904 64.2813 25.5741 59.0489 23.4042C59.0827 11.2477 50.4613 2.4812 39.4037 2.4812C32.3519 2.4812 27.0914 6.19412 23.7756 11.0582C17.5113 9.47489 10.0366 14.3078 9.79011 21.9128C3.74744 22.9833 0 28.4109 0 34.7722ZM31.3175 46.2071V32.6491L31.5095 28.6637L30.2277 30.2621L26.1613 34.6549C25.7387 35.1339 25.0999 35.3878 24.5069 35.3878C23.2916 35.3878 22.3366 34.4838 22.3366 33.2475C22.3366 32.583 22.5984 32.104 23.0427 31.6518L31.9231 22.9521C32.547 22.317 33.1204 22.0947 33.7757 22.0947C34.4045 22.0947 34.9777 22.317 35.6065 22.9521L44.4822 31.6518C44.9265 32.104 45.1883 32.583 45.1883 33.2475C45.1883 34.4838 44.1898 35.3878 42.9961 35.3878C42.4034 35.3878 41.7862 35.1339 41.3684 34.6549L37.2973 30.2621L36.0154 28.6637L36.2072 32.6491V46.2071C36.2072 47.5846 35.1031 48.6863 33.7757 48.6863C32.4218 48.6863 31.3175 47.5846 31.3175 46.2071Z" fill="#6061F0" fill-opacity="0.12"></path>
