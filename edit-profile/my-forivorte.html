@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>صفحة التعديل</title>
+    <title>صفحة مفضلتي</title>
     <link rel="stylesheet" href="../asites/css/style.css">
 
     <!-- bootstrab links css -->
@@ -148,8 +148,8 @@
                     <ul class="dropdown-menu profile mt-4 align-items-end flex-column" aria-labelledby="navbarDropdown" data-bs-popper="static">
                         <p class="Name text-end m-0">محمد عبدالله</p>
                         <p class="email mb-2">mohmad@gmail.com</p>
-                        <li class="w-100"><a class="dropdown-item profile px-2 w-100 text-end active" href="#">  الملف الشخصي <span><i class="fa-solid fa-user mx-2"></i></span></a></li>
-                        <li class="w-100"><a class="dropdown-item profile px-2 w-100 text-end" href="my-forivorte.html">مفضلتي <span> <i class="fa-solid fa-user mx-2"></i></span></a></li>
+                        <li class="w-100"><a class="dropdown-item profile px-2 w-100 text-end" href="view-profile.html">  الملف الشخصي <span><i class="fa-solid fa-user mx-2"></i></span></a></li>
+                        <li class="w-100"><a class="dropdown-item profile px-2 w-100 text-end active" href="#">مفضلتي <span> <i class="fa-solid fa-user mx-2"></i></span></a></li>
                         <li class="w-100"><a class="dropdown-item profile px-2 w-100 text-end" href="my-project.html">المشاريع <span> <i class="fa-solid fa-user mx-2"></i></span></a></li>
                         <li class="w-100"><a class="dropdown-item profile px-2 w-100 text-end" href="blance.html">الرصيد <span><i class="fa-solid fa-user mx-2"></i> </span></a></li>
                         <li class="w-100 text-end"><hr class="mt-2 dropdown-divider text-end"><a class="dropdown px-2 w-100 text-danger " href="#">تسجيل الخروج <span> <i class="fa-solid fa-right-to-bracket mx-2"></i> </span></a></li>
@@ -162,157 +162,251 @@
         </div>
         <!-- /header -->
 
-    <div class="container mt-5">
-        <div class="btn-groub flex-row d-flex justify-content-center w-100 mw-100">
-            <button class="pg-Beneficiary border-0 flex-shrink-0 btn btn-groub-item w-lg  active" onclick="showPage('profile' , this)">الملف
-                الشخصي</button>
-            <button class="pg-business-owner flex-shrink-0 border-0 btn btn-groub-item w-lg" onclick="showPage('loginData' , this)"> بيانات تسجيل
-                الدخول</button>
-            <button class="pg-business-owner flex-shrink-0 border-0 btn btn-groub-item w-lg" onclick="showPage('bankData' , this)">البيانات
-                البنكية</button>
-        </div>
-    </div>
-
-    <div class="content-login edit-profile d-flex align-items-center flex-direction-column mx-auto mb-5 px-sm-5 px-3 ">
-        <div id="profilePage" class="Content-edit-profile active w-100" data-wow-offset="10" data-wow-duration="2s">
-                <form class="date-form-sign w-100" method="post">
-                    <div class="profile-image mb-5">
-                        <div class="image mb-2 text-center"><img class="mb-1 rounded-circle" src="../asites/images/bg-defult-profile.png"></div>
-                    </div>
-                    <div class="item-form mb-2">
-                        <label for="name" class="form-label">الإسم</label>
-                        <input type="text" class="form-control border-light-profile w-100" id="name" aria-describedby="emailHelp">
-                    </div>
-                    <div class="item-form mb-2">
-                        <label for="numbarPhone" class="form-label">رقم الجوال</label>
-                        <input type="number" class="form-control border-light-profile w-100" id="numbarPhone" aria-describedby="emailHelp">
-                    </div>
-                    <div class="item-form mb-2">
-                        <label for="emailes" class="form-label">البريد الالكتروني</label>
-                        <input type="email" class="form-control border-light-profile w-100" id="emailes" aria-describedby="emailHelp">
-                    </div>
-                    <div class="item-form mb-2">
-                        <label for="namesE" class="form-label">التخصص</label>
-                        <input type="text" class="form-control border-light-profile w-100" id="namesE" aria-describedby="emailHelp">
-                    </div>
-                    <div class="item-form mb-2">
-                        <label for="nameemp" class="form-label">المسمى الوظيفي</label>
-                        <input type="text" class="form-control border-light-profile w-100" id="nameemp" aria-describedby="emailHelp">
-                    </div>
-                    <div class="item-form mb-2">
-                        <label for="nameemp" class="form-label">مهاراتي</label>
-                        <div  class="form-control border-light-profile sel-item-skiles justify-content-flex-start align-items-center w-100 " id="nameemp" aria-describedby="emailHelp">
-                            <div class="content-skiles">
-                                <p class="mb-0 pe-2 item-skiles ms-2 d-inline-flex align-items-center mb-2 w-auto ps-3">
-                                    <span class="ms-1 d-inline-flex align-items-center position-relative"> 
-                                       <svg xmlns="http://www.w3.org/2000/svg" width="1.3rem" height="1.3rem" viewBox="0 0 15 16" fill="none">
-                                        <path d="M13.7534 5.88228L9.01032 1.25416C8.59844 0.841659 8.00594 0.639784 7.43032 0.722284L3.12532 1.31103C2.78344 1.35791 2.54407 1.67291 2.59094 2.01478C2.63782 2.35666 2.95219 2.59541 3.29532 2.54916L7.60094 1.96041C7.79219 1.93416 7.98969 1.99978 8.13282 2.14291L12.8766 6.77103C13.5297 7.42416 13.5934 8.44603 13.0784 9.17541C12.9322 8.88353 12.7516 8.60541 12.5091 8.36291L7.83719 3.73041C7.42594 3.31916 6.83907 3.12103 6.25719 3.19853L1.95157 3.78728C1.66782 3.82603 1.44657 4.05291 1.41532 4.33791L0.937191 8.66041C0.874691 9.22978 1.07094 9.78791 1.47719 10.1935L6.11219 14.7892C6.70219 15.3798 7.48657 15.7042 8.32094 15.7042H8.33157C9.17032 15.7017 9.95657 15.3717 10.5459 14.7748L12.5253 12.7698C13.1047 12.1829 13.3959 11.4204 13.4147 10.6523L13.7753 10.2923C14.9784 9.07353 14.9716 7.09728 13.7553 5.88166L13.7534 5.88228ZM4.04969 6.95478C3.70469 6.95478 3.42469 6.67478 3.42469 6.32978C3.42844 5.51228 4.67094 5.51291 4.67469 6.32978C4.67469 6.67478 4.39469 6.95478 4.04969 6.95478Z" fill="#1D23D3"/>
-                                        </svg> 
-                                    </span>
-                                    مصمم واجهات
-                                </p>
-                                <p class="mb-0 pe-2 item-skiles ms-2 d-inline-flex align-items-center mb-2 w-auto ps-3">
-                                    <span class="ms-1 d-inline-flex align-items-center position-relative"> 
-                                       <svg xmlns="http://www.w3.org/2000/svg" width="1.3rem" height="1.3rem" viewBox="0 0 15 16" fill="none">
-                                        <path d="M13.7534 5.88228L9.01032 1.25416C8.59844 0.841659 8.00594 0.639784 7.43032 0.722284L3.12532 1.31103C2.78344 1.35791 2.54407 1.67291 2.59094 2.01478C2.63782 2.35666 2.95219 2.59541 3.29532 2.54916L7.60094 1.96041C7.79219 1.93416 7.98969 1.99978 8.13282 2.14291L12.8766 6.77103C13.5297 7.42416 13.5934 8.44603 13.0784 9.17541C12.9322 8.88353 12.7516 8.60541 12.5091 8.36291L7.83719 3.73041C7.42594 3.31916 6.83907 3.12103 6.25719 3.19853L1.95157 3.78728C1.66782 3.82603 1.44657 4.05291 1.41532 4.33791L0.937191 8.66041C0.874691 9.22978 1.07094 9.78791 1.47719 10.1935L6.11219 14.7892C6.70219 15.3798 7.48657 15.7042 8.32094 15.7042H8.33157C9.17032 15.7017 9.95657 15.3717 10.5459 14.7748L12.5253 12.7698C13.1047 12.1829 13.3959 11.4204 13.4147 10.6523L13.7753 10.2923C14.9784 9.07353 14.9716 7.09728 13.7553 5.88166L13.7534 5.88228ZM4.04969 6.95478C3.70469 6.95478 3.42469 6.67478 3.42469 6.32978C3.42844 5.51228 4.67094 5.51291 4.67469 6.32978C4.67469 6.67478 4.39469 6.95478 4.04969 6.95478Z" fill="#1D23D3"/>
-                                        </svg> 
-                                    </span>
-                                    مصمم واجهات
-                                </p>
-                                <p class="mb-0 pe-2 item-skiles ms-2 d-inline-flex align-items-center mb-2 w-auto ps-3">
-                                    <span class="ms-1 d-inline-flex align-items-center position-relative"> 
-                                       <svg xmlns="http://www.w3.org/2000/svg" width="1.3rem" height="1.3rem" viewBox="0 0 15 16" fill="none">
-                                        <path d="M13.7534 5.88228L9.01032 1.25416C8.59844 0.841659 8.00594 0.639784 7.43032 0.722284L3.12532 1.31103C2.78344 1.35791 2.54407 1.67291 2.59094 2.01478C2.63782 2.35666 2.95219 2.59541 3.29532 2.54916L7.60094 1.96041C7.79219 1.93416 7.98969 1.99978 8.13282 2.14291L12.8766 6.77103C13.5297 7.42416 13.5934 8.44603 13.0784 9.17541C12.9322 8.88353 12.7516 8.60541 12.5091 8.36291L7.83719 3.73041C7.42594 3.31916 6.83907 3.12103 6.25719 3.19853L1.95157 3.78728C1.66782 3.82603 1.44657 4.05291 1.41532 4.33791L0.937191 8.66041C0.874691 9.22978 1.07094 9.78791 1.47719 10.1935L6.11219 14.7892C6.70219 15.3798 7.48657 15.7042 8.32094 15.7042H8.33157C9.17032 15.7017 9.95657 15.3717 10.5459 14.7748L12.5253 12.7698C13.1047 12.1829 13.3959 11.4204 13.4147 10.6523L13.7753 10.2923C14.9784 9.07353 14.9716 7.09728 13.7553 5.88166L13.7534 5.88228ZM4.04969 6.95478C3.70469 6.95478 3.42469 6.67478 3.42469 6.32978C3.42844 5.51228 4.67094 5.51291 4.67469 6.32978C4.67469 6.67478 4.39469 6.95478 4.04969 6.95478Z" fill="#1D23D3"/>
-                                        </svg> 
-                                    </span>
-                                    مصمم واجهات
-                                </p>
-                                <p class="mb-0 pe-2 item-skiles ms-2 d-inline-flex align-items-center mb-2 w-auto ps-3">
-                                    <span class="ms-1 d-inline-flex align-items-center position-relative"> 
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="1.3rem" height="1.3rem" viewBox="0 0 15 16" fill="none">
-                                        <path d="M13.7534 5.88228L9.01032 1.25416C8.59844 0.841659 8.00594 0.639784 7.43032 0.722284L3.12532 1.31103C2.78344 1.35791 2.54407 1.67291 2.59094 2.01478C2.63782 2.35666 2.95219 2.59541 3.29532 2.54916L7.60094 1.96041C7.79219 1.93416 7.98969 1.99978 8.13282 2.14291L12.8766 6.77103C13.5297 7.42416 13.5934 8.44603 13.0784 9.17541C12.9322 8.88353 12.7516 8.60541 12.5091 8.36291L7.83719 3.73041C7.42594 3.31916 6.83907 3.12103 6.25719 3.19853L1.95157 3.78728C1.66782 3.82603 1.44657 4.05291 1.41532 4.33791L0.937191 8.66041C0.874691 9.22978 1.07094 9.78791 1.47719 10.1935L6.11219 14.7892C6.70219 15.3798 7.48657 15.7042 8.32094 15.7042H8.33157C9.17032 15.7017 9.95657 15.3717 10.5459 14.7748L12.5253 12.7698C13.1047 12.1829 13.3959 11.4204 13.4147 10.6523L13.7753 10.2923C14.9784 9.07353 14.9716 7.09728 13.7553 5.88166L13.7534 5.88228ZM4.04969 6.95478C3.70469 6.95478 3.42469 6.67478 3.42469 6.32978C3.42844 5.51228 4.67094 5.51291 4.67469 6.32978C4.67469 6.67478 4.39469 6.95478 4.04969 6.95478Z" fill="#1D23D3"/>
-                                        </svg>
-                                    </span>
-                                    مصمم واجهات
-                                </p>
+        <div class="content two col-xs-auto col-lg mx-4 px-xs-0 pt-3 pb-3 container mx-auto">
+            <div class="search-job mb-3 px-4 py-1">
+                      
+                <h4 class="mt-2 mb-1 text-center">صفحة مفضلتي</h4>
+              <form class="d-block mt-4" method="post">
+                <div class="after-text-bankNums input-search-job w-100 position-relative">
+                  <input class="w-100 pe-5 ps-3 border-0 rounded" type="search" placeholder="ابحث...">
+                  <button class="border-0  position-absolute p-0 bg-transparent" type="submit">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                      <path d="M1 21L3 19M11.5 20C10.2524 20 9.0171 19.7543 7.86451 19.2769C6.71191 18.7994 5.66464 18.0997 4.78249 17.2175C3.90033 16.3354 3.20056 15.2881 2.72314 14.1355C2.24572 12.9829 2 11.7476 2 10.5C2 9.25244 2.24572 8.0171 2.72314 6.86451C3.20056 5.71191 3.90033 4.66464 4.78249 3.78249C5.66464 2.90033 6.71191 2.20056 7.86451 1.72314C9.0171 1.24572 10.2524 1 11.5 1C14.0196 1 16.4359 2.00089 18.2175 3.78249C19.9991 5.56408 21 7.98044 21 10.5C21 13.0196 19.9991 15.4359 18.2175 17.2175C16.4359 18.9991 14.0196 20 11.5 20Z" stroke="#EE786B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg>
+                  </button>
+                </div>
+              </form>
+            </div>                     
+            <div class="contain-itemes-job justify-content-center row py-3 mx-4">
+                        <!-- item-job -->
+            <div class="item-job p-3 h-auto ms-3 mb-3">
+                        <!-- header -->
+                        <div class="header d-md-flex mb-4 d-sm-block text-center text-md-end">
+                          <div class="img-user d-inline-flex justify-content-center align-items-center rounded-circle ">
+                              <img src="../asites/images/شعار-عون-للتقنية 1.png">
+                          </div>
+                          <div class="informithion-user d-inlin-block me-2 mt-2">
+                              <h5 class="name-job mb-0">مصمم واجهات</h5>
+                              <p class="skiles-items text-dark mb-0">جمعية عون التقنية</p>
+                              <p class="date-duration mb-2 mb-md-0">
+                                  <span class="ms-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                      <g clip-path="url(#clip0_895_4717)">
+                                      <path d="M7.97181 16.0055L7.50709 15.6072C6.86643 15.0707 1.27246 10.2396 1.27246 6.70569C1.27246 3.00575 4.27187 0.00634766 7.97181 0.00634766C11.6717 0.00634766 14.6712 3.00575 14.6712 6.70569C14.6712 10.2396 9.07718 15.0708 8.43918 15.6098L7.97181 16.0055ZM7.97181 1.45494C5.07327 1.45822 2.72437 3.80713 2.72109 6.70566C2.72109 8.92572 6.16271 12.4722 7.97181 14.0954C9.78093 12.4716 13.2225 8.92304 13.2225 6.70566C13.2192 3.80713 10.8704 1.45825 7.97181 1.45494Z" fill="#767F8C"></path>
+                                      <path d="M7.97197 9.36142C6.50534 9.36142 5.31641 8.17248 5.31641 6.70586C5.31641 5.23923 6.50534 4.05029 7.97197 4.05029C9.43859 4.05029 10.6275 5.23923 10.6275 6.70586C10.6275 8.17248 9.43862 9.36142 7.97197 9.36142ZM7.97197 5.37804C7.23866 5.37804 6.64419 5.97251 6.64419 6.70582C6.64419 7.43914 7.23866 8.03361 7.97197 8.03361C8.70528 8.03361 9.29975 7.43914 9.29975 6.70582C9.29975 5.97251 8.70531 5.37804 7.97197 5.37804Z" fill="#767F8C"></path>
+                                      </g>
+                                      <defs>
+                                      <clipPath id="clip0_895_4717">
+                                      <rect width="16" height="16" fill="white"></rect>
+                                      </clipPath>
+                                      </defs>
+                                      </svg>
+                                  </span>
+                                  مكة، المملكة العربية السعودية</p>
+                          </div>
+                                        <div class="save-icon me-auto ms-1 mt-1 py-2 px-2 rounded-circle d-flex justify-content-center align-items-center"><i class="fa-solid fa-heart"></i></div>
+                        </div> <!-- /header -->
+                            <p class="commint-rev-job  me-3 ms-2 mt-4">كمصصم واجهات, المطلوب هو تصميم واجهة مشروع سخي بحيث تكون الواجهات سهلة الاستخدام و....</p>
+                            <div class="contact-probrtis-job row m-4">
+                                <div class="item-probrtis-job w-auto d-flex justify-content-center align-items-center px-4 ms-2 mb-2 py-1">
+                                  <p class="mb-0 mx-2">مبتدئ</p>
+                                </div>
+                                <div class="item-probrtis-job w-auto d-flex justify-content-center align-items-center px-4 ms-2 mb-2 py-1">
+                                  <p class="mb-0 mx-2"><span>13</span> متقدم</p>
+                                </div>
+                                <div class="item-probrtis-job w-auto d-flex justify-content-center align-items-center px-4 ms-2 mb-2 py-1">
+                                  <p class="mb-0 mx-2">حضوري</p>
+                                </div>
                             </div>
+                            <!-- /contact-probrtis-job -->
+                            <div class="footer-job-item d-flex position-relative justify-content-center align-items-center">
+                              <a href="../training/show-training.html" class="  text-white d-flex justify-content-center align-items-center text-decoration-none mb-2">تفاصيل أكثر</a>
+                              <p class="date-job position-absolute mb-0 mt-3">منذ يومين</p>
+                            </div>
+            </div> <!-- /item-job -->
+            <div class="item-job p-3 h-auto ms-3 mb-3">
+                <!-- header -->
+                <div class="header d-md-flex mb-4 d-sm-block text-center text-md-end">
+                  <div class="img-user d-inline-flex justify-content-center align-items-center rounded-circle ">
+                      <img src="../asites/images/شعار-عون-للتقنية 1.png">
+                  </div>
+                  <div class="informithion-user d-inlin-block me-2 mt-2">
+                      <h5 class="name-job mb-0">مصمم واجهات</h5>
+                      <p class="skiles-items text-dark mb-0">جمعية عون التقنية</p>
+                      <p class="date-duration mb-2 mb-md-0">
+                          <span class="ms-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                              <g clip-path="url(#clip0_895_4717)">
+                              <path d="M7.97181 16.0055L7.50709 15.6072C6.86643 15.0707 1.27246 10.2396 1.27246 6.70569C1.27246 3.00575 4.27187 0.00634766 7.97181 0.00634766C11.6717 0.00634766 14.6712 3.00575 14.6712 6.70569C14.6712 10.2396 9.07718 15.0708 8.43918 15.6098L7.97181 16.0055ZM7.97181 1.45494C5.07327 1.45822 2.72437 3.80713 2.72109 6.70566C2.72109 8.92572 6.16271 12.4722 7.97181 14.0954C9.78093 12.4716 13.2225 8.92304 13.2225 6.70566C13.2192 3.80713 10.8704 1.45825 7.97181 1.45494Z" fill="#767F8C"></path>
+                              <path d="M7.97197 9.36142C6.50534 9.36142 5.31641 8.17248 5.31641 6.70586C5.31641 5.23923 6.50534 4.05029 7.97197 4.05029C9.43859 4.05029 10.6275 5.23923 10.6275 6.70586C10.6275 8.17248 9.43862 9.36142 7.97197 9.36142ZM7.97197 5.37804C7.23866 5.37804 6.64419 5.97251 6.64419 6.70582C6.64419 7.43914 7.23866 8.03361 7.97197 8.03361C8.70528 8.03361 9.29975 7.43914 9.29975 6.70582C9.29975 5.97251 8.70531 5.37804 7.97197 5.37804Z" fill="#767F8C"></path>
+                              </g>
+                              <defs>
+                              <clipPath id="clip0_895_4717">
+                              <rect width="16" height="16" fill="white"></rect>
+                              </clipPath>
+                              </defs>
+                              </svg>
+                          </span>
+                          مكة، المملكة العربية السعودية</p>
+                  </div>
+                                <div class="save-icon me-auto ms-1 mt-1 py-2 px-2 rounded-circle d-flex justify-content-center align-items-center"><i class="fa-solid fa-heart"></i></div>
+                </div> <!-- /header -->
+                    <p class="commint-rev-job  me-3 ms-2 mt-4">كمصصم واجهات, المطلوب هو تصميم واجهة مشروع سخي بحيث تكون الواجهات سهلة الاستخدام و....</p>
+                    <div class="contact-probrtis-job row m-4">
+                        <div class="item-probrtis-job w-auto d-flex justify-content-center align-items-center px-4 ms-2 mb-2 py-1">
+                          <p class="mb-0 mx-2">مبتدئ</p>
                         </div>
-
+                        <div class="item-probrtis-job w-auto d-flex justify-content-center align-items-center px-4 ms-2 mb-2 py-1">
+                          <p class="mb-0 mx-2"><span>13</span> متقدم</p>
+                        </div>
+                        <div class="item-probrtis-job w-auto d-flex justify-content-center align-items-center px-4 ms-2 mb-2 py-1">
+                          <p class="mb-0 mx-2">حضوري</p>
+                        </div>
                     </div>
-                    <div class="item-form mb-2">
-                        <label for="exampleInputEmail1" class="form-label">النبذة التعريفية</label>
-                        <textarea type="text" class="text-M border-light-profile d-flex align-items-center w-100"></textarea> 
+                    <!-- /contact-probrtis-job -->
+                    <div class="footer-job-item d-flex position-relative justify-content-center align-items-center">
+                      <a href="../training/show-training.html" class="  text-white d-flex justify-content-center align-items-center text-decoration-none mb-2">تفاصيل أكثر</a>
+                      <p class="date-job position-absolute mb-0 mt-3">منذ يومين</p>
                     </div>
-                    <div class="item-form mb-2">
-                        <label for="exampleInputEmail1" class="form-label">السيرة الذاتية</label>
-                        <div class="text-M border-light-profile d-flex align-items-center text-center w-100">
-                            <svg class="mx-auto" xmlns="http://www.w3.org/2000/svg" width="49" height="60" viewBox="0 0 49 60" fill="none">
-                                <path d="M29.3754 18.016V2.07349C31.6304 2.92506 33.6786 4.24623 35.3843 5.94942L43.8772 14.4472C45.5824 16.1509 46.9046 18.1986 47.7556 20.4537H31.8131C31.1666 20.4537 30.5465 20.1969 30.0894 19.7397C29.6322 19.2826 29.3754 18.6625 29.3754 18.016ZM48.877 26.5114V47.2684C48.8731 50.4998 47.5877 53.5977 45.3028 55.8826C43.0178 58.1676 39.9199 59.453 36.6885 59.4568H12.3115C9.08013 59.453 5.98219 58.1676 3.69724 55.8826C1.4123 53.5977 0.126918 50.4998 0.123047 47.2684V13.1406C0.126918 9.90923 1.4123 6.81129 3.69724 4.52635C5.98219 2.2414 9.08013 0.956019 12.3115 0.952148L23.3177 0.952148C23.7151 0.952148 24.1075 0.983838 24.5 1.01065V18.016C24.5 19.9556 25.2705 21.8157 26.642 23.1871C28.0134 24.5586 29.8735 25.3291 31.8131 25.3291H48.8185C48.8453 25.7216 48.877 26.114 48.877 26.5114ZM29.3754 47.2684C29.3754 46.6218 29.1186 46.0018 28.6614 45.5446C28.2043 45.0875 27.5842 44.8307 26.9377 44.8307H14.7492C14.1027 44.8307 13.4827 45.0875 13.0255 45.5446C12.5684 46.0018 12.3115 46.6218 12.3115 47.2684C12.3115 47.9149 12.5684 48.5349 13.0255 48.9921C13.4827 49.4492 14.1027 49.7061 14.7492 49.7061H26.9377C27.5842 49.7061 28.2043 49.4492 28.6614 48.9921C29.1186 48.5349 29.3754 47.9149 29.3754 47.2684ZM36.6885 37.5176C36.6885 36.8711 36.4317 36.251 35.9745 35.7939C35.5173 35.3367 34.8973 35.0799 34.2508 35.0799H14.7492C14.1027 35.0799 13.4827 35.3367 13.0255 35.7939C12.5684 36.251 12.3115 36.8711 12.3115 37.5176C12.3115 38.1641 12.5684 38.7841 13.0255 39.2413C13.4827 39.6984 14.1027 39.9553 14.7492 39.9553H34.2508C34.8973 39.9553 35.5173 39.6984 35.9745 39.2413C36.4317 38.7841 36.6885 38.1641 36.6885 37.5176Z" fill="#1D23D3"/>
-                                </svg>
-                        </div> 
-                    </div>
-                    <div class="submit-login mt-4 text-center">
-                        <button class="subm-login text-white d-flex border-0 justify-content-center align-items-center mb-3 w-100" type="submit">حفظ التغييرات</button>
-                    </div>
-                </form>
-            <!-- محتوى الصفحة الأولى -->
-
+    </div> <!-- /item-job -->
+    <div class="item-job p-3 h-auto ms-3 mb-3">
+        <!-- header -->
+        <div class="header d-md-flex mb-4 d-sm-block text-center text-md-end">
+          <div class="img-user d-inline-flex justify-content-center align-items-center rounded-circle ">
+              <img src="../asites/images/شعار-عون-للتقنية 1.png">
+          </div>
+          <div class="informithion-user d-inlin-block me-2 mt-2">
+              <h5 class="name-job mb-0">مصمم واجهات</h5>
+              <p class="skiles-items text-dark mb-0">جمعية عون التقنية</p>
+              <p class="date-duration mb-2 mb-md-0">
+                  <span class="ms-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                      <g clip-path="url(#clip0_895_4717)">
+                      <path d="M7.97181 16.0055L7.50709 15.6072C6.86643 15.0707 1.27246 10.2396 1.27246 6.70569C1.27246 3.00575 4.27187 0.00634766 7.97181 0.00634766C11.6717 0.00634766 14.6712 3.00575 14.6712 6.70569C14.6712 10.2396 9.07718 15.0708 8.43918 15.6098L7.97181 16.0055ZM7.97181 1.45494C5.07327 1.45822 2.72437 3.80713 2.72109 6.70566C2.72109 8.92572 6.16271 12.4722 7.97181 14.0954C9.78093 12.4716 13.2225 8.92304 13.2225 6.70566C13.2192 3.80713 10.8704 1.45825 7.97181 1.45494Z" fill="#767F8C"></path>
+                      <path d="M7.97197 9.36142C6.50534 9.36142 5.31641 8.17248 5.31641 6.70586C5.31641 5.23923 6.50534 4.05029 7.97197 4.05029C9.43859 4.05029 10.6275 5.23923 10.6275 6.70586C10.6275 8.17248 9.43862 9.36142 7.97197 9.36142ZM7.97197 5.37804C7.23866 5.37804 6.64419 5.97251 6.64419 6.70582C6.64419 7.43914 7.23866 8.03361 7.97197 8.03361C8.70528 8.03361 9.29975 7.43914 9.29975 6.70582C9.29975 5.97251 8.70531 5.37804 7.97197 5.37804Z" fill="#767F8C"></path>
+                      </g>
+                      <defs>
+                      <clipPath id="clip0_895_4717">
+                      <rect width="16" height="16" fill="white"></rect>
+                      </clipPath>
+                      </defs>
+                      </svg>
+                  </span>
+                  مكة، المملكة العربية السعودية</p>
+          </div>
+                        <div class="save-icon me-auto ms-1 mt-1 py-2 px-2 rounded-circle d-flex justify-content-center align-items-center"><i class="fa-solid fa-heart"></i></div>
+        </div> <!-- /header -->
+            <p class="commint-rev-job  me-3 ms-2 mt-4">كمصصم واجهات, المطلوب هو تصميم واجهة مشروع سخي بحيث تكون الواجهات سهلة الاستخدام و....</p>
+            <div class="contact-probrtis-job row m-4">
+                <div class="item-probrtis-job w-auto d-flex justify-content-center align-items-center px-4 ms-2 mb-2 py-1">
+                  <p class="mb-0 mx-2">مبتدئ</p>
+                </div>
+                <div class="item-probrtis-job w-auto d-flex justify-content-center align-items-center px-4 ms-2 mb-2 py-1">
+                  <p class="mb-0 mx-2"><span>13</span> متقدم</p>
+                </div>
+                <div class="item-probrtis-job w-auto d-flex justify-content-center align-items-center px-4 ms-2 mb-2 py-1">
+                  <p class="mb-0 mx-2">حضوري</p>
+                </div>
+            </div>
+            <!-- /contact-probrtis-job -->
+            <div class="footer-job-item d-flex position-relative justify-content-center align-items-center">
+              <a href="../training/show-training.html" class="  text-white d-flex justify-content-center align-items-center text-decoration-none mb-2">تفاصيل أكثر</a>
+              <p class="date-job position-absolute mb-0 mt-3">منذ يومين</p>
+            </div>
+</div> <!-- /item-job -->
+<div class="item-job p-3 h-auto ms-3 mb-3">
+    <!-- header -->
+    <div class="header d-md-flex mb-4 d-sm-block text-center text-md-end">
+      <div class="img-user d-inline-flex justify-content-center align-items-center rounded-circle ">
+          <img src="../asites/images/شعار-عون-للتقنية 1.png">
+      </div>
+      <div class="informithion-user d-inlin-block me-2 mt-2">
+          <h5 class="name-job mb-0">مصمم واجهات</h5>
+          <p class="skiles-items text-dark mb-0">جمعية عون التقنية</p>
+          <p class="date-duration mb-2 mb-md-0">
+              <span class="ms-1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <g clip-path="url(#clip0_895_4717)">
+                  <path d="M7.97181 16.0055L7.50709 15.6072C6.86643 15.0707 1.27246 10.2396 1.27246 6.70569C1.27246 3.00575 4.27187 0.00634766 7.97181 0.00634766C11.6717 0.00634766 14.6712 3.00575 14.6712 6.70569C14.6712 10.2396 9.07718 15.0708 8.43918 15.6098L7.97181 16.0055ZM7.97181 1.45494C5.07327 1.45822 2.72437 3.80713 2.72109 6.70566C2.72109 8.92572 6.16271 12.4722 7.97181 14.0954C9.78093 12.4716 13.2225 8.92304 13.2225 6.70566C13.2192 3.80713 10.8704 1.45825 7.97181 1.45494Z" fill="#767F8C"></path>
+                  <path d="M7.97197 9.36142C6.50534 9.36142 5.31641 8.17248 5.31641 6.70586C5.31641 5.23923 6.50534 4.05029 7.97197 4.05029C9.43859 4.05029 10.6275 5.23923 10.6275 6.70586C10.6275 8.17248 9.43862 9.36142 7.97197 9.36142ZM7.97197 5.37804C7.23866 5.37804 6.64419 5.97251 6.64419 6.70582C6.64419 7.43914 7.23866 8.03361 7.97197 8.03361C8.70528 8.03361 9.29975 7.43914 9.29975 6.70582C9.29975 5.97251 8.70531 5.37804 7.97197 5.37804Z" fill="#767F8C"></path>
+                  </g>
+                  <defs>
+                  <clipPath id="clip0_895_4717">
+                  <rect width="16" height="16" fill="white"></rect>
+                  </clipPath>
+                  </defs>
+                  </svg>
+              </span>
+              مكة، المملكة العربية السعودية</p>
+      </div>
+                    <div class="save-icon me-auto ms-1 mt-1 py-2 px-2 rounded-circle d-flex justify-content-center align-items-center"><i class="fa-solid fa-heart"></i></div>
+    </div> <!-- /header -->
+        <p class="commint-rev-job  me-3 ms-2 mt-4">كمصصم واجهات, المطلوب هو تصميم واجهة مشروع سخي بحيث تكون الواجهات سهلة الاستخدام و....</p>
+        <div class="contact-probrtis-job row m-4">
+            <div class="item-probrtis-job w-auto d-flex justify-content-center align-items-center px-4 ms-2 mb-2 py-1">
+              <p class="mb-0 mx-2">مبتدئ</p>
+            </div>
+            <div class="item-probrtis-job w-auto d-flex justify-content-center align-items-center px-4 ms-2 mb-2 py-1">
+              <p class="mb-0 mx-2"><span>13</span> متقدم</p>
+            </div>
+            <div class="item-probrtis-job w-auto d-flex justify-content-center align-items-center px-4 ms-2 mb-2 py-1">
+              <p class="mb-0 mx-2">حضوري</p>
+            </div>
         </div>
-
-        <div id="loginDataPage" class="Content-edit-profile w-100" data-wow-offset="10" data-wow-duration="2s">
-            <form class="date-form-sign w-100" method="post">
-                <div class="item-form mb-2">
-                    <label for="emailes" class="form-label">البريد الالكتروني</label>
-                    <input type="email" class="form-control border-light-profile w-100" id="emailes" aria-describedby="emailHelp">
-                </div>
-                <div class="item-form mb-2">
-                    <label for="exampleInputEmail1" class="form-label"> كلمة المرور</label>
-                    <div class="pass position-relative">
-                        <input type="password" class="form-control one border-light-profile w-100">
-                        <div onclick="passForget('.pass .form-control.one', this)" class="icon-eye o position-absolute cursor-pointer d-flex bg-white justify-content-center align-content-center">
-                            <i class="fa fa-eye"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="item-form mb-2">
-                    <label for="exampleInputEmail1" class="form-label">تأكيد كلمة المرور</label>
-                    <div class="pass position-relative">
-                        <input type="password" class="form-control two border-light-profile w-100">
-                        <div onclick="passForget('.pass .form-control.two', this)" class="icon-eye o position-absolute cursor-pointer d-flex bg-white justify-content-center align-content-center">
-                            <i class="fa fa-eye"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="submit-login mt-4 text-center">
-                        <button class="subm-login text-white d-flex border-0 justify-content-center align-items-center mb-3 w-100" type="submit">حفظ التغييرات</button>
-                    </div>
-            </form>
+        <!-- /contact-probrtis-job -->
+        <div class="footer-job-item d-flex position-relative justify-content-center align-items-center">
+          <a href="../training/show-training.html" class="  text-white d-flex justify-content-center align-items-center text-decoration-none mb-2">تفاصيل أكثر</a>
+          <p class="date-job position-absolute mb-0 mt-3">منذ يومين</p>
         </div>
-
-        <div id="bankDataPage" class="Content-edit-profile w-100" data-wow-offset="10" data-wow-duration="2s">
-            <form class="date-form-sign w-100" method="post">
-                <div class="item-form mb-2">
-                    <label for="FullName" class="form-label">الاسم كاملًا</label>
-                    <input type="text" class="form-control border-light-profile-2 px-1 w-100" id="FullName" aria-describedby="emailHelp">
-                </div>
-                <div class="item-form mb-2">
-                    <label for="bankNumbars" class="form-label">الآيبان</label>
-                        <div class="after-text-bankNums position-relative">
-                            <input type="text" id="bankNumbars" placeholder="SAXX XXXX XXXX XXXX XXXX XXXX" class="form-control position-relative sel-item-skiles border-light-profile-2 w-100">
-                        </div>
-                    </div>
-                    <div class="item-form mb-2">
-                        <label for="bankName" class="form-label">اسم البنك</label>
-                            <div class="after-text position-relative">
-                                <input type="text" id="bankName" placeholder="اختيار" class="form-control sel-item-skiles border-light-profile-2 w-100">
-                            </div> 
-                </div>
-                <div class="submit-login mt-5 text-center">
-                    <button class="subm-login text-white d-flex border-0 justify-content-center align-items-center mb-3 w-100" type="submit">حفظ التغييرات</button>
-                </div>
-            </form>
+</div> <!-- /item-job -->
+<div class="item-job p-3 h-auto ms-3 mb-3">
+    <!-- header -->
+    <div class="header d-md-flex mb-4 d-sm-block text-center text-md-end">
+      <div class="img-user d-inline-flex justify-content-center align-items-center rounded-circle ">
+          <img src="../asites/images/شعار-عون-للتقنية 1.png">
+      </div>
+      <div class="informithion-user d-inlin-block me-2 mt-2">
+          <h5 class="name-job mb-0">مصمم واجهات</h5>
+          <p class="skiles-items text-dark mb-0">جمعية عون التقنية</p>
+          <p class="date-duration mb-2 mb-md-0">
+              <span class="ms-1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <g clip-path="url(#clip0_895_4717)">
+                  <path d="M7.97181 16.0055L7.50709 15.6072C6.86643 15.0707 1.27246 10.2396 1.27246 6.70569C1.27246 3.00575 4.27187 0.00634766 7.97181 0.00634766C11.6717 0.00634766 14.6712 3.00575 14.6712 6.70569C14.6712 10.2396 9.07718 15.0708 8.43918 15.6098L7.97181 16.0055ZM7.97181 1.45494C5.07327 1.45822 2.72437 3.80713 2.72109 6.70566C2.72109 8.92572 6.16271 12.4722 7.97181 14.0954C9.78093 12.4716 13.2225 8.92304 13.2225 6.70566C13.2192 3.80713 10.8704 1.45825 7.97181 1.45494Z" fill="#767F8C"></path>
+                  <path d="M7.97197 9.36142C6.50534 9.36142 5.31641 8.17248 5.31641 6.70586C5.31641 5.23923 6.50534 4.05029 7.97197 4.05029C9.43859 4.05029 10.6275 5.23923 10.6275 6.70586C10.6275 8.17248 9.43862 9.36142 7.97197 9.36142ZM7.97197 5.37804C7.23866 5.37804 6.64419 5.97251 6.64419 6.70582C6.64419 7.43914 7.23866 8.03361 7.97197 8.03361C8.70528 8.03361 9.29975 7.43914 9.29975 6.70582C9.29975 5.97251 8.70531 5.37804 7.97197 5.37804Z" fill="#767F8C"></path>
+                  </g>
+                  <defs>
+                  <clipPath id="clip0_895_4717">
+                  <rect width="16" height="16" fill="white"></rect>
+                  </clipPath>
+                  </defs>
+                  </svg>
+              </span>
+              مكة، المملكة العربية السعودية</p>
+      </div>
+                    <div class="save-icon me-auto ms-1 mt-1 py-2 px-2 rounded-circle d-flex justify-content-center align-items-center"><i class="fa-solid fa-heart"></i></div>
+    </div> <!-- /header -->
+        <p class="commint-rev-job  me-3 ms-2 mt-4">كمصصم واجهات, المطلوب هو تصميم واجهة مشروع سخي بحيث تكون الواجهات سهلة الاستخدام و....</p>
+        <div class="contact-probrtis-job row m-4">
+            <div class="item-probrtis-job w-auto d-flex justify-content-center align-items-center px-4 ms-2 mb-2 py-1">
+              <p class="mb-0 mx-2">مبتدئ</p>
+            </div>
+            <div class="item-probrtis-job w-auto d-flex justify-content-center align-items-center px-4 ms-2 mb-2 py-1">
+              <p class="mb-0 mx-2"><span>13</span> متقدم</p>
+            </div>
+            <div class="item-probrtis-job w-auto d-flex justify-content-center align-items-center px-4 ms-2 mb-2 py-1">
+              <p class="mb-0 mx-2">حضوري</p>
+            </div>
         </div>
-   </div>
+        <!-- /contact-probrtis-job -->
+        <div class="footer-job-item d-flex position-relative justify-content-center align-items-center">
+          <a href="../training/show-training.html" class="  text-white d-flex justify-content-center align-items-center text-decoration-none mb-2">تفاصيل أكثر</a>
+          <p class="date-job position-absolute mb-0 mt-3">منذ يومين</p>
+        </div>
+</div> <!-- /item-job -->
+                  </div>
+              </div>
+
 
    <footer class="footer-primary px-5 ">
         <div class="image-item d-md-flex d-sm-block">
