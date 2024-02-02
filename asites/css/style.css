@@ -55,6 +55,23 @@ nav.navbar .offcanvas.offcanvas-end ul.dropdown-menu.profile.opportunity.show a 
   color: #4D4D4D;
   font-weight: 500;
 }
+.py-2-5{
+  padding: .7rem 0 !important;
+  font-size: 1rem !important;
+}
+.contain-itemes-job.landing-page .item-job:hover {
+  border: 1px solid var(--primary) !important;
+}
+.modal-body .btn-groub button.btn {
+  max-width: 12.9rem;
+}
+.modal-body .btn-groub {
+  max-width: 23rem;
+}
+.carousel-control-next,
+.carousel-control-prev {
+max-width: 1rem;
+}
 @media screen and (min-width:992px) {
   .offcanvas {
     max-width: none ;
@@ -100,7 +117,6 @@ nav.navbar .offcanvas.offcanvas-end ul.dropdown-menu.profile.opportunity.show a 
 /* navbar custome end */
 .contetnt-landing-page {
   background-color: var(--secondary-700);
-  margin-top: 90px;
 }
 .text-landing-page h1.text-top, .text-landing-page h1.text-bottom {
   font-family: Tajawal , 'Cairo', sans-serif;
@@ -165,10 +181,7 @@ form.form-landing-page {
   left: 0;
 }
 @media screen and (min-width:1900px) {
-  .contetnt-landing-page .image-content img {
-    width: 140% !important;
-    height: 140% !important;
-  }
+
   .text-landing-page {
     left: 10%;
     top: 5%;
@@ -230,8 +243,8 @@ form.form-landing-page {
     top: 3.5rem;
   }
   .contetnt-landing-page .image-content img {
-    width:120%;
-    height: 120%;
+    width: 57.7rem;
+    height: 57.7rem;
 }
 }
 @media screen and (max-width:1375px) {
@@ -1276,9 +1289,10 @@ ul.dropdown-menu.profile.opportunity:before {
   display: block;
 }
 ul.dropdown-menu.profile.opportunity.show {
-  left: -3.1rem;
+  left: -4.1rem;
   border-radius: 1.5rem;
   border: 0;
+  min-width: 12.5rem;
 }
 .upload.job {
   min-width: 8.5625rem;
@@ -1289,6 +1303,16 @@ ul.dropdown-menu.profile.opportunity.show {
 .upload.job .img-icons svg {
   width: 4.21813rem;
 height: 3.83994rem;
+}
+
+.item-svg-nav-drob svg {
+  margin: 0 5px 0 5px;
+  transition: .3s all ease-in-out;
+}
+
+.dropdown-item.profile.active .item-svg-nav-drob svg path ,
+.dropdown-item.profile:active .item-svg-nav-drob svg path {
+  fill: white !important;
 }
 /* end content-jobs */
 /* show job page start */
