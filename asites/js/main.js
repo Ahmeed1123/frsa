@@ -78,71 +78,61 @@ function showPage(pageId, btn) {
 let sliderOpen = false;  // إضافة متغير لتتبع حالة السلايدر
 
 function toggleSlider() {
-  const carousel = document.getElementById('myCarousel');
-  const carouselbtn = document.querySelector('#myCarousel .price');
-  const contentJob = document.querySelector('.content.two');
-  if(carouselbtn) {
-    if(sliderOpen) {
+    const carousel = document.getElementById('myCarousel');
+    const carouselbtn = document.querySelector('#myCarousel .price');
+    const contentJob = document.querySelector('.content.two');
+  
+    const toggleClasses = () => {
       carousel.classList.toggle('active');
       contentJob.classList.toggle('w-100');
       carouselbtn.classList.toggle('flex-sm-row-reverse');
-    
-      // تحويل قيمة الـ display بين block و none
-      setTimeout(() => {
-        carousel.classList.toggle('w-job');
+    };
+  
+    if (carouselbtn) {
+      if (sliderOpen) {
+        toggleClasses();
         setTimeout(() => {
-        carousel.classList.toggle('w-job');
+          carousel.classList.toggle('w-job');
+          setTimeout(() => {
+            carousel.classList.toggle('w-job');
+            carousel.classList.toggle('w-0');
+          }, 50);
+        }, 60);
+      } else {
+        setTimeout(() => {
           carousel.classList.toggle('w-0');
-      
-        }, 50);
-      }, 60);
-     
-    }else {
-      setTimeout(() => {
-        carousel.classList.toggle('w-0');
-    
-        carousel.classList.toggle('w-job');
-        setTimeout(() => {
-        carousel.classList.toggle('w-job');
+          carousel.classList.toggle('w-job');
+          setTimeout(() => {
+            carousel.classList.toggle('w-job');
+          }, 250);
         }, 250);
-      }, 250);
-        carousel.classList.toggle('active');
-        contentJob.classList.toggle('w-100');
-        carouselbtn.classList.toggle('flex-sm-row-reverse');
-    }
-  }else {
-    if(sliderOpen) {
-      carousel.classList.toggle('active');
-      contentJob.classList.toggle('w-100');
-    
-      // تحويل قيمة الـ display بين block و none
-      setTimeout(() => {
-        carousel.classList.toggle('w-job');
+        toggleClasses();
+      }
+    } else {
+      if (sliderOpen) {
+        toggleClasses();
         setTimeout(() => {
-        carousel.classList.toggle('w-job');
+          carousel.classList.toggle('w-job');
+          setTimeout(() => {
+            carousel.classList.toggle('w-job');
+            carousel.classList.toggle('w-0');
+          }, 50);
+        }, 60);
+      } else {
+        setTimeout(() => {
           carousel.classList.toggle('w-0');
-      
-        }, 50);
-      }, 60);
-     
-    }else {
-      setTimeout(() => {
-        carousel.classList.toggle('w-0');
-    
-        carousel.classList.toggle('w-job');
-        setTimeout(() => {
-        carousel.classList.toggle('w-job');
+          carousel.classList.toggle('w-job');
+          setTimeout(() => {
+            carousel.classList.toggle('w-job');
+          }, 250);
         }, 250);
-      }, 250);
-        carousel.classList.toggle('active');
-        contentJob.classList.toggle('w-100');
+        toggleClasses();
+      }
     }
+  
+    sliderOpen = !sliderOpen;
   }
- 
-
-  sliderOpen = !sliderOpen;
-}
-
+  
 
 //   // this is start filter 
 //   let sliderOpen = false;

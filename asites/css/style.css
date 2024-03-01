@@ -95,6 +95,9 @@ max-width: 1rem;
     width: 100% !important;
     overflow-y: auto;
   }
+  .contetnt-landing-page {
+    background-color: white !important;
+  }
   .position-lg-absolute {
     position: relative !important;
   }
@@ -247,7 +250,7 @@ form.form-landing-page {
     height: 57.7rem;
 }
 }
-@media screen and (max-width:1375px) {
+@media screen and (max-width:1375px) and (min-width:516px){
 .text-landing-page h1.text-top, .text-landing-page h1.text-bottom {
   font-size: 2.5rem;
   }
@@ -292,12 +295,72 @@ form.form-landing-page {
   }
   
 }
-
+@media screen and (max-width:515px) and (min-width:351px)  {
+  .text-landing-page h1.text-top,
+  .text-landing-page h1.text-bottom {
+    font-size: 2rem;
+    position: relative;
+    left: -7%;
+    min-width: 268px;
+    padding: 0 !important;
+  }
+  .text-landing-page h1.text-bottom .stars-1 {
+    top: -1.5rem;
+    left: 20px;
+  }
+  .text-landing-page h1.text-bottom span img {
+    width: 3.8rem;
+    height: 3.8rem;
+    bottom: .9rem;
+    right: .5rem;
+  }
+  .text-landing-page h1.text-bottom .stars-1 img {
+    width: 3.4rem;
+  }
+  .text-landing-page .stars-2 img.two-stars {
+    width: 7.2rem;
+    right: .5rem !important;
+  }
+  .text-landing-page .title h1 {
+    font-size: 3.5rem;
+    }
+}
+@media screen and (max-width:350px) {
+  .text-landing-page h1.text-top,
+  .text-landing-page h1.text-bottom {
+    font-size: 1.5rem;
+    position: relative;
+    left: -7%;
+    min-width: auto;
+    padding: 0 !important;
+  }
+  .text-landing-page h1.text-bottom .stars-1 {
+    top: -1.5rem;
+    left: 20px;
+  }
+  .text-landing-page h1.text-bottom span img {
+    width: 3.8rem;
+    height: 3.8rem;
+    bottom: .9rem;
+    right: .5rem;
+  }
+  .text-landing-page h1.text-bottom .stars-1 img {
+    width: 3rem;
+  }
+  .text-landing-page .stars-2 img.two-stars {
+    width: 6rem;
+    right: .5rem !important;
+  }
+  .text-landing-page .title h1 {
+    font-size: 3rem;
+    }
+}
 .position-sm-relative {
   position: absolute;
 }
 .content-landing-page-add .item-page-add {
-  width: 23.5625rem;
+  max-width: 23.5625rem;
+  width: 100%;
   border-radius: 1.01644rem;
 }
 .content-landing-page-add .item-page-add .svg-user-add {
@@ -347,6 +410,7 @@ section.methode-work .content-work .item-content {
 .text-secondary-700  {
   color:var(--secondary-700) !important;
 }
+
 section.methode-work .content-work .item-content .massage {
   color: #263238;
   font-weight: 500;
@@ -982,6 +1046,7 @@ footer .image-item .navbar-brand img {
     animation-duration: .5s;
     display: flex;
     width: 16.8125rem;
+    gap: .4px;
     height: 18rem;
     left: -20px;
     padding: 1.4375rem 1.5625rem 11.125rem 0.9375rem;
@@ -997,7 +1062,9 @@ a.dropdown-item.profile {
   transition: .1s all ease-in-out;
   color:  #748094;
 }
-
+.dropdown-menu.profile.show li.w-100:first-child a.dropdown-item.profile span {
+  font-size: 1.09rem !important; 
+}
 
 a.dropdown-item.profile.active {
   color: white;
@@ -1910,3 +1977,14 @@ a.job-table-Applicants-show-a {
 }
 
 /* page blance sahb frsa  end*/
+/* erorr page */
+.error-404 h4 {
+  letter-spacing: -1px;
+  font-family: Tajawal, 'Cairo', sans-serif;
+  max-width: 690px;
+  font-size: 2rem;
+  line-height: 49px;
+  text-align: center;
+  margin: auto;
+}
+/* end erorr page */
